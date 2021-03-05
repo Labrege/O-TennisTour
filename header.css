@@ -17,7 +17,7 @@ header{
 
 body{
     background-color: black;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header{
@@ -83,11 +83,11 @@ header img{
     border-radius: 5% 0  0  5%;
     right: 0vw;
     top:20vh;
-    transition: 0.5s ease-in-out;
     z-index: 2;
 }
 
 .change{
+    transition: 1s ease-in-out;
     display: initial;
 }
 
@@ -222,6 +222,9 @@ header img{
         overflow-x: hidden;
     }
 
+    header img{
+        height:15vh;
+    }
     
 }
 
