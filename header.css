@@ -17,7 +17,6 @@ header{
 
 body{
     background-color: black;
-    overflow: hidden;
 }
 
 header{
@@ -135,7 +134,6 @@ header img{
 
 .valeurs-container{
     position: absolute;
-    width: 30%;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -151,11 +149,12 @@ header img{
     margin-left: 100px;
     margin-right: 100px;
     width: 90%;
+    text-align: justify;
 }
 
 .valeurs-container h2{
+    white-space: normal;
     font-size: 3em;
-    letter-spacing: 3px;
     color: white;
     margin-bottom: 25px;
 }
@@ -226,5 +225,11 @@ header img{
         height:15vh;
     }
     
+}
+
+@media screen and (max-width: 350px){
+    header img{
+        height:10vh;
+    }
 }
 
