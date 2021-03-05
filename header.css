@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    
+    justify-content: center;
+    background-color: blue;
+    align-items: center;
+}*/
+header{
+    width: 100%;
+    height: 100%;
+}
+
+.header-logo{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header img{
+    height:14vh;
+}
+
+
+
+/*burger menu*/
+.hamburger-menu{
+    width: 35px;
+    height: 30px;
+    
+    
+    padding: 50px;
+    padding: 50px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ligne{
+    width: 100%;
+    height:3px;
+    background-color: #FFFAE5;
+    transition: all 1s;
+}
+
+/***************************/
+
+.navbar{
+    height:80vh;
+    width:20vw;
+    background-color: blue;
+    position: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0  0  40%;
+    right:-20vw;
+    top:20vh;
+}
+
+.change{
+    right: 0vw;
+}
+
+.nav-list{
+    text-align: center;
+}
+
+.nav-item{
+    list-style: none;
+    margin: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 2em;
+    
+}
+
+.change .ligne-1{
+    transform: rotateZ(-45deg) translate(-8px,6px);
+}
+
+.change .ligne-2{
+    opacity: 0;
+}
+
+.change .ligne-3{
+    transform: rotateZ(45deg) translate(-8px,-6px);
+}
+
+
+.container-image{
+    width: 100%;
+    height: 80vh;
+    background:url(image_tennis.jfif) center no-repeat;
+    background-size: cover;
+}
