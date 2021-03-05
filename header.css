@@ -29,9 +29,13 @@ header{
     height: 20vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #111A2F;
     align-items: center;
+}
+
+.logo_club {
+    padding-left: 20px;
 }
 
 .no-scroll{
