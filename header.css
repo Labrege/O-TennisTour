@@ -51,7 +51,7 @@ header img{
     padding: 50px;
     padding: 50px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 10;
 
     display: flex;
     flex-direction: column;
@@ -131,7 +131,6 @@ header img{
 
 .valeurs-container{
     position: absolute;
-    background-color: #111A2F;
     width: 30%;
     top: 60%;
     left: 50%;
@@ -182,6 +181,7 @@ header img{
     justify-content: center;
     align-items: center;
 }
+
 
 @media screen and (max-width: 768px){
     .logo_club{
