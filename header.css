@@ -17,7 +17,6 @@ header{
 
 body{
     background-color: black;
-    overflow-x: hidden;
 }
 
 header{
@@ -83,11 +82,11 @@ header img{
     border-radius: 5% 0  0  5%;
     right: 0vw;
     top:20vh;
-    transition: 0.5s ease-in-out;
     z-index: 2;
 }
 
 .change{
+    transition: 1s ease-in-out;
     display: initial;
 }
 
@@ -135,7 +134,6 @@ header img{
 
 .valeurs-container{
     position: absolute;
-    width: 30%;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -151,11 +149,12 @@ header img{
     margin-left: 100px;
     margin-right: 100px;
     width: 90%;
+    text-align: justify;
 }
 
 .valeurs-container h2{
+    white-space: normal;
     font-size: 3em;
-    letter-spacing: 3px;
     color: white;
     margin-bottom: 25px;
 }
@@ -226,6 +225,15 @@ header img{
         overflow-x: hidden;
     }
 
+    header img{
+        height:15vh;
+    }
     
+}
+
+@media screen and (max-width: 350px){
+    header img{
+        height:10vh;
+    }
 }
 
