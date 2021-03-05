@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 /*
 header{
@@ -12,9 +14,14 @@ header{
     background-color: blue;
     align-items: center;
 }*/
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
 header{
-    width: 100%;
-    height: 100%;
+    position: relative;
 }
 
 .header-logo{
@@ -22,27 +29,29 @@ header{
     height: 20vh;
     display: flex;
     flex-direction: row;
-    background-color: blue;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #111A2F;
     align-items: center;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
 header img{
-    height:14vh;
+    height:20vh;
 }
-
-
 
 /*burger menu*/
 .hamburger-menu{
     width: 35px;
     height: 30px;
-    
-    
     padding: 50px;
     padding: 50px;
     cursor: pointer;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
@@ -52,7 +61,7 @@ header img{
 .ligne{
     width: 100%;
     height:3px;
-    background-color: #FFFAE5;
+    background-color: white;
     transition: all 1s;
 }
 
@@ -60,20 +69,22 @@ header img{
 
 .navbar{
     height:80vh;
-    width:20vw;
-    background-color: blue;
-    position: fixed;
-    
+    width:25vw;
+    background-color: #111A2F;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20% 0  0  40%;
-    right:-20vw;
+    display: none;
+    border-radius: 5% 0  0  5%;
+    right: 0vw;
     top:20vh;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
 }
 
 .change{
-    right: 0vw;
+    display: initial;
 }
 
 .nav-list{
@@ -87,28 +98,126 @@ header img{
 
 .nav-link{
     text-decoration: none;
-    color: yellow;
+    color: white;
     text-transform: uppercase;
     font-size: 2em;
-    
 }
 
-.change .ligne-1{
+.nav-link:hover{
+    color: #F46E54;
+}
+
+.change-cross .ligne-1{
     transform: rotateZ(-45deg) translate(-8px,6px);
 }
 
-.change .ligne-2{
+.change-cross .ligne-2{
     opacity: 0;
 }
 
-.change .ligne-3{
+.change-cross .ligne-3{
     transform: rotateZ(45deg) translate(-8px,-6px);
 }
 
-
 .container-image{
+    position: relative;
     width: 100%;
     height: 80vh;
-    background:url(image_tennis.jfif) center no-repeat;
+    background:url(image-tennis.png) center no-repeat;
     background-size: cover;
+    opacity: 0.4;
+    z-index: 1;
 }
+
+.valeurs-container{
+    position: absolute;
+    background-color: #111A2F;
+    width: 30%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.valeurs-texte{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 90%;
+}
+
+.valeurs-container h2{
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.valeurs-container p{
+    color: white;
+}
+
+.btn-link{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button-container{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    background-color: #F46E54;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .logo_club{
+        display: none;
+    }
+
+    .valeurs-container h2{
+        font-size: 1em;
+    }
+
+    .navbar{
+        height:80vh;
+        width:100vw;
+        background-color: #111A2F;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        right: 0vw;
+        top:20vh;
+        transition: 0.5s ease-in-out;
+        z-index: 10;
+        display: none;
+
+    }
+
+    .change{
+        display: initial;
+    }
+
+    .no-scroll{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    
+}
+
