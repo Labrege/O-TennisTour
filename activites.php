@@ -103,8 +103,8 @@
         </div>
 
     <?php
-          require 'footer.php'
-      ?>
+        require 'footer.php'
+    ?>
 
     <script src="JS/script.js"></script>
 </body>
