@@ -1,0 +1,21 @@
+footer{
+    background-color: #111A2F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.material-icons.logo-style{
+    color: #F46E54;
+    font-size: 40px;
+}
