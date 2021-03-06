@@ -185,7 +185,7 @@ header img{
     }
 
     .no-scroll{
-        height: 80vh;
+        height: 0vh;
     }
 
     .no-scroll-body{

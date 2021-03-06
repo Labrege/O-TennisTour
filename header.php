@@ -1,6 +1,6 @@
 <div class="header-logo">
-            <img class= "logo_club" src="../Images/logoheader-2.png" alt="logo-test">
-            <img class= "logo_nom" src="../Images/titre-header.png" alt="logo-test">
+            <img class= "logo_club" src="Images/logoheader-2.png" alt="logo-test">
+            <img class= "logo_nom" src="Images/titre-header.png" alt="logo-test">
             <div class="hamburger-menu">
                 <div class="ligne ligne-1"></div>
                 <div class="ligne ligne-2"></div>
@@ -17,7 +17,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="#" class="nav-link btn">Activités</a>
+                  <a href="activites.php" class="nav-link btn">Activités</a>
                 </li>
                 <li class="nav-item">
                     <a href="infrastructures.php" class="nav-link btn">Infrastructures</a>
