@@ -1,4 +1,5 @@
 footer{
+    margin-top: 200px;
     background-color: #111A2F;
     display: flex;
     flex-direction: row;
@@ -19,3 +20,5 @@ footer{
     color: #F46E54;
     font-size: 40px;
 }
+
+

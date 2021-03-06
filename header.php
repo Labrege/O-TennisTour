@@ -13,7 +13,7 @@
                   <a href="index.php" class="nav-link btn">Accueil </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link btn">A propos</a>
+                  <a href="a-propos.php" class="nav-link btn">A propos</a>
                 </li>
 
                 <li class="nav-item">
@@ -26,7 +26,7 @@
                     <a href="#" class="nav-link btn">formules</a>
                   </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link btn">inscription</a>
+                    <a href="inscriptions.php" class="nav-link btn">inscription</a>
                   </li>
               </ul>
         </nav>
