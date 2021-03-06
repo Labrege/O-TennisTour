@@ -32,6 +32,12 @@ body{
     margin: 10px;
 }
 
+.finger{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 .card:nth-child(1){
     background:url(../Images/tennis.jpg) center no-repeat;
     background-size: cover;
@@ -73,9 +79,18 @@ body{
 }
 
 .content h2{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+.content a{
+    color: white;
+    margin-top: 40px;
+    background-color: #F46E54;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .mask{
@@ -106,6 +121,10 @@ body{
 
 .card:hover .content{
     visibility: visible;
+}
+
+.card:hover .finger{
+    visibility: hidden;
 }
 
 @media screen and (max-width: 768px){
