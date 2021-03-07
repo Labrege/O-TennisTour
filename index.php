@@ -31,7 +31,6 @@
               Similique vel pariatur quasi ?</p>
           </div>
       </div>
-
       <div class="pagination-wrapper">
         <svg class="btn btn--prev" height="96" viewBox="0 0 24 24" width="96" xmlns="http://www.w3.org/2000/svg">
           <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
@@ -39,9 +38,13 @@
         </svg>
         
         <div class="pagination-container">
-          <div class="dot big-dot"></div>
-          <div class="dot "></div>
-          <div class="dot "></div>
+          <div class="little-dot  little-dot--first"></div>
+          <div class="little-dot">
+            <div class="big-dot-container">
+              <div class="big-dot"></div>
+            </div>
+          </div>
+          <div class="little-dot  little-dot--last"></div>
         </div>
         
         <svg class="btn btn--next" height="96" viewBox="0 0 24 24" width="96" xmlns="http://www.w3.org/2000/svg">
@@ -49,6 +52,7 @@
           <path d="M0-.25h24v24H0z" fill="none"/>
         </svg>
       </div>
+      
 
       <a href="#" class="btn-link">
         <div class="button-container">
