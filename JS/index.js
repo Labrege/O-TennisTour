@@ -1,12 +1,5 @@
-var titre_1="performance";
-var text_1="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel pariatur quasi ? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel pariatur quasi ?";
-var titre_2="infrastructure";
-var text_2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel pariatur quasi ? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel pariatur quasi ?";
-var titre_3="Tennis";
-var text_3="azefrgfhcrgfdhze frgsjfmnjezfmnjidnjfsjsdnv dereruqeru oer uqeu geru gheirug erougqmozie fqoze zoei ozme mqoze fqmzoeu qzmeo qmeur gqmzeumqzue qmzeu qzoeu qmeurg qlerub qliur bmqeru gqm";
 
-
-var btns = document.querySelectorAll('.btn');
+var btns = document.querySelectorAll('.button');
 var paginationWrapper = document.querySelector('.pagination-wrapper');
 var bigDotContainer = document.querySelector('.big-dot-container');
 var littleDot = document.querySelector('.little-dot');
@@ -26,8 +19,15 @@ function btnClick() {
             click++;
             console.log("precedent");
             texts[i].classList.remove('contenue_afficher');
-            if (i==0) texts[2].classList.add('contenue_afficher');
-            else texts[i-1].classList.add('contenue_afficher');
+            texts[i].classList.add('contenue_cacher');
+            if (i==0) {
+                texts[2].classList.add('contenue_afficher');
+                texts[2].classList.remove('contenue_cacher');
+            }
+            else{
+                texts[i-1].classList.add('contenue_afficher');
+                texts[i-1].classList.remove('contenue_cacher');
+            } 
         }
       }
   } else {
@@ -39,8 +39,15 @@ function btnClick() {
             click++;
             console.log("suivant");
             texts[i].classList.remove('contenue_afficher');
-            if (i==2) texts[0].classList.add('contenue_afficher');
-            else texts[i+1].classList.add('contenue_afficher');
+            texts[i].classList.add('contenue_cacher');
+            if (i==2){
+                texts[0].classList.add('contenue_afficher');
+                texts[0].classList.remove('contenue_cacher');
+            } 
+            else{
+                texts[i+1].classList.add('contenue_afficher');
+                texts[i+1].classList.remove('contenue_cacher');
+            } 
         }
       }
   }
