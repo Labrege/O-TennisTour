@@ -13,7 +13,7 @@
     color: red;
 }
 
-.valeurs-container{
+.contenue_afficher{
     position: absolute;
     top: 60%;
     left: 50%;
@@ -31,14 +31,14 @@
     text-align: center;
 }
 
-.valeurs-container h2{
+.contenue_afficher h2{
     white-space: normal;
     font-size: 3em;
     color: white;
     margin-bottom: 25px;
 }
 
-.valeurs-container p{
+.contenue_afficher p{
     color: white;
 }
 
@@ -66,7 +66,7 @@
 .pagination-wrapper {
     font-size: 0;
     position: absolute;
-    top:50%;
+    top:80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

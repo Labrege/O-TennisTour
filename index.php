@@ -22,13 +22,25 @@
           
       </div>
       
-      <div class="valeurs-container">
+      <div class="valeurs-container contenue_afficher">
           <div class="valeurs-texte">
             <h2> PERFORMANCE</h2>
             <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Similique vel pariatur quasi ?
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Similique vel pariatur quasi ?</p>
+          </div>
+      </div>
+      <div class="valeurs-container">
+          <div class="valeurs-texte">
+            <h2> tennis</h2>
+            <p> zadefrlgbfzemqeiafndvjzasvjsnsvn wnjdskf kvn dv ddvf defznfd c  cnzv dfczd;vqdc c dqv zed fdjbcd jbdbj  jdzv fdjvlmZND LSDCZS </p>
+          </div>
+      </div>
+      <div class="valeurs-container">
+          <div class="valeurs-texte">
+            <h2> Vacances</h2>
+            <p> venez nous donner de l'argent pour de la garderie les enfant sont contant et ca vous fait de vacances....</p>
           </div>
       </div>
       <div class="pagination-wrapper">
