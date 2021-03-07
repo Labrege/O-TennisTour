@@ -23,7 +23,7 @@
                     <a href="infrastructures.php" class="nav-link btn">Infrastructures</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link btn">formules</a>
+                    <a href="formules.php" class="nav-link btn">formules</a>
                   </li>
                 <li class="nav-item">
                     <a href="inscriptions.php" class="nav-link btn">inscription</a>
