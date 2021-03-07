@@ -115,8 +115,6 @@ body{
 
 .card:hover .mask{
     visibility: visible;
-    transition: 1s ease-in-out;
-
 }
 
 .card:hover .content{
@@ -130,5 +128,17 @@ body{
 @media screen and (max-width: 768px){
     .card{
         height: 300px;
+    }
+
+    .card:hover .mask{
+        visibility: visible;
+    }
+    
+    .card:hover .content{
+        visibility: visible;
+    }
+    
+    .card:hover .finger{
+        visibility: hidden;
     }
 }
