@@ -81,7 +81,7 @@
 
                 <div class="plan_abonnement">
                     <div class="titre-formule"><!-- abonement club-->
-                        <h3>Grand Chelm</h3>
+                        <h3>Grand Chelme</h3>
                         <img src="https://img.icons8.com/emoji/48/000000/1st-place-medal-emoji.png"/>
                     </div>
                     

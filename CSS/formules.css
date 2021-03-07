@@ -37,8 +37,8 @@
     display: flex;
     flex-direction: column;
 
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    min-height: 350px;
     
     align-items: center ;
     justify-content: space-around;
@@ -128,3 +128,11 @@
     margin-left:20%;
 }
 
+@media screen and (max-width: 768px){
+    .plan_abonnement{
+       /* width: 250px;*/
+    }
+
+
+}
+    
