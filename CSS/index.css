@@ -62,7 +62,42 @@
     justify-content: center;
     align-items: center;
 }
+.pagination-wrapper{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.pagination-container{
+    width:130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot{
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.big-dot{
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.btn{
+    fill:#fff;
+}
 
 @media screen and (max-width: 768px){
     .valeurs-texte{
