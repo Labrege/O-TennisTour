@@ -1,5 +1,6 @@
 footer{
     margin-top: 200px;
+    
     background-color: #111A2F;
     display: flex;
     flex-direction: row;
@@ -13,6 +14,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 100px;
     
 }
 
