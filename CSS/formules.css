@@ -1,4 +1,4 @@
-#espace_membre_abonnement
+/*#espace_membre_abonnement
 {
     background-color:#111A2F;
     width: 100%;
@@ -127,6 +127,154 @@
     margin-bottom: 10%;
     margin-left:20%;
 }
+*/
 
+/*css annimation*/
+
+#espace_membre_abonnement
+{
+    background-color:#111A2F;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.titre-offres {
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgba(255, 250, 229, 0.5);
+    border-left: 1px solid rgba(255, 250, 229, 0.5);
+   color: white;
+}
+
+.container .card .titre-formule{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: unset;
+    height: 18%;
+    width:100%;
+}
+
+.titre-formule h2{
+    font-size: 2em;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.titre-formule img{
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.titre-formule svg{
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.container .card .prix_par_mois{
+    font-size: 2em;
+    margin-right: 40%;
+}
+
+.liste_contenu_plan li{
+    list-style: none;
+    margin-bottom: 5%;
+    display: flex;
+    
+}
+
+.liste_contenu_plan li img{
+    height: 12%;
+    width:12%;
+}
+
+.liste_contenu_plan li p{
+    margin-left: 5%;
+    font-size: 1.5em;
+}
+
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.boite-bouton-valider{
+    height:3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bouton_valider{
+    align-items: center ;
+    border: 1px solid white;
+    height:100%;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white;
+    color: #111A2F;
+    padding: auto;
+    
+    outline: none;
+}
+
+.bouton_valider:hover{
+    background-color:#111A2F;
+    color:white;
+
+}
+
+.bouton_valider:focus{
+    outline:none;
+}
+
+/*********************************************/
 
     
