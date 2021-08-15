@@ -9,13 +9,46 @@
   overflow: hidden;
 }
 
+.rest{
+  overflow-x: hidden; 
+}
+
+.container-image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+  overflow: hidden;
+  background-color: black;
+}
+
+.photo-container{
+  width: 100vw;
+  height: 79.5vh;
+}
+
+.img1{
+  background:url(../Images/tennis-card-2.jpeg) center no-repeat;
+  background-size: cover;
+}
+
+.img2{
+  background:url(../Images/image-tennis.png) center no-repeat;
+  background-size: cover;
+}
+.img3{
+  background:url(../Images/tennis-camp3.jpg) center no-repeat;
+  background-size: cover;
+}
+
 .active{
   color: red;
 }
 
 .contenue_afficher{
   position: absolute;
-  top: 60%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
@@ -24,7 +57,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 300px;
 }
+
 .contenue_cacher{
   display: none;
 }
@@ -34,8 +69,12 @@
 }
 
 .valeurs-texte{
-  width: 400px;
+  width: 440px;
+  padding: 20px;
   text-align: center;
+  background-color: #111A2Faf;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
 .contenue_afficher h2{
@@ -51,7 +90,7 @@
 
 .btn-link{
   text-decoration: none;
-  color: white;
+  color: #384284;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -62,7 +101,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
-  background-color: #F46E54;
+  background-color: #FFD81F;
   width: 150px;
   height: 40px;
   border-radius: 10px;
@@ -81,6 +120,10 @@
   z-index:2;
 }
 
+.pagination-container{
+  padding: 20px;
+}
+
 @keyframes pagination-container--animation-prev {
   0% { transform: translateX(0); }
   100% { transform: translateX(18px); }
@@ -97,18 +140,6 @@
 
 .transition-next .pagination-container {
   animation: pagination-container--animation-next 0.3s forwards;
-}
-
-.little-dot {
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  border-radius: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 6px;
-  position: relative;
-  z-index: 10;
 }
 
 .little-dot--first,
@@ -169,7 +200,7 @@
   width: 12px;
   height: 12px;
   border-radius: 100%;
-  background: #F46E54;
+  background: #FFD81F;
   position: absolute;
   top: 50%;
   right: -6px;
@@ -214,7 +245,7 @@
 .transition-next .big-dot-container {
   animation: big-dot-container--animation-next 0.3s forwards;
 }
-.button {
+.photo-container .button_accueil {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -235,14 +266,80 @@
   right: calc(100% + 20px);
 }
 
+
+.contenue_afficher{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenue_afficher{
+  display: unset;
+}
+
+.valeurs-texte{
+  width: 400px;
+  text-align: center;
+}
+
+.contenue_afficher h2{
+  white-space: normal;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.contenue_afficher p{
+  color: white;
+}
+
+.btn-link{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-container{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: #F46E54;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.little-dot {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 6px;
+  position: relative;
+  z-index: 10;
+}
+
+
 @media screen and (max-width: 768px){
   .valeurs-texte{
       width: 250px;
   }
-
-  .pagination-wrapper {
-      top:65%;
-    }
 
   .valeurs-container{
       top: 50%;
@@ -254,5 +351,16 @@
 
   .container-image{
       height: 80vh;
+  }
+  .valeurs-texte{
+    width: 250px;
+}
+
+  .valeurs-container{
+      top: 58%;
+  }
+
+  .valeurs-container h2{
+      font-size: 2em;
   }
 }

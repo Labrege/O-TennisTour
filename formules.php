@@ -1,29 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/header.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="CSS/formules.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="CSS/footer.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <a href="https://icons8.com/icon/X6CJMckcVrBj/1st-place-medal"></a>
-    <title>O Tennis Tour | formules </title>
-</head>
-<body>
-    <header>
-      <?php
-          require 'header.php'
-      ?>
-    </header>
-    <div id="espace_membre_abonnement">
+<header>
+  <?php
+      require 'header.php'
+  ?>
+</header>
+<div class="rest">
+    <div id="espace_membre_formules">
         <img class="background" src="Images/tennis.jpg" alt="">
         <div class="titre-offres">
             <h1> Les <span class="titre-color">formules<span> </h1>
         </div>
-        <div class="container container-formules">
-            <img src="" alt="">
-            <div class="card">
+        <div class="container-formules">
+            <div class="card-formule">
                 <div class="image-card">
                     <img src="Images/image-tennis.png" alt="">
                 </div>
@@ -45,13 +32,12 @@
 
                     </ul>
                 </div>
-                
                 <div class="boite-bouton-valider">
                     <button type="button_gratuit" class="bouton_valider" name="button_gratuit">Choisir ce plan</a>
                 </div>  
             </div>
 
-            <div class="card">
+            <div class="card-formule">
                 <div class="image-card">
                     <img src="Images/tennis-card-2.jpeg" alt="">
                 </div>
@@ -79,7 +65,7 @@
                 </div>  
             </div>
 
-            <div class="card">
+            <div class="card-formule">
                 <div class="image-card">
                     <img src="Images/tennis-card-1.jpeg" alt="">
                 </div>
@@ -107,6 +93,8 @@
                 </div>  
             </div>
         </div>
+    </div>
+</div>
     
 <script type="text/javascript" src="JS/vanilla-tilt.js"></script>
     <script>
@@ -117,6 +105,5 @@
             //"max-glare":1,
         });
     </script>
-    <script src="JS/script.js"></script>
 </body>
 </html>
