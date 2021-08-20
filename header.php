@@ -13,23 +13,59 @@
       <nav class="navbar">
           <ul id="myDIV" class="nav-list">
               <li class="nav-item">
-                <a href="index.php" class="nav-link btn">Accueil </a>
+                <a href="index.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'index.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">Accueil </a>
               </li>
               <li class="nav-item">
-                <a href="a-propos.php" class="nav-link btn">A propos</a>
+                <a href="a-propos.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'a-propos.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">A propos</a>
               </li>
 
               <li class="nav-item">
-                <a href="equipe.php" class="nav-link btn">Equipe</a>
+                <a href="equipe.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'equipe.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">Equipe</a>
               </li>
               <li class="nav-item">
-                  <a href="infrastructures.php" class="nav-link btn">Sites</a>
+                  <a href="infrastructures.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'infrastructures.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">Sites</a>
                 </li>
                 <li class="nav-item">
-                  <a href="formules.php" class="nav-link btn">formules</a>
+                  <a href="formules.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'formules.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">formules</a>
                 </li>
               <li class="nav-item">
-                  <a href="inscriptions.php" class="nav-link btn">inscription</a>
+                  <a href="inscriptions.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'inscriptions.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">inscription</a>
                 </li>
             </ul>
       </nav>
