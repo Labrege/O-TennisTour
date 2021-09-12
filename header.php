@@ -28,7 +28,7 @@
           }else{
               echo "";
           }
-        ?>">A propos</a>
+        ?>">Nos Stages </a>
               </li>
 
               <li class="nav-item">

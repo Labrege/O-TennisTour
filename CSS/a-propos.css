@@ -1,4 +1,4 @@
-#espace_membre_apropos{
+.espace_membre_apropos{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -9,15 +9,25 @@
     flex-direction: column;
 }
 
+img.background-apropos {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
 .container{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: auto;
+    justify-content: center;
     min-height: 370px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -28,8 +38,10 @@
 .content-container{
     width: 95%;
     min-height: 300px;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 
@@ -48,22 +60,168 @@
 .content-text{
     width: 450px;
     margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%,-50%);
+    color: white;
     text-shadow: black 0px 0px 10px;
 }
 
 .content-text p{
-    color: white;
-    width: 95%;
-    text-align: justify;
+    line-height: 1.5;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
-.content-text h3{
-    margin-bottom: 20px;
+.content-text h2{
+    font-size: 2.1rem;
     text-transform: uppercase;
-    color: white;
-    font-size: bolder;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 900;
+    width: 100%;
 }
+
+/*page tracker*/
+.tracker{
+    position: fixed;
+    top: 37vh;
+    left: 10vw;
+    z-index: 1;
+}
+
+.tracker li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.tracker .bullet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.tracker .bullet-separateur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 20px;
+    height: 40px;
+}
+
+.boule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.boule-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F46E54;
+}
+
+.trait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1px;
+    background-color: white;
+}
+
+.tracker a{
+    cursor: pointer;
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.tracker .link-active{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #F46E54;
+}
+
+@media screen and (max-width: 768px){
+    .tracker{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-text{
+        width: 90%;
+    }
+
+    .content-text p{
+        line-height: 1.2;
+        width: 95%;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .content-text h2{
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 900;
+        width: 100%;
+    }
+
+    .content-text .button{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .content-text p{
+        line-height: 1;
+        width: 95%;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .content-text h2{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 900;
+        width: 100%;
+    }
+
+}
+
+
+
+
