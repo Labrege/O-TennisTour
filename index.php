@@ -7,12 +7,15 @@
 <div class="rest">
     <div class="photo-container">
     <div class="container-image img1 display">
+      <div class="screen-index"></div>
       <video playsinline loop muted autoplay src="Videos/tennis1.mp4"></video>
     </div>
     <div class="container-image img2 no-display">
+      <div class="screen-index"></div>
       <video playsinline loop muted autoplay src="Videos/tennis2.mp4"></video>
     </div>
     <div class="container-image img3 no-display">
+      <div class="screen-index"></div>
       <video playsinline loop muted autoplay src="Videos/tennis3.mp4"></video>
     </div>
 

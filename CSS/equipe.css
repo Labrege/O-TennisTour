@@ -1,4 +1,4 @@
-#espace_membre_equipe{
+.espace_membre_equipe{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -7,4 +7,210 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: #3f3f3f;
 }
+
+img.background-equipe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.screen-equipe{
+    background: #111A2F;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+/*contenue page 1*/
+.container-equipe{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    min-height: 300px;
+    z-index: 1;
+}
+
+.card-equipe{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.card-equipe p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card-equipe h2{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 900;
+    width: 100%;
+}
+
+.card-equipe .ligne{
+    width: 80%;
+    height: 2px;
+    background-color:#F46E54 ;
+    margin-bottom: 20px;
+}
+
+.card-equipe .button{
+    width: 40%;
+    height: 55px;
+}
+
+/*deuxième partie de page*/
+#espace_membre_equipe_2{
+    background: white;
+}
+
+.container-liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 75%;
+    min-height: 300px;
+    z-index: 1;
+    margin-top: 70px;
+}
+.container-liste h2{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 900;
+    width: 100%;
+    color: #F46E54;
+}
+
+.container-liste p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.card-liste-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-liste{
+    width: 340px;
+    height: 600px;
+    margin: 15px;
+    box-shadow: 0 5px 18px rgb(0 0 0 / 10%);
+}
+
+.img-coach{
+    width: 100%;
+    height: 300px;
+}
+
+.img-coach img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-liste-contenu{
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-liste-contenu h3{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card-liste-contenu .ligne{
+    width: 80%;
+    height: 2px;
+    background-color:#F46E54 ;
+    margin-bottom: 20px;
+}
+
+.card-liste-contenu ul{
+    line-height: 1.5;
+}
+
+.card-liste-contenu ul li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .container-equipe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        min-height: 300px;
+        z-index: 1;
+    }
+
+    .card-equipe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    .card-equipe p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .card-equipe h2{
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 20px;
+        font-weight: 900;
+        width: 100%;
+    }
+    
+    .card-equipe .ligne{
+        width: 80%;
+        height: 2px;
+        background-color:#F46E54 ;
+        margin-bottom: 20px;
+    }
+    
+    .card-equipe .button{
+        width: 60%;
+        height: 55px;
+    }
+}
+
+

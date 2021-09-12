@@ -20,6 +20,7 @@
         </ul>
     </div>
     <div id="espace_membre_apropos_1" class='espace_membre_apropos'>
+        <div class="screen-apropos"></div>
         <img class="background-apropos" src="Images/tennis-coach.jpg" alt="">
         <div class="container">
             <div class="content-container">
@@ -37,7 +38,8 @@
         </div>
     </div>
     <div id="espace_membre_apropos_2" class='espace_membre_apropos'>
-        <img class="background-apropos" src="Images/tennis.jpg" alt="">
+        <div class="screen-apropos"></div>
+        <img class="background-apropos" src="Images/tennis-court.jpg" alt="">
         <div class="container">
             <div class="content-container">
                 <div class="content-text">
@@ -54,6 +56,7 @@
         </div>
     </div>
     <div id="espace_membre_apropos_3" class='espace_membre_apropos'>
+        <div class="screen-apropos"></div>
         <img class="background-apropos" src="Images/tennis-kid.jpg" alt="">
         <div class="container">
             <div class="content-container">
@@ -71,6 +74,7 @@
         </div>
     </div>
     <div id="espace_membre_apropos_4" class='espace_membre_apropos'>
+        <div class="screen-apropos"></div>
         <img class="background-apropos" src="Images/tennis-score.jpg" alt="">
         <div class="container">
             <div class="content-container">
@@ -88,7 +92,8 @@
         </div>
     </div>
     <div id="espace_membre_apropos_5" class='espace_membre_apropos'>
-        <img class="background-apropos" src="Images/tennis-indiv.jpg" alt="">
+        <div class="screen-apropos"></div>
+        <img class="background-apropos" src="Images/indiv.jpg" alt="">
         <div class="container">
             <div class="content-container">
                 <div class="content-text">

@@ -2,8 +2,8 @@
   require 'links.php';
 ?>
 <div class="header-logo">
-          <img class= "logo_club" src="Images/logoheader-2.png" alt="logo-test">
-          <img class= "logo_nom" src="Images/titre-header.png" alt="logo-test">
+          <a href="index.php"><img class= "logo_club" src="Images/logoheader-2.png" alt="logo-test"></a>
+          <a href="index.php"><img class= "logo_nom" src="Images/titre-header.png" alt="logo-test"></a>
           <div class="hamburger-menu">
               <div class="ligne ligne-1"></div>
               <div class="ligne ligne-2"></div>

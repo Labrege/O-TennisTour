@@ -2,36 +2,76 @@
     <?php
         require 'header.php'
     ?>
-</header> 
+</header>
 
-<div class="titre titre-inscription">
-    <h1> Mon <span class="titre-color">Inscription <span> </h1>
-</div>
-<div class="rest inscription-container">
-    <div class="inscription-info">
-        <div class="form-container">
-            <form action="#">
-                <input type="text" placeholder="nom" name="nom">
-                <input type="text" placeholder="Prénom" name="nom">
-                <input type="date" placeholder="Age" name="nom">
-                <input type="email" placeholder="email" name="email">
-                <input type="tel" placeholder="téléphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                <select name="cars" id="cars">
-                    <option value="A">Semaine A</option>
-                    <option value="B">Semaine B</option>
-                    <option value="C">Semaine C</option>
-                    <option value="D">Semaine D</option>
-                </select>
+<div class="rest">
+    <div id='espace_membre_inscription_1'>
+        <div class="recherche-container">
+            <div class="screen-inscription"></div>
+            <img class="background-inscription" src="Images/court.jpg" alt="">
+            <div class="rechercher-container">
+                <h2> Réserver un stage </h2>
+                <div class="input-container">
+                    <form action="" method='POST'>
+                        <div class="label-container">
+                            <label for="date-début">Date de début</label>
+                            <input type="date" name='date-début'>
+                        </div>
+                        <div class="label-container">
+                            <label for="date-fin">Date de fin</label>
+                            <input type="date" name='date-fin'>
+                        </div>
+                        <div class="label-container">
+                            <label for="stage-select">Type de stage</label>
+                            <select name="stage-select" id="">
+                                <option value="" disabled> Stages </option>
+                                <option value=""> Stage compétition </option>
+                                <option value=""> Stage jeune </option>
+                                <option value=""> Stage loisir </option>
+                                <option value=""> Stage perfectionnement </option>
+                            </select>
+                        </div>
+                        <div class="label-container">
+                            <label for="age">Age</label>
+                            <input type="number" min=4 max=99 placeholder='15'>
+                        </div>
 
-                <button> Envoyer </button>
-
-            </form>
+                        <div class="label-container">
+                            <label for="age" style='visibility: hidden;'>Age</label>
+                            <button class='button'> rechercher </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+    </div>
+    <div id='espace_membre_inscription_2'>
+        <div class="container-formules">
+            <div class="card-formule">
+                <div class="image-card">
+                    <img src="Images/image-tennis.png" alt="">
+                </div>
+                <div class="titre-formule">
+                    <h2>ATP 500</h2>
+                </div>
+                <div class="date-container">
+                    <h3 class="date"> du 17/06 au 22/06 </h3>
+                    <h3 class="prix"> 400€ </h3>
+                </div>
+                    
+                <div class="contenue_propose">
+                    <ul class="liste_contenu_plan">
+                        <li class="contenu_plan"><img src="Images/tick.png" alt=""> <p>2 sessions de tennis par jour </p></li>
+                        <li class="contenu_plan"> <img src="Images/tick.png" alt=""><p>3h d'activité physique par jour </p> </li>
+                        <li class="contenu_plan"> <img src="Images/tick.png" alt=""><p>Rapport individuel</p></li>
+                        <li class="contenu_plan"> <img src="Images/tick.png" alt=""><p>Pension complète</p></li>
+                        <li class="contenu_plan"> <img src="Images/tick.png" alt=""><p>Transport (train/mini-bus)</p></li>
 
-        <div class="explication-container">
-            <div class="explication-texte">
-                <h2> Et après ?</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates rerum vitae vero nostrum fugit nisi ratione. Animi <br><br>dolore sapiente doloremque nostrum numquam? Dolor velit quia fugit perspiciatis praesentium soluta neque doloremque libero quos. Dolor quas facere, impedit vero officiis dolore ex molestias necessitatibus hic doloribus ipsam sed culpa quod tempora a sint natus modi fugiat dolorum placeat aut vel temporibus quaerat accusantium. Optio, sequi. Commodi a reiciendis facilis quae architecto dolorem sequi consequatur vitae obcaecati assumenda dolor quibusdam neque fugit autem maxime eius, fugiat repellat esse consequuntur temporibus, at culpa! Quod sapiente obcaecati iste expedita!</p>
+                    </ul>
+                </div>
+                <div class="boite-bouton-valider">
+                    <button type="button_gratuit" class="bouton_valider" name="button_gratuit">Choisir ce plan</a>
+                </div>  
             </div>
         </div>
     </div>

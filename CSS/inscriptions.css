@@ -1,128 +1,243 @@
-body{
-    background: #111A2F;
-}
-
-.titre-inscription{
-    margin-bottom: 100px;
-}
-
-.inscription-container{
+#espace_membre_inscription_2{
+    position: relative;
     width: 100%;
+    min-height: 100vh;
+    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
-.inscription-info{
-    width: 95%;
-    min-height: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.form-container, .explication-container{
-    width: 500px;
-    margin: 20px;
-}
-
-.form-container form{
+/*barre de recherche*/
+.recherche-container{
+    position: relative;
+    height: 50vh;
     width: 100%;
+}
+
+img.background-inscription {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.screen-inscription{
+    background: #111A2F;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.rechercher-container{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.form-container form button{
-    width: 30%;
-    height: 30px;
-    background: #F46E54;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    outline: none;
-    border: none;
-    border-radius: 5px;
+.recherche-container h2{
     margin-top: 30px;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 900;
+    width: 100%;
+    color: white;
 }
 
-.form-container form button:hover{
+.input-container{
+    width: 80%;
+}
+
+.input-container form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-container form input, select, .button{
+    min-width: 175px;
+    height: 50px;
+    text-align: center;
+    margin: 15px;
+}
+
+.input-container .button{
     cursor: pointer;
 }
 
-.form-container form input, select{
-    width: 60%;
-    border: none;
-    background: none;
-    border-bottom: 2px solid #F46E54;
-    height: 40px;
-    font-size: 1.5rem;
-    text-align: left;
-    padding-bottom: 5px;
-    margin: 10px;
-    color: white;
-}
-
-.form-container form select option{
-    color: #111A2F;
-}
-
-.form-container form input::placeholder{
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    color: white;
-}
-
-.form-container form select:focus{
-    outline: none;
-}
-
-.form-container form input:focus{
-    outline: none;
-}
-
-
-.explication-container{
-    background: white;
-    color: #111A2F;
+.label-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.explication-texte{
-    width: 80%;
-    height: 80%;
-}
-
-.explication-container h2{
-    font-size: 2rem;
-    margin-bottom: 30px;
-    font-weight: bolder;
-    text-transform: uppercase;
-
-}
-
-.explication-container p{
+.label-container label{
     font-size: 1.2rem;
+    color: #F46E54;
 }
 
-@media screen and (max-width: 768px){
-    .form-container, .explication-container{
-        width: 800px;
-    }
-
-    
-    .form-container form input::placeholder{
-        font-size: 1rem;
-        text-transform: capitalize;
-        color: white;
-    }
-
-    .form-container form input, select{
-        font-size: 1rem;
-    }
+/*cartes formules*/
+.container-formules{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    width: 100%;
 }
 
+.container-formules .card-formule{
+    position: relative;
+    width: 60%;
+    height: 700px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgba(255, 250, 229, 0.5);
+    border-left: 1px solid rgba(255, 250, 229, 0.5);
+    color: gray;
+}
+
+.container-formules .image-card{
+    width: 95%;
+    height: 250px;
+    margin-top: 7px;
+}
+
+.container-formules .image-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-formules .card-formule .titre-formule{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.titre-formule h2{
+    font-size: 2em;
+    color: black;
+    z-index: 100;
+}
+
+.date-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.date-container .date{
+    font-size: 1rem;
+}
+
+.date-container .prix{
+    font-size: 1.5rem;
+}
+
+.liste_contenu_plan li{
+    list-style: none;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.liste_contenu_plan li img{
+    height: 12%;
+    width:12%;
+}
+
+.liste_contenu_plan li p{
+    margin-left: 5%;
+    font-size: 1em;
+}
+
+.container-formules .card-formule .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container-formules .card-formule:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.boite-bouton-valider{
+    height:3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+}
+
+.bouton_valider{
+    align-items: center ;
+    border: 1px solid white;
+    height:100%;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: salmon;
+    color: white;
+    outline: none;
+    border-radius: 0;
+}
+
+.bouton_valider:hover{
+    background-color:#111A2F;
+    color:white;
+
+}
+
+.bouton_valider:focus{
+    outline:none;
+}
+
+@media screen and (max-width: 520px){
+    .recherche-container{
+        position: relative;
+        height: 80vh;
+        width: 100%;
+    }
+
+    .recherche-container h2{
+        margin-top: 30px;
+    }
+}
