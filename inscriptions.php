@@ -3,7 +3,6 @@
         require 'header.php'
     ?>
 </header>
-
 <div class="rest">
     <div id='espace_membre_inscription_1'>
         <div class="recherche-container">
