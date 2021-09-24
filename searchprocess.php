@@ -3,7 +3,6 @@
      $(document).ready(function(){
      // Valide le boutton s'il y a une heure 
         $('.time-select').click(function () {
-            $('.results').submit();
             //check if checkbox is checked
             if ($('.time-select').is(':checked')) {
 
