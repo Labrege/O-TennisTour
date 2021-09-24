@@ -61,15 +61,13 @@
                 <div class="btnContainer" style="display: none;">
                     <button type="submit" value="Submit" id="btnRechercher" class="button-valide"> Rechercher </button>
                 </div>
-                <div> Hello </div>
             </form>
         </div>
         
-        <form class="results">
+        <form class="results" method='POST' action='cours-individuels-booking.php'>
             <div class="card-indiv-container">
                 
             </div>
-            <button disabled class='valider-heure'> continuer </button>
         </form>
     </div>
 </div>
