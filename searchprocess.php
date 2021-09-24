@@ -1,8 +1,11 @@
 <!-- Pour valider le boutton submit -->
 <script>
      $(document).ready(function(){
+        $('.time-select').on('change', function() {
+            $('.time-select').not(this).prop('checked', false);
+        });
      // Valide le boutton s'il y a une heure 
-        $('.time-select').click(function () {
+     $('.time-select').click(function () {
             //check if checkbox is checked
             if ($('.time-select').is(':checked')) {
 

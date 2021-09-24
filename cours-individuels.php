@@ -64,10 +64,11 @@
             </form>
         </div>
         
-        <form class="results" method='POST' action='cours-individuels-booking.php'>
+        <form class="results">
             <div class="card-indiv-container">
                 
             </div>
+            <button disabled class='valider-heure'> continuer </button>
         </form>
     </div>
 </div>
