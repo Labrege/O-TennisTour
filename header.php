@@ -65,7 +65,16 @@
           }else{
               echo "";
           }
-        ?>">inscription</a>
+        ?>">Reservation stages</a>
+                </li>
+                <li class="nav-item">
+                  <a href="cours-individuels.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'cours-individuels.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">Cours individuels</a>
                 </li>
             </ul>
       </nav>
