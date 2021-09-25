@@ -69,6 +69,36 @@
 
                     </ul>
                 </div>
+
+                <button class="detail">EN DETAILS</button>
+                <div class="info_detail contenue_cacher">
+                    <h4> stage pour s'ammeliorer et s'amuser !</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ab, corrupti dicta magnam nemo a fugiat optio, quae distinctio ut porro tempora iusto iste repellendus culpa suscipit voluptatem doloribus incidunt?</p>
+                    <div class="slider">
+                        <div class="inscription_carousel">
+                                <div class="emplacement_img one" style="background-color:blue"></div>
+                                <div class="emplacement_img two" style="background-color:red"></div>
+                                <div class="emplacement_img three" style="background-color:yellow"></div>
+                                <div class="emplacement_img four" style="background-color:orange"></div>
+                                <div class="emplacement_img five" style="background-color:pink"></div>
+                        </div>
+                        <div class="fleche">
+                            <div class="next">
+                                <svg class="button_carousel btn--next" height="96" viewBox="0 0 24 24" width="96" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+                                    <path d="M0-.25h24v24H0z" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="prev">
+                                <svg class="button_carousel btn--prev" height="96" viewBox="0 0 24 24" width="96" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
+                                    <path d="M0-.5h24v24H0z" fill="none"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
                 <div class="boite-bouton-valider">
                     <button type="button_gratuit" class="bouton_valider" name="button_gratuit">Choisir ce plan</a>
                 </div>  
@@ -76,5 +106,6 @@
         </div>
     </div>
 </div>
+<script src="JS/carousel_inscription.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
