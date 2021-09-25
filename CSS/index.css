@@ -3,6 +3,13 @@
     position: relative;
 }
 
+.valeurs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .screen-index{
     background: #111A2F;
     position: absolute;

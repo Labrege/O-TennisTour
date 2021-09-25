@@ -110,7 +110,6 @@ img.background-inscription {
 .container-formules .card-formule{
     position: relative;
     width: 60%;
-    height: 700px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     background: white;
@@ -184,6 +183,118 @@ img.background-inscription {
     font-size: 1em;
 }
 
+.detail{
+    margin-left: -60%;
+    margin-bottom: 20px;
+    color: #F46E54;
+    border:1px solid white ;
+    background-color: transparent;
+    
+}
+
+.detail:hover {
+    border-bottom:1px solid #F46E54 ;
+    cursor: pointer;
+}
+
+.info_detail{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.info_detail h4{
+    font-size: 1.5rem;
+    color: #f46f54a1;
+}
+
+.contenue_afficher{
+    display:flex ;
+}
+.contenue_cacher{
+    display:none ;
+}
+
+.slider{
+    margin:10px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.inscription_carousel{
+    height:100%;
+    width: 1000px;
+    position: absolute;
+}
+.emplacement_img{
+    width: 300px;
+    height:100%;
+    object-fit:scale-down;
+    position: absolute;
+}
+
+.emplacement_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.one{
+    left: 0;
+    top:0;
+}
+.two{
+    left: 300px;
+    
+}
+.three{
+    left:600px;
+   
+}
+.four{
+    left: 1200px;
+   
+}
+.five{
+    left: 1500px;
+    
+}
+.six{
+    left:1800px;
+}
+
+.next{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+}
+
+.prev{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+}
+
+
+ .button_carousel {
+    position: absolute;
+    top: 30%;
+    right: -40%;
+    fill: rgba(255, 255, 255, 0.644);
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .button_carousel:hover {
+    fill: rgb(255, 255, 255);
+  }
+/*
 .container-formules .card-formule .content{
     padding: 20px;
     text-align: center;
@@ -195,7 +306,7 @@ img.background-inscription {
 .container-formules .card-formule:hover .content{
     transform: translateY(0px);
     opacity: 1;
-}
+}*/
 
 
 .boite-bouton-valider{

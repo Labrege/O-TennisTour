@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="CSS/inscriptions.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/equipe.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/infrastructures.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="CSS/cours-individuels.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="CSS/cours-individuels-booking.css?v=<?php echo time(); ?>">
+
+
     <!-- Links -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,11 +25,8 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
     <!-- SEO -->
     <title> Academie de tennis à Paris | O'Tennis Tour </title>

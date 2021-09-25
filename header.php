@@ -1,5 +1,6 @@
 <?php
   require 'links.php';
+  require 'dbh.inc.php';
 ?>
 <div class="header-logo">
           <a href="index.php"><img class= "logo_club" src="Images/logoheader-2.png" alt="logo-test"></a>
@@ -65,7 +66,16 @@
           }else{
               echo "";
           }
-        ?>">inscription</a>
+        ?>">Reservation stages</a>
+                </li>
+                <li class="nav-item">
+                  <a href="cours-individuels.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'cours-individuels.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">Cours individuels</a>
                 </li>
             </ul>
       </nav>
