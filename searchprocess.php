@@ -56,7 +56,6 @@ if(isset($_POST['submit'])){
                         <div class="card-indiv-dispo-container">
                             <!-- Création d'info pour l'étape 2-->
                             <input type="date" name='date' value='<?php echo $date;?>' style='display: none;'>
-                            <input type="text" name='profEtape2' value='<?php echo $donnees['profDispo'];?>' style='display: none;'>
                             
                             <?php
                                 $profDispo = $donnees['profDispo'];
@@ -67,7 +66,7 @@ if(isset($_POST['submit'])){
                             ?>
                               <div class="card-indiv-dispo">
                                 <label class='card-indiv-dispo-label'>
-                                    <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'];?>'> 
+                                    <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo;?>'> 
                                     <?php 
                                     $heureSelect = new DateTime($donneesheures['heureDispo']);
                                     echo $heureSelect->format('h:i'); 
