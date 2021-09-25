@@ -52,8 +52,8 @@
 <div class="rest">
     <div id="espace_membre_indiv">
         <div class="calendar">
-        <div class="screen-inscription"></div>
-        <img class="background-inscription" src="Images/court.jpg" alt="">
+            <div class="screen-inscription"></div>
+            <img class="background-inscription" src="Images/court.jpg" alt="">
             <form action="#" method='POST' class='form-indiv'>
                 <input type="date" onkeydown="return false" name='date-indiv' class='date-indiv' id='form-info' min='<?php echo date('Y-m-d'); ?>' value="<?php echo date('Y-m-d'); ?>">
                 
