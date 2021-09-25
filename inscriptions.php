@@ -76,11 +76,11 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ab, corrupti dicta magnam nemo a fugiat optio, quae distinctio ut porro tempora iusto iste repellendus culpa suscipit voluptatem doloribus incidunt?</p>
                     <div class="slider">
                         <div class="inscription_carousel">
-                                <div class="emplacement_img one" style="background-color:blue"></div>
-                                <div class="emplacement_img two" style="background-color:red"></div>
-                                <div class="emplacement_img three" style="background-color:yellow"></div>
-                                <div class="emplacement_img four" style="background-color:orange"></div>
-                                <div class="emplacement_img five" style="background-color:pink"></div>
+                                <div class="emplacement_img one"> <img src="Images/escalade.jpeg" alt=""></div>
+                                <div class="emplacement_img two"><img src="Images/escape-game.jpeg" alt=""></div>
+                                <div class="emplacement_img three"><img src="Images/futuroscope.jpeg" alt=""></div>
+                                <div class="emplacement_img four"><img src="Images/lac.jpg" alt=""></div>
+                                <div class="emplacement_img five"><img src="Images/creps-poitier.jpeg" alt=""></div>
                         </div>
                         <div class="fleche">
                             <div class="next">

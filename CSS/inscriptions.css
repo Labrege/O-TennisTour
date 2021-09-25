@@ -226,13 +226,19 @@ img.background-inscription {
 .inscription_carousel{
     height:100%;
     width: 1000px;
-    
     position: absolute;
 }
 .emplacement_img{
     width: 300px;
     height:100%;
+    object-fit:scale-down;
     position: absolute;
+}
+
+.emplacement_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .one{
@@ -258,8 +264,6 @@ img.background-inscription {
 .six{
     left:1800px;
 }
-
-
 
 .next{
     position: absolute;

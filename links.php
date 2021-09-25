@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="CSS/equipe.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/infrastructures.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/cours-individuels.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="CSS/cours-individuels-booking.css?v=<?php echo time(); ?>">
+
 
     <!-- Links -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
