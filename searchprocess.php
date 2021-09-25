@@ -3,15 +3,17 @@
      $(document).ready(function(){
         $('.time-select').on('change', function() {
             $('.time-select').not(this).prop('checked', false);
+            $('.time-select').not(this).parent().parent().removeClass('checked');
         });
      // Valide le boutton s'il y a une heure 
      $('.time-select').click(function () {
             //check if checkbox is checked
             if ($('.time-select').is(':checked')) {
-
+                $(this).parent().parent().addClass('checked');
                 $('.valider-heure').removeAttr('disabled'); //enable input
 
             } else {
+                $(this).parent().parent().removeClass('checked');
                 $('.valider-heure').attr('disabled', true); //disable input
             }
         });
@@ -46,9 +48,16 @@ if(isset($_POST['submit'])){
                         <img src="Images/olivier-renaud.jpeg" alt="">
                     </div>
                     <div class="card-indiv-text">
+                        <!-- Nom du prof -->
                         <h1> <?php echo $donnees['profDispo'];?> </h1>
+
+                        <!-- dispo du prof -->
                         <h2> Disponibilité(s) pour le <?php echo $dateSmallFormat;?></h2>
                         <div class="card-indiv-dispo-container">
+                            <!-- Création d'info pour l'étape 2-->
+                            <input type="date" name='date' value='<?php echo $date;?>' style='display: none;'>
+                            <input type="text" name='profEtape2' value='<?php echo $donnees['profDispo'];?>' style='display: none;'>
+                            
                             <?php
                                 $profDispo = $donnees['profDispo'];
                                 $sqlHeure = "SELECT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo'";
@@ -57,8 +66,9 @@ if(isset($_POST['submit'])){
                                 while ($donneesheures = $searchHeure->fetch_assoc()){
                             ?>
                               <div class="card-indiv-dispo">
-                                <input class='time-select' type="checkbox">
-                                <label> <?php 
+                                <label class='card-indiv-dispo-label'>
+                                    <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'];?>'> 
+                                    <?php 
                                     $heureSelect = new DateTime($donneesheures['heureDispo']);
                                     echo $heureSelect->format('h:i'); 
                                     ?>
@@ -74,7 +84,11 @@ if(isset($_POST['submit'])){
         }
     }
     else{
-        echo 'No results';
+        ?>
+        <div class="no-results">
+            <h2> Oops... Aucun résultat ne correspond à votre recherche. Veuillez saisir une nouvelle recherche.</h2>
+        </div>
+        <?php
     }
 }
 
