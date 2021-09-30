@@ -14,7 +14,7 @@
         $('.condition').html(' exterieur');
       }else if($('.client-condition').val() == 'int') {
         $('.price').html(' 70 € ');
-        var amount = '70';
+        var amount = '7000';
         $('.condition').html(' interieur');
       }
       $('.amount').val(amount);
@@ -22,12 +22,12 @@
 
     $('.client-condition').on('change', function() {
       if($('.client-condition').val() == 'ext'){
-      $('.price').html(' 60 € ');
-      var amount = '60';
-      $('.condition').html(' exterieur');
+        var amount = '6000';
+        $('.price').html(' 60 € ');
+        $('.condition').html(' exterieur');
       }else if($('.client-condition').val() == 'int') {
         $('.price').html(' 70 € ');
-        var amount = '70';
+        var amount = '7000';
         $('.condition').html(' interieur');
       }
       $('.amount').val(amount);
