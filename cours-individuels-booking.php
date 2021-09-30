@@ -3,7 +3,8 @@
       require 'header.php'
   ?>
 </header>
-
+<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+<script src="https://js.stripe.com/v3/"></script>
 <?php
 if(isset($_POST['time-select']) && isset($_POST['date'])){
     $datepicked = date('d M Y', strtotime($_POST['date']));
@@ -185,9 +186,6 @@ else{
   header('Location: ../cours-individuels.php');
 }
 ?>
-
-<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
-<script src="https://js.stripe.com/v3/"></script>
 <script>
   $(document).ready(function(){
     statutprof = <?php echo $statutProf;?>
