@@ -10,7 +10,7 @@
     statutprof = <?php echo $statutProf;?>
 
     window.onload = function(){
-      if(statutprof == 'coach'){
+      if($('.client-condition').length){
         if($('.client-condition').val() == 'ext'){
         var amount = '6000';
         $('.price').html(' 60 € ');
@@ -28,7 +28,7 @@
     }
 
     $('.client-condition').on('change', function() {
-      if(statutprof == 'coach'){
+      if($('.client-condition').length){
         if($('.client-condition').val() == 'ext'){
         var amount = '6000';
         $('.price').html(' 60 € ');
