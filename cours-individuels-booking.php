@@ -7,24 +7,23 @@
 <script src="https://js.stripe.com/v3/"></script>
 <script>
   $(document).ready(function(){
-    statutprof = <?php echo $statutProf;?>
-
     window.onload = function(){
       if($('.client-condition').length){
         if($('.client-condition').val() == 'ext'){
         var amount = '6000';
         $('.price').html(' 60 € ');
         $('.condition').html(' exterieur');
-      }else if($('.client-condition').val() == 'int') {
+        }
+        else if($('.client-condition').val() == 'int') {
         $('.price').html(' 70 € ');
         var amount = '7000';
         $('.condition').html(' interieur');
-      }
-      $('.amount').val(amount);
+        }
       }
       else{
         var amount = '10000';
-      } 
+      }
+      $('.amount').val(amount);
     }
 
     $('.client-condition').on('change', function() {
@@ -33,16 +32,17 @@
         var amount = '6000';
         $('.price').html(' 60 € ');
         $('.condition').html(' exterieur');
-      }else if($('.client-condition').val() == 'int') {
+        }
+        else if($('.client-condition').val() == 'int') {
         $('.price').html(' 70 € ');
         var amount = '7000';
         $('.condition').html(' interieur');
-      }
-      $('.amount').val(amount);
+        }
       }
       else{
         var amount = '10000';
       }
+      $('.amount').val(amount);
     });
   });
 </script>

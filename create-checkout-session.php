@@ -1,5 +1,6 @@
-<?php  //Variables
-  /*$name = $_POST['clientname'];
+<?php  
+  //Variables
+  $name = $_POST['clientname'];
   $surname = $_POST['clientsurname'];
   $tel = $_POST['clienttel'];
   $mail = $_POST['clientmail'];
@@ -17,12 +18,12 @@
   }
   $age = $_POST['client-age'];
   $localisation1 = $_POST['client-localisation-1'];
-  $localisation2 = $_POST['client-localisation-2'];*/
+  $localisation2 = $_POST['client-localisation-2'];
   require 'vendor/autoload.php';
   \Stripe\Stripe::setApiKey('sk_test_51JeKanC0wJvQStrM1E5hZf736sLysewAGej9P0zGH79tPdMgSbywBVHjONEPu8g55G3H7kQXNTAkt87pyiNNDhj800LvYoxlNu');
 
   header('Content-Type: application/json');
-  $amount = $_POST['amount'];
+  echo $amount = $_POST['amount'];
   $price = "'$amount'";
   $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
   //$YOUR_DOMAIN = 'https://www.otennistour.com';
