@@ -212,7 +212,7 @@ if(isset($_POST['time-select']) && isset($_POST['date'])){
     <?php
 }
 else{
-  header('Location: cours-individuels.php');
+  header('Location: ../cours-individuels.php');
 }
 ?>
 
