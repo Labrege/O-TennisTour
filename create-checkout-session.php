@@ -1,6 +1,4 @@
 <?php
-if(isset($_POST['submit-pay'])){
-
   //Variables
   $amount = $_POST['amount'];
   $name = $_POST['clientname'];
@@ -21,8 +19,7 @@ if(isset($_POST['submit-pay'])){
   }
   $age = $_POST['client-age'];
   $localisation1 = $_POST['client-localisation-1'];
-  $localisation2 = $_POST['client-localisation-2'];  
-
+  $localisation2 = $_POST['client-localisation-2'];
 
   require 'vendor/autoload.php';
   \Stripe\Stripe::setApiKey('sk_test_51JeKanC0wJvQStrM1E5hZf736sLysewAGej9P0zGH79tPdMgSbywBVHjONEPu8g55G3H7kQXNTAkt87pyiNNDhj800LvYoxlNu');
@@ -49,6 +46,4 @@ if(isset($_POST['submit-pay'])){
 
   header("HTTP/1.1 303 See Other");
   header("Location: " . $checkout_session->url);
-}else{
-  ('Location: ../cours-individuels.php');
-}
+
