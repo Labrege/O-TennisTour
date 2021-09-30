@@ -28,7 +28,7 @@ if(isset($_POST['submit-pay'])){
   \Stripe\Stripe::setApiKey('sk_test_51JeKanC0wJvQStrM1E5hZf736sLysewAGej9P0zGH79tPdMgSbywBVHjONEPu8g55G3H7kQXNTAkt87pyiNNDhj800LvYoxlNu');
 
   header('Content-Type: application/json');
-  $price = "$amount";
+  $price = "'$amount'";
   /*$YOUR_DOMAIN = 'http://localhost/O-tennisTour';*/
   $YOUR_DOMAIN = 'https://www.otennistour.com/';
   $checkout_session = \Stripe\Checkout\Session::create([
