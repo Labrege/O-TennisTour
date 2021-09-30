@@ -29,7 +29,8 @@ if(isset($_POST['submit-pay'])){
 
   header('Content-Type: application/json');
   echo $price = "'$amount'";
-  $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
+  /*$YOUR_DOMAIN = 'http://localhost/O-tennisTour';*/
+  $YOUR_DOMAIN = 'https://www.otennistour.com/';
   $checkout_session = \Stripe\Checkout\Session::create([
     'line_items' => [[
       # TODO: replace this with the `price` of the product you want to sell
