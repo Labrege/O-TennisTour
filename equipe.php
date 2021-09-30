@@ -11,7 +11,13 @@
         <div class="container-equipe">
             <div class="card-equipe">
                 <h2> Notre philosophie </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illum perferendis voluptate soluta. Est veniam dignissimos ducimus minus, odio vitae amet, temporibus minima dicta in sapiente similique! Quibusdam recusandae, impedit repellat iste modi provident repudiandae.</p>
+                <p> Ayant travaillé dans des clubs de Paris, nous partageons la même vision du tennis. L’Académie comprend que le tennis d’aujourd’hui et du futur se joue d’abord avec les « yeux », puis avec « le mental », ensuite avec les « jambes » et finalement avec les « mains ».
+                
+                <br><br>
+                Nous sommes convaincus que l’on peut apprendre le goût de l’effort, le dépassement de soi quelque soit le niveau du joueur.
+                Parce que chaque joueur est unique, que chaque joueur est un projet en soi, il mérite une méthodologie de coaching individualisée et propre à ses besoins, ses attentes que ce soit aussi bien en cours collectifs qu’en leçon individuelle.
+                Notre objectif commun est de faire évoluer le joueur dans les meilleures conditions possibles grâce à un cadre idéal sur le terrain comme en dehors.
+                </p>
                 <div class="ligne"></div>
                 <a class='button' href="#"> Nous rejoindre</a>
             </div>

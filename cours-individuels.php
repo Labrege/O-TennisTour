@@ -26,10 +26,12 @@
         window.onload = function(){
             var date = $('.date-indiv').val();
             var prof = $('.prof-indiv').val();
+            var time = $('.time-indiv').val();
             var submit = $('#btnRechercher').val();
             $(".card-indiv-container").load("searchprocess.php", {
                 date: date,
                 prof:prof,
+                time:time,
                 submit: submit
             });
         }
@@ -37,10 +39,13 @@
         $('.form-indiv').change(function(){
             var date = $('.date-indiv').val();
             var prof = $('.prof-indiv').val();
+            var time = $('.time-indiv').val();
+            console.log(time);
             var submit = $('#btnRechercher').val();
             $(".card-indiv-container").load("searchprocess.php", {
                 date: date,
                 prof:prof,
+                time:time,
                 submit: submit
             });
         });
@@ -70,6 +75,23 @@
                 <?php
                 }
                 ?>                   
+                </select>
+                <select name="time-indiv" class="time-indiv">
+                    <option value="all">Toutes les heures</option>
+                    <option value="08:00">à partir de 8h</option>
+                    <option value="09:00">à partir de 9h</option>
+                    <option value="10:00">à partir de 10h</option>
+                    <option value="11:00">à partir de 11h</option>
+                    <option value="12:00">à partir de 12h</option>
+                    <option value="13:00">à partir de 13h</option>
+                    <option value="14:00">à partir de 14h</option>
+                    <option value="15:00">à partir de 15h</option>
+                    <option value="16:00">à partir de 16h</option>
+                    <option value="17:00">à partir de 17h</option>
+                    <option value="18:00">à partir de 18h</option>
+                    <option value="19:00">à partir de 19h</option>
+                    <option value="20:00">à partir de 20h</option>
+                    <option value="21:00">à partir de 21h</option>
                 </select>
                 <div class="btnContainer" style="display: none;">
                     <button type="submit" value="Submit" id="btnRechercher" class="button-valide"> Rechercher </button>

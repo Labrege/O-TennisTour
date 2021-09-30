@@ -43,7 +43,7 @@
 
 .titre-info-container{
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     width: 100%;
     height: 100%;
     display: flex;
@@ -60,4 +60,134 @@
 
 .titre-info-container h3{
     font-weight: 500;
+    margin: 5px;
+}
+
+.ligne-rouge-indiv{
+    width: 300px;
+    height: 3px;
+    background-color: #F46E54;
+    margin: 6px;
+}
+
+.form-indiv-container{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.form-indiv-booking{
+    width: 550px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.explication-indiv-container{
+    width: 550px;
+    min-height: 700px;
+    background-color: #111A2F;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explication-indiv-container-paiement{
+    width: 550px;
+    min-height: 350px;
+    background-color: #111A2F;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-container-indiv-booking{
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    width: 70%;
+}
+
+.input-container-indiv-booking label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F46E54;
+    margin: 5px;
+}
+
+.input-container-indiv-booking input, .input-container-indiv-booking select{
+    height: 32px;
+    width: 100%;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.explication-indiv-text{
+    min-height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+
+.explication-indiv-text h2{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.explication-indiv-text h3{
+    font-size: 1.05rem;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.explication-indiv-text p{
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.red{
+    color: #F46E54;
+    font-weight: bold;
+}
+
+
+.ligne-rouge-indiv-text{
+    width: 75px;
+    height: 3px;
+    background-color: #F46E54;
+    margin: 20px;
+    margin-left: 0;
+    margin-bottom: 7px;
+}
+
+.button.blue{
+    cursor: pointer;
+}
+
+.button.blue:hover{
+    background-color: #111A2F;
+    border: #111A2F;
+}
+
+label.error{
+    font-size: 0.9rem;
+    color: red;
 }

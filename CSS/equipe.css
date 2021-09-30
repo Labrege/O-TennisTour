@@ -42,25 +42,26 @@ img.background-equipe {
 }
 
 .card-equipe{
-    width: 40%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     color: white;
 }
 
 .card-equipe p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     width: 100%;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 20px;
 }
 
 .card-equipe h2{
-    font-size: 2.1rem;
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 20px;
+    margin-top: 20px;
     font-weight: 900;
     width: 100%;
 }

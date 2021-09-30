@@ -72,11 +72,19 @@ img.background-inscription {
     align-items: center;
 }
 
-.input-container form input, select, .button{
+.input-container form input, .input-container form select{
     min-width: 175px;
     height: 50px;
     text-align: center;
     margin: 15px;
+}
+
+.button{
+    min-width: 175px;
+    height: 50px;
+    text-align: center;
+    margin: 15px;
+    margin-left: 0;
 }
 
 .input-container .button{
@@ -220,7 +228,6 @@ img.background-inscription {
     height: 200px;
     position: relative;
     overflow: hidden;
-    
 }
 
 .inscription_carousel{

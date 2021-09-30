@@ -26,8 +26,10 @@ require('dbh.inc.php');
 if(isset($_POST['submit'])){
     $date = $_POST['date'];
     $prof = $_POST['prof'];
+    $time = $_POST['time'];
     $dateSmallFormat = date("d/m", strtotime($date));
 
+    //Choix du prof
     if($prof == 'all'){
         $searchProf = '';
     }
@@ -35,7 +37,15 @@ if(isset($_POST['submit'])){
         $searchProf = "AND profDispo = '$prof'";
     }
 
-    $sqlDate = "SELECT DISTINCT profDispo FROM disposindivs WHERE dateDispo ='$date'"."$searchProf";
+    //Choix de l'heure
+    if($time == 'all'){
+        $searchTime = "";
+    }
+    else{
+        $searchTime = "AND heureDispo >= '$time'";
+    }
+
+    $sqlDate = "SELECT DISTINCT profDispo, statutProf FROM disposindivs, profs WHERE disposindivs.profDispo = profs.prenomProf AND dateDispo ='$date'"."$searchProf"."$searchTime";
     $searchDate = $conn->query($sqlDate);
 
     //Si la recherche donne un résultat
@@ -50,6 +60,10 @@ if(isset($_POST['submit'])){
                     <div class="card-indiv-text">
                         <!-- Nom du prof -->
                         <h1> <?php echo $donnees['profDispo'];?> </h1>
+                        <div class="ligne-noire"></div>
+                        <div class="statut-coach">
+                            <h3> <?php echo $donnees['statutProf'];?> </h3>
+                        </div>
 
                         <!-- dispo du prof -->
                         <h2> Disponibilité(s) pour le <?php echo $dateSmallFormat;?></h2>
@@ -66,7 +80,7 @@ if(isset($_POST['submit'])){
                             ?>
                               <div class="card-indiv-dispo">
                                 <label class='card-indiv-dispo-label'>
-                                    <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo;?>'> 
+                                    <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo.' '.$donnees['statutProf'];?>'> 
                                     <?php 
                                     $heureSelect = new DateTime($donneesheures['heureDispo']);
                                     echo $heureSelect->format('h:i'); 
