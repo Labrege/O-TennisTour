@@ -3,37 +3,7 @@
       require 'header.php'
   ?>
 </header>
-<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
-<script src="https://js.stripe.com/v3/"></script>
-<script>
-  $(document).ready(function(){
-    window.onload = function(){
-      if($('.client-condition').val() == 'ext'){
-        var amount = '6000';
-        $('.price').html(' 60 € ');
-        $('.condition').html(' exterieur');
-      }else if($('.client-condition').val() == 'int') {
-        $('.price').html(' 70 € ');
-        var amount = '7000';
-        $('.condition').html(' interieur');
-      }
-      $('.amount').val(amount);
-    }
 
-    $('.client-condition').on('change', function() {
-      if($('.client-condition').val() == 'ext'){
-        var amount = '6000';
-        $('.price').html(' 60 € ');
-        $('.condition').html(' exterieur');
-      }else if($('.client-condition').val() == 'int') {
-        $('.price').html(' 70 € ');
-        var amount = '7000';
-        $('.condition').html(' interieur');
-      }
-      $('.amount').val(amount);
-    });
-  });
-</script>
 <?php
 if(isset($_POST['time-select']) && isset($_POST['date'])){
     $datepicked = date('d M Y', strtotime($_POST['date']));
@@ -215,5 +185,49 @@ else{
   header('Location: ../cours-individuels.php');
 }
 ?>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+  $(document).ready(function(){
+    statutprof = <?php echo $statutProf;?>
+
+    window.onload = function(){
+      if(statutprof == 'coach'){
+        if($('.client-condition').val() == 'ext'){
+        var amount = '6000';
+        $('.price').html(' 60 € ');
+        $('.condition').html(' exterieur');
+      }else if($('.client-condition').val() == 'int') {
+        $('.price').html(' 70 € ');
+        var amount = '7000';
+        $('.condition').html(' interieur');
+      }
+      $('.amount').val(amount);
+      }
+      else{
+        var amount = '10000';
+      } 
+    }
+
+    $('.client-condition').on('change', function() {
+      if(statutprof == 'coach'){
+        if($('.client-condition').val() == 'ext'){
+        var amount = '6000';
+        $('.price').html(' 60 € ');
+        $('.condition').html(' exterieur');
+      }else if($('.client-condition').val() == 'int') {
+        $('.price').html(' 70 € ');
+        var amount = '7000';
+        $('.condition').html(' interieur');
+      }
+      $('.amount').val(amount);
+      }
+      else{
+        var amount = '10000';
+      }
+    });
+  });
+</script>
 
 
