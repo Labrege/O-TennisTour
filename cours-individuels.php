@@ -23,6 +23,11 @@
             }
         });
 
+        $('.valider-heure').click(function(){
+            console.log('hello');
+            $('.results').submit();
+        });
+
         window.onload = function(){
             var date = $('.date-indiv').val();
             var prof = $('.prof-indiv').val();
@@ -51,7 +56,12 @@
         });
     });
 </script>
+<?php
 
+$date = date('Y-m-d');
+
+
+?>
 
 <!-- HTML -->
 <div class="rest">
@@ -60,7 +70,7 @@
             <div class="screen-inscription"></div>
             <img class="background-inscription" src="Images/court.jpg" alt="">
             <form action="#" method='POST' class='form-indiv'>
-                <input type="date" onkeydown="return false" name='date-indiv' class='date-indiv' id='form-info' min='<?php echo date('Y-m-d'); ?>' value="<?php echo date('Y-m-d'); ?>">
+                <input type="date" onkeydown="return false" name='date-indiv' class='date-indiv' id='form-info' min='<?php echo date('Y-m-d', strtotime($date.'+ 2 days')); ?>' value="<?php echo date('Y-m-d', strtotime($date.'+ 2 days')); ?>">
                 
                 <!-- Load tous les profs -->
                 <select name="" class='prof-indiv' id='form-info'>

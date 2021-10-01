@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
                             
                             <?php
                                 $profDispo = $donnees['profDispo'];
-                                $sqlHeure = "SELECT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo'";
+                                $sqlHeure = "SELECT DISTINCT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo' AND heureDispo>='$time'";
                                 $searchHeure = $conn->query($sqlHeure);
 
                                 while ($donneesheures = $searchHeure->fetch_assoc()){
@@ -83,7 +83,7 @@ if(isset($_POST['submit'])){
                                     <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo.' '.$donnees['statutProf'];?>'> 
                                     <?php 
                                     $heureSelect = new DateTime($donneesheures['heureDispo']);
-                                    echo $heureSelect->format('h:i'); 
+                                    echo $heureSelect->format('H:i'); 
                                     ?>
                                 </label>
                             </div>  
