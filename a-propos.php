@@ -33,6 +33,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quidem dicta ea quas aliquam incidunt laudantium facilis fugiat sunt?
                     </p>
                     <a  class="button" href="#"> M'inscrire au stage</a>
+                    <a  class="button_hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
                 </div>
             </div>
         </div>
@@ -51,6 +52,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quidem dicta ea quas aliquam incidunt laudantium facilis fugiat sunt?
                     </p>
                     <a  class="button" href="#"> M'inscrire au stage</a>
+                    <a  class="button_hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
                 </div>
             </div>
         </div>
@@ -69,6 +71,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quidem dicta ea quas aliquam incidunt laudantium facilis fugiat sunt?
                     </p>
                     <a  class="button" href="#"> M'inscrire au stage</a>
+                    <a  class="button_hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
                 </div>
             </div>
         </div>
@@ -87,6 +90,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quidem dicta ea quas aliquam incidunt laudantium facilis fugiat sunt? Sapiente distinctio, nobis ratione fugiat ullam impedit cumque laudantium nihil, aperiam minus suscipit neque provident ipsum!
                     </p>
                     <a  class="button" href="#"> M'inscrire au stage</a>
+                    <a  class="button_hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
                 </div>
             </div>
         </div>
@@ -105,6 +109,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quidem dicta ea quas aliquam incidunt laudantium facilis fugiat sunt? Sapiente distinctio, nobis ratione fugiat ullam impedit cumque laudantium nihil, aperiam minus suscipit neque provident ipsum!
                     </p>
                     <a  class="button" href="#"> M'inscrire au stage</a>
+                    <a  class="button_hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
                 </div>
             </div>
         </div>

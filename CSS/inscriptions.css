@@ -79,14 +79,6 @@ img.background-inscription {
     margin: 15px;
 }
 
-.button{
-    min-width: 175px;
-    height: 50px;
-    text-align: center;
-    margin: 15px;
-    margin-left: 0;
-}
-
 .input-container .button{
     cursor: pointer;
 }

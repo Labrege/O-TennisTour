@@ -34,7 +34,7 @@
                 </div>
                 <div class="boite-bouton-valider">
                     <button type="button_gratuit" class="bouton_valider" name="button_gratuit">Choisir ce plan</a>
-                </div>  
+                </div>
             </div>
 
             <div class="card-formule">

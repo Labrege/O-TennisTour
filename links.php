@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="CSS/infrastructures.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/cours-individuels.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/cours-individuels-booking.css?v=<?php echo time(); ?>">
-
+    <link rel="stylesheet" href="CSS/success-payement.css?v=<?php echo time(); ?>">
 
     <!-- Links -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -26,8 +26,14 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.9.0/jquery.validate.min.js" integrity="sha512-FyKT5fVLnePWZFq8zELdcGwSjpMrRZuYmF+7YdKxVREKomnwN0KTUG8/udaVDdYFv7fTMEc+opLqHQRqBGs8+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="JS/form-validation.js"></script>
-    <!-- Favicon -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <script src="JS/form-validation.js?v=<?php echo time(); ?>"></script>
+
+    <!-- Pickaday -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 
     <!-- SEO -->
     <title> Academie de tennis à Paris | O'Tennis Tour </title>

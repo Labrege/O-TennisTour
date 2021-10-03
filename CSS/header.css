@@ -32,19 +32,43 @@ img.background {
 }
 /* Buttons*/
 .button{
-    width: 150px;
-    height: 40px;
-    background-color:#F46E54 ;
+    min-width: 175px;
+    height: 50px;
+    text-align: center;
+    margin: 15px;
+    margin-left: 0;
+    background-color:#F46E54;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #F46E54;
     color: white;
+    cursor: pointer;
+    max-width: 95%;
+}
+
+.button_hollow{
+    min-width: 175px;
+    height: 50px;
+    text-align: center;
+    margin: 15px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F46E54;
+    color: white;
+    max-width: 95%;
 }
 
 .button:hover{
     border: 1px solid #F46E54;
     background: none;
+}
+
+.button_hollow:hover{
+    border: 1px solid #F46E54;
+    background-color:#F46E54;
 }
 /* Titres */
 h1{

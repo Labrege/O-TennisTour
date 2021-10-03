@@ -19,13 +19,18 @@
   $age = $_POST['client-age'];
   $localisation1 = $_POST['client-localisation-1'];
   $localisation2 = $_POST['client-localisation-2'];
+
+  $prof = $_GET['prof'];
+  $timepicked = $_GET['time'];
+  $statutprof = $_GET['statut'];
+  $date = $_GET['date'];
   require 'vendor/autoload.php';
   \Stripe\Stripe::setApiKey('sk_test_51JeKanC0wJvQStrM1E5hZf736sLysewAGej9P0zGH79tPdMgSbywBVHjONEPu8g55G3H7kQXNTAkt87pyiNNDhj800LvYoxlNu');
 
   header('Content-Type: application/json');
   echo $amount = $_POST['amount'];
   $price = "'$amount'";
-  //$YOUR_DOMAIN = 'http://localhost/O-tennisTour';
+  $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
   $YOUR_DOMAIN = 'https://www.otennistour.com';
   $checkout_session = \Stripe\Checkout\Session::create([
     'line_items' => [[
@@ -39,7 +44,7 @@
       'card',
     ],
     'mode' => 'payment',
-    'success_url' => $YOUR_DOMAIN . "/success-payement.php?amount=$amount&name=$name&surname=$surname&tel=$tel&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2",
+    'success_url' => $YOUR_DOMAIN . "/success-payement.php?amount=$amount&name=$name&surname=$surname&tel=$tel&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$timepicked&date=$date",
     'cancel_url' => $YOUR_DOMAIN . '/cours-individuels.php',
   ]);
 

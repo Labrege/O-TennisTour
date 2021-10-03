@@ -1,7 +1,7 @@
 
 <?php
-/*
-$servername = "localhost";
+
+/*$servername = "localhost";
 $dbusername = "root";
 $dbpassword = "";
 $dbname = "ott";

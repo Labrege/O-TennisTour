@@ -23,18 +23,20 @@
             }
         });
 
-        $('.valider-heure').click(function(){
-            console.log('hello');
-            $('.results').submit();
-        });
-
         window.onload = function(){
-            var date = $('.date-indiv').val();
+            var strdate = $('.date-indiv').val();
+            var date = new Date(Date.parse(strdate));
+            var dd = String(date.getDate()).padStart(2, '0');
+            var mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = date.getFullYear();
+            date = yyyy + '/' + mm + '/' + dd;
+            var dateToEcho = dd + '/' + mm + '/' + yyyy;
             var prof = $('.prof-indiv').val();
             var time = $('.time-indiv').val();
             var submit = $('#btnRechercher').val();
             $(".card-indiv-container").load("searchprocess.php", {
                 date: date,
+                dateToEcho: dateToEcho,
                 prof:prof,
                 time:time,
                 submit: submit
@@ -42,13 +44,19 @@
         }
 
         $('.form-indiv').change(function(){
-            var date = $('.date-indiv').val();
+            var strdate = $('.date-indiv').val();
+            var date = new Date(Date.parse(strdate));
+            var dd = String(date.getDate()).padStart(2, '0');
+            var mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = date.getFullYear();
+            date = yyyy + '/' + mm + '/' + dd;
+            var dateToEcho = dd + '/' + mm + '/' + yyyy;
             var prof = $('.prof-indiv').val();
             var time = $('.time-indiv').val();
-            console.log(time);
             var submit = $('#btnRechercher').val();
             $(".card-indiv-container").load("searchprocess.php", {
                 date: date,
+                dateToEcho: dateToEcho,
                 prof:prof,
                 time:time,
                 submit: submit
@@ -57,10 +65,7 @@
     });
 </script>
 <?php
-
-$date = date('Y-m-d');
-
-
+$dateval = date(1);
 ?>
 
 <!-- HTML -->
@@ -69,9 +74,10 @@ $date = date('Y-m-d');
         <div class="calendar">
             <div class="screen-inscription"></div>
             <img class="background-inscription" src="Images/court.jpg" alt="">
-            <form action="#" method='POST' class='form-indiv'>
-                <input type="date" onkeydown="return false" name='date-indiv' class='date-indiv' id='form-info' min='<?php echo date('Y-m-d', strtotime($date.'+ 2 days')); ?>' value="<?php echo date('Y-m-d', strtotime($date.'+ 2 days')); ?>">
-                
+            <form action="#" method='POST' class='form-indiv'>    
+                <!-- Datepicker Input -->
+                <input style='text-align: center;' type="text" id="datepicker" onkeydown="return false" name='date-indiv' class='date-indiv' value="<?php echo date('Y-m-d', strtotime($dateval.'+ 2 days')); ?>">
+
                 <!-- Load tous les profs -->
                 <select name="" class='prof-indiv' id='form-info'>
                     <option value="all" selected> Tous les profs </option>
@@ -107,6 +113,10 @@ $date = date('Y-m-d');
                     <button type="submit" value="Submit" id="btnRechercher" class="button-valide"> Rechercher </button>
                 </div>
             </form>
+            <div class="download-container">
+                <a href="PDF/brochure joueurs.pdf" target='_blank' class="button_hollow"> Voir les joueurs OTT </a>
+                <a href="PDF/brochure leçons individuelles.pdf" target='_blank' class="button"> Voir les tarifs </a>
+            </div>
         </div>
         
         <form class="results" method='POST' action='cours-individuels-booking.php'>
@@ -117,6 +127,7 @@ $date = date('Y-m-d');
         </form>
     </div>
 </div>
-
 </body>
 </html>
+<!-- Pickaday script -->
+<script src='JS/datepick1.js?v=<?php echo time();?>'></script>

@@ -12,7 +12,7 @@
 .titre-indiv-booking{
     position: relative;
     width: 100%;
-    min-height: 150px;
+    min-height: 30vh;
 }
 
 .screen-booking{
@@ -190,4 +190,10 @@
 label.error{
     font-size: 0.9rem;
     color: red;
+}
+
+@media screen and (max-width: 768px){
+    .titre-info-container h2{
+        font-size: 2.5rem;
+    }
 }
