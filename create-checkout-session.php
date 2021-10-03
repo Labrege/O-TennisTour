@@ -30,7 +30,7 @@
   header('Content-Type: application/json');
   echo $amount = $_POST['amount'];
   $price = "'$amount'";
-  $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
+  //$YOUR_DOMAIN = 'http://localhost/O-tennisTour';
   $YOUR_DOMAIN = 'https://www.otennistour.com';
   $checkout_session = \Stripe\Checkout\Session::create([
     'line_items' => [[
