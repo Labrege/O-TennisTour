@@ -2,7 +2,7 @@
 require 'links.php';
 require 'dbh.inc.php';
 
-if(isset($_POST['submit-pay']) && isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && isset($_GET['tel']) && isset($_GET['condition']) && isset($_GET['surface']) && isset($_GET['age'])){
+if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && isset($_GET['tel']) && isset($_GET['condition']) && isset($_GET['surface']) && isset($_GET['age'])){
     $nom = $_GET['surname'];
     $prénom = $_GET['name'];
     $mail = $_GET['mail'];
