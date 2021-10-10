@@ -146,14 +146,14 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
     
             if ($mail->send()){
                 echo"<script language='javascript'>
-                    window.location = '../O-TennisTour/login.php?error=signupcomplete&mail=sent';
+                    window.location = '../login.php?error=signupcomplete&mail=sent';
                     window.location = newLocation;
                 </script>
                 ";
             }
             else{
                 echo"<script language='javascript'>
-                window.location = '../O-TennisTour/login.php?error=signupcomplete&mail=notsent';
+                window.location = '../login.php?error=signupcomplete&mail=notsent';
                     window.location = newLocation;
                 </script>
                 ";
