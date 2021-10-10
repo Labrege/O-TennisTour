@@ -19,7 +19,7 @@
                 var pwdrepeat = $(".pwdrepeat").val();
                 var submit = $("#bouton-inscription").val();
                 
-                $(".message").load("O-TennisTour/includes/signup.inc.php", {
+                $(".message").load("includes/signup.inc.php", {
                      name: name,
                      surname: surname,
                      email: email,
