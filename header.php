@@ -1,6 +1,6 @@
 <?php
   require 'links.php';
-  require 'dbh.inc.php';
+  require 'includes/dbh.inc.php';
 ?>
 <div class="header-logo">
           <a href="index.php"><img class= "logo_club" src="Images/logoheader-3.png" alt="logo-test"></a>

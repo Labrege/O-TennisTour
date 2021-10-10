@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,600;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    color: #10222e;
+    font-size: 14px;
+}
+
+body{
+    background-color: #10222e;
+    overflow-x: hidden;
+}
+
+img{
+    position: absolute;
+    top: -1%;
+    left: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulaire h1{
+    color: white;
+    background-color: salmon;
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 5% 100%);
+    font-size: 2.5rem ;
+    margin: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+form input{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 80px;
+}
+form input:focus{
+    outline:none;
+}
+
+.boutton{
+    color: white;
+    width: 40%;
+    border: 1px solid white;
+    background-color: #10222e;
+}
+
+.boutton:hover{
+    transition: ease-in 400ms;
+    color: #10222e;
+    background-color: white;
+    cursor: pointer;
+}
+
+.boutton:focus{
+    outline:none;
+}
+
+.options{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.inscription{
+    text-align: center;
+    color: tomato;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%,-50%);
+}
+
+#bouton-inscription{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 30px;
+    color: #FFFAE5;
+    border: 1px solid #FFFAE5;
+
+    background-color: #10222e;
+}
+
+#bouton-inscription:hover{
+    background-color: #FFFAE5;
+    color: #10222e;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+}
+
+#bouton-inscription:active{
+    background-color: #FFFAE5;
+    color: #10222e;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+}
+
+#bouton-inscription:focus{
+    outline: none;
+}
+
+/*messages d'erreur*/
+.message{
+    display: flex;
+    margin-top: 5px;
+}
+
+.error_message{
+    background: lightpink; 
+    width: 300px; 
+    text-align: center; 
+    color: white; 
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    color: black; 
+    border: red 1px solid;
+    z-index: 1000;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.error_message .exit-message{
+    margin-left: 30px;
+}
+
+.success_message{
+    background: #d2f8d2;
+    width: 300px; 
+    text-align: center; 
+    color: white; 
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    color: black; 
+    border: green 1px solid;
+    z-index: 1000;
+    
+}
+
+.success_message .exit-message{
+    margin-left: 30px;
+}
+
+.exit-message{
+    font-size: 20px;
+}
+
+
+.exit-message:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px){
+    *{
+        font-size: 8px;
+    }
+    
+    .formulaire{
+        width: 80%;
+    }
+
+    .formulaire h1{
+        font-size: 2rem;
+    }
+
+    .inscription{
+        top: 10%;
+    }
+
+    .error_message{
+        width: 200px; 
+    }
+
+}

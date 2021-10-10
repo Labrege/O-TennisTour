@@ -11,6 +11,10 @@ a{
     text-decoration: none;
 }
 
+.capitalize{
+    text-transform: capitalize;
+}
+
 img.background {
     position: absolute;
     left: 0px;

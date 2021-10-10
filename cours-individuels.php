@@ -73,7 +73,7 @@ $dateval = date(1);
     <div id="espace_membre_indiv">
         <div class="calendar">
             <div class="screen-inscription"></div>
-            <img class="background-inscription" src="Images/court.jpg" alt="">
+            <img class="background-inscription" src="Images/tennis-court.jpg" alt="">
             <form action="#" method='POST' class='form-indiv'>    
                 <!-- Datepicker Input -->
                 <input style='text-align: center;' type="text" id="datepicker" onkeydown="return false" name='date-indiv' class='date-indiv' value="<?php echo date('Y-m-d', strtotime($dateval.'+ 2 days')); ?>">

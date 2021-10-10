@@ -1,12 +1,13 @@
 <?php
 if(isset($_POST['time-select']) && isset($_POST['date'])){
     $date1 = $_POST['date'];
-    $date = date('d/m/Y', strtotime($date1));
+    $date = date('d M Y', strtotime($date1));
     $info = $_POST['time-select'];
     $divide = explode(' ', $info);
     $timepicked = date("H:i", strtotime($divide[0]));
     $profpicked = $divide[1];
     $statutProf = $divide[2];
+    $profEmail = $divide[3];
     ?>
     <header>
     <?php
@@ -88,7 +89,7 @@ if(isset($_POST['time-select']) && isset($_POST['date'])){
         </div>
         <div class="form-indiv-container">
           <!-- début formulaire -->
-          <form action="create-checkout-session.php?prof=<?php echo $profpicked;?>&time=<?php echo $timepicked;?>&statut=<?php echo $statutProf;?>&date=<?php echo $date;?>" method="post" class='form-indiv-booking'>
+          <form action="create-checkout-session.php?prof=<?php echo $profpicked;?>&time=<?php echo $timepicked;?>&statut=<?php echo $statutProf;?>&date=<?php echo $date;?>&profEmail=<?php echo $profEmail;?>" method="post" class='form-indiv-booking'>
             <div class="input-container-indiv-booking">
               <label for="client-name">Prénom * : </label>
               <input type="text" name="clientname" class="client-info client-name" placeholder='Prénom'>
@@ -174,7 +175,7 @@ if(isset($_POST['time-select']) && isset($_POST['date'])){
                 <option value="BB"> Boulogne-Billancourt </option>
               </select>
             </div>
-            <button class='button blue button-pay' name='submit-pay'> Continuer et passer au paiement </button>
+            <button class='button blue button-pay' name='submit-pay'>  Passer au paiement </button>
           </form>
 
           <!-- début explication -->

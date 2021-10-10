@@ -21,13 +21,13 @@
 </script>
 
 <?php
-require('dbh.inc.php');
+require('includes/dbh.inc.php');
 
 if(isset($_POST['submit'])){
     $date = $_POST['date'];
     $prof = $_POST['prof'];
     $time = $_POST['time'];
-    $dateSmallFormat = date("d/m", strtotime($date));
+    $dateSmallFormat = date("d M", strtotime($date));
 
     //Choix du prof
     if($prof == 'all'){
@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
         $searchTime = "AND heureDispo >= '$time'";
     }
 
-    $sqlDate = "SELECT DISTINCT profDispo, statutProf FROM disposindivs, profs WHERE disposindivs.profDispo = profs.prenomProf AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo ='$date' ORDER BY statutProf,  profs.prenomProf ASC";
+    $sqlDate = "SELECT DISTINCT profDispo, statutProf, mailProf FROM disposindivs, profs WHERE disposindivs.profDispo = profs.prenomProf AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo ='$date' ORDER BY statutProf,  profs.prenomProf ASC";
     $searchDate = $conn->query($sqlDate);
 
     //Si la recherche donne un résultat
@@ -55,14 +55,14 @@ if(isset($_POST['submit'])){
             ?>
             <div class="card-indiv">
                 <div class="card-indiv-photo">
-                    <img src="Images/olivier-renaud.jpeg" alt="">
+                    <img src="Images/coachs/<?php echo $donnees['profDispo'];?>.jpg" alt="">
                 </div>
                 <div class="card-indiv-text">
                     <!-- Nom du prof -->
                     <h1> <?php echo $donnees['profDispo'];?> </h1>
                     <div class="ligne-noire"></div>
                     <div class="statut-coach">
-                        <h3> <?php echo $donnees['statutProf'];?> </h3>
+                        <h3> <span class="capitalize"><?php echo $donnees['statutProf'];?></span> </h3>
                     </div>
 
                     <!-- dispo du prof -->
@@ -72,6 +72,7 @@ if(isset($_POST['submit'])){
                         <input type="text" name='date' value='<?php echo $date;?>' style='display: none;'>
                         <?php
                             $profDispo = $donnees['profDispo'];
+                            $profEmail = $donnees['mailProf'];
                             $sqlHeure = "SELECT DISTINCT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo' AND heureDispo>='$time' AND coursReserve='0' ORDER BY heureDispo ASC";
                             $searchHeure = $conn->query($sqlHeure);
 
@@ -79,7 +80,7 @@ if(isset($_POST['submit'])){
                         ?>
                             <div class="card-indiv-dispo">
                             <label class='card-indiv-dispo-label'>
-                                <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo.' '.$donnees['statutProf'];?>'> 
+                                <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo.' '.$donnees['statutProf'].' '.$profEmail;?>'> 
                                 <?php 
                                 $heureSelect = new DateTime($donneesheures['heureDispo']);
                                 echo $heureSelect->format('H:i'); 

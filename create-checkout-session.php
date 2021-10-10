@@ -21,6 +21,7 @@
   $localisation2 = $_POST['client-localisation-2'];
 
   $prof = $_GET['prof'];
+  $profEmail = $_GET['profEmail'];
   $timepicked = $_GET['time'];
   $statutprof = $_GET['statut'];
   $date = $_GET['date'];
@@ -30,7 +31,7 @@
   header('Content-Type: application/json');
   $amount = $_POST['amount'];
   $price = "'$amount'";
-  //$YOUR_DOMAIN = 'http://localhost/O-tennisTour';
+  // $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
   $YOUR_DOMAIN = 'https://www.otennistour.com';
   $checkout_session = \Stripe\Checkout\Session::create([
     'line_items' => [[
@@ -44,7 +45,7 @@
       'card',
     ],
     'mode' => 'payment',
-    'success_url' => $YOUR_DOMAIN . "/success-payement.php?amount=$amount&name=$name&surname=$surname&tel=$tel&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$timepicked&date=$date",
+    'success_url' => $YOUR_DOMAIN . "/success-payement.php?amount=$amount&name=$name&surname=$surname&tel=$tel&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$timepicked&date=$date&profEmail=$profEmail",
     'cancel_url' => $YOUR_DOMAIN . '/cours-individuels.php',
   ]);
 
