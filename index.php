@@ -25,7 +25,7 @@
           <h2> Stage de tennis </h2>
           <p> Vivez l’expérience O’TENNIS  TOUR cet été !
           Reservez votre stage en 2021 et rejoignez l’aventure.
-          De 10 à 18ans, quelque soit votre niveau, profitez durant les semaines de vacances d’un entraînement personnalisé et adapté afin de  maximiser votre potentiel et atteindre vos objectifs .
+          De 10 à 18 ans, quelque soit votre niveau, profitez durant les semaines de vacances d’un entraînement personnalisé et adapté afin de  maximiser votre potentiel et atteindre vos objectifs .
           </p>
         </div>
         <a href="inscriptions.php" class="btn-link">

@@ -74,6 +74,47 @@ img.background {
     border: 1px solid #F46E54;
     background-color:#F46E54;
 }
+
+.button-small{
+    min-width: 175px;
+    height: 50px;
+    text-align: center;
+    margin: 15px;
+    margin-left: 0;
+    background-color:#F46E54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F46E54;
+    color: white;
+    cursor: pointer;
+    max-width: 45%;
+}
+
+.button_hollow_small{
+    min-width: 175px;
+    height: 50px;
+    text-align: center;
+    margin: 15px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    max-width: 45%;
+}
+
+.button-small:hover{
+    border: 1px solid #F46E54;
+    background: none;
+}
+
+.button_hollow_small:hover{
+    border: 1px solid white;
+    background-color:white;
+    color: #111A2F;
+}
 /* Titres */
 h1{
     color: white;
@@ -261,12 +302,52 @@ header{
     .nav-link{
         font-size: 1.5em;
     }
-    
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 400px){
     header img{
         height:10vh;
+    }
+
+    .button-small{
+        min-width: 175px;
+        height: 35px;
+        text-align: center;
+        margin: 5px;
+        margin-left: 0;
+        background-color:#F46E54;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #F46E54;
+        color: white;
+        cursor: pointer;
+        max-width: 30%;
+    }
+
+    .button_hollow_small{
+        min-width: 175px;
+        height: 35px;
+        text-align: center;
+        margin: 5px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        color: white;
+        max-width: 30%;
+    }
+
+    .button-small:hover{
+        border: 1px solid #F46E54;
+        background: none;
+    }
+
+    .button_hollow_small:hover{
+        border: 1px solid white;
+        background-color:white;
+        color: #111A2F;
     }
 }
 
