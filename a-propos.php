@@ -26,6 +26,7 @@
             <div class="content-container">
                 <div class="content-text">
                     <h2> Stage Multisports </h2>
+                    <div class="red-ligne"></div>
                     <p>Le <span class='bold'> STAGE MULTI-SPORT </span> est parfait pour les  joueurs souhaitant progresser et pratiquer le tennis mais également d'autres sports !</p>
                     
                     <div class="programme">

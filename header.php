@@ -42,24 +42,6 @@
         ?>">Equipe</a>
               </li>
               <li class="nav-item">
-                  <a href="infrastructures.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'infrastructures.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">Sites</a>
-                </li>
-                <li class="nav-item">
-                  <a href="formules.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'formules.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">formules</a>
-                </li>
-              <li class="nav-item">
                   <a href="inscriptions.php" class="nav-link btn <?php 
           if(strpos($_SERVER['REQUEST_URI'], 'inscriptions.php') !== false){
               echo 'jaune';

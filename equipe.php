@@ -25,9 +25,25 @@
     </div>
     <div id='espace_membre_equipe_2' class="espace_membre_equipe">
         <div class="container-liste">
-            <h2> L'equipe O'Tennis Tour</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt beatae excepturi dolor nihil sunt natus? Ex ab ea nisi pariatur? Distinctio, dolores! Aperiam, recusandae vitae.</p>
+            <h2> Les coachs O'TENNIS TOUR</h2>
+            <p>Chez O'Tennis Tour, nous avons souhaité travailler uniquement avec des coachs partageant la même philisophie que nous. Tous nos coachs OTT sont titulaires du DEJEPS ou DESJEPS et prêt à vous aider à remplir vos objectifs !</p>
             <div class="card-liste-container">
+                <div class="card-liste">
+                    <div class="img-coach">
+                        <img src="Images/coachs/quentin.jpg" alt="">
+                    </div>
+                    <div class="card-liste-contenu">
+                        <h3>Olivier Renaud</h3>
+                        <div class="ligne"></div>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="card-liste">
                     <div class="img-coach">
                         <img src="Images/olivier-renaud.jpeg" alt="">
@@ -76,7 +92,77 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <h2> Les sparrings O'TENNIS TOUR</h2>
+            <p>Chez O'Tennis Tour, nous avons souhaité travailler uniquement avec des coachs partageant la même philisophie que nous. Tous nos coachs OTT sont titulaires du DEJEPS ou DESJEPS et prêt à vous aider à remplir vos objectifs !</p>
+            <div class="card-liste-container">
+                <div class="card-liste">
+                    <div class="img-coach">
+                        <img src="Images/coachs/arthur.jpg" alt="">
+                    </div>
+                    <div class="card-liste-contenu">
+                        <h3>Arthur BONNAUD</h3>
+                        <div class="ligne"></div>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-liste">
+                    <div class="img-coach">
+                        <img src="Images/coachs/schena.jpg" alt="">
+                    </div>
+                    <div class="card-liste-contenu">
+                        <h3>Schena BENAMAR</h3>
+                        <div class="ligne"></div>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-liste">
+                    <div class="img-coach">
+                        <img src="Images/coachs/gaspard.jpg" alt="">
+                    </div>
+                    <div class="card-liste-contenu">
+                        <h3>Gaspard CLAIR</h3>
+                        <div class="ligne"></div>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-liste">
+                    <div class="img-coach">
+                        <img src="Images/coachs/solal.jpg" alt="">
+                    </div>
+                    <div class="card-liste-contenu">
+                        <h3>Solal PONT</h3>
+                        <div class="ligne"></div>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
 </body>

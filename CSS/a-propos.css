@@ -88,9 +88,14 @@ img.background-apropos {
     font-size: 2.1rem;
     text-transform: uppercase;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 900;
     width: 100%;
+}
+
+.content-text p, .content-text li{
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 /*page tracker*/
@@ -195,6 +200,31 @@ img.background-apropos {
     margin-top: 10px;
 }
 
+@media screen and (min-width: 900px){
+    .content-text{
+        width: 600px;
+        margin: 15px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%,-50%);
+        color: white;
+    }
+
+    .content-text h2{
+        font-size: 3rem;
+    }
+
+    .content-text h3{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: #F46E54;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
 @media screen and (max-width: 768px){
     .tracker{
         display: none;
@@ -217,7 +247,7 @@ img.background-apropos {
     }
 
     .content-text{
-        width: 90%;
+        width: 80%;
     }
 
     .content-text p{
@@ -238,6 +268,14 @@ img.background-apropos {
 
     .content-text .button{
         width: 95%;
+    }
+
+    .content-text h3{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: #F46E54;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -264,6 +302,14 @@ img.background-apropos {
         justify-content: center;
         margin-bottom: 10px;
         margin-top: 10px;
+    }
+
+    .content-text h3{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: #F46E54;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }
