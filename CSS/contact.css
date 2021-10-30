@@ -65,6 +65,7 @@
 
     .contact-container:nth-child(1){
         height: 40vh;
+        margin: 0;
     }
 
     .contact-container:nth-child(2){
