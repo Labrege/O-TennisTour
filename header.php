@@ -23,8 +23,8 @@
         ?>">Accueil </a>
               </li>
               <li class="nav-item">
-                <a href="a-propos.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'a-propos.php') !== false){
+                <a href="stages.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'stages.php') !== false){
               echo 'jaune';
           }else{
               echo "";
