@@ -81,7 +81,7 @@
         <!-- OTT 500 -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/tennis-coach.jpg" alt="">
+               <img src="Images/ado-service.jpg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
