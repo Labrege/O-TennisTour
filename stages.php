@@ -15,7 +15,7 @@
                 <h1> LES STAGES O'TENNIS TOUR </h1>
                 <div class="intro-text-container">
                     <div class="intro-text">
-                        <img class='intro-text-image' src="Images/joueur-ado.jpg" alt="">
+                        <img class='intro-text-image' src="Images/ado-soleil.jpg" alt="">
                     </div>
                     <div class="intro-text">
                         <h2> UN ÉTÉ HORS DU COMMUN : OFFREZ-LUI UN STAGE DE TENNIS EN 2021 ! </h2>
@@ -50,7 +50,7 @@
         <!-- OTT MULTISPORT -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/ado-fille.jpg" alt="">
+               <img src="Images/joueur-ado.jpg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
