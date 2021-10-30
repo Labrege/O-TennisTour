@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="CSS/cours-individuels-booking.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/success-payement.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/stages.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="CSS/contact.css?v=<?php echo time(); ?>">
 
     <!-- Links -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">

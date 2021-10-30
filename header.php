@@ -59,6 +59,15 @@
           }
         ?>">Cours individuels</a>
                 </li>
+                <li class="nav-item">
+                  <a href="contact.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'contact.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">Contact</a>
+                </li>
             </ul>
       </nav>
     <script src="JS/script.js?v=<?php echo time(); ?>"></script>
