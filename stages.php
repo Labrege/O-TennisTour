@@ -109,7 +109,7 @@
         <!-- OTT 1000 -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/tennis-coach.jpg" alt="">
+               <img src="Images/competition.jpg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
@@ -120,8 +120,53 @@
                <p>La formule OTT 1000 est le stage parfait pour les joueurs souhaitant commencer la compétition et progresser sur leur jeu en tournoi !</p>
                <h4> Volume d'entraînement </h4>
                <ul>
-                   <li> Tennis : 15h/semaine </li>
-                   <li> Entraînement physique et sports collectifs : 10H/semaine </li>
+                    <li> Tennis - 5H/Jour </li>
+                    <li> Entraînement physique & sports collectifs - 3H/Jour </li>
+                    <li> Matchs en tournoi officiel </li>
+                    <li> Au moins 1 tournoi durant le stage </li>
+                </ul>
+                <h4> Journée type </h4>
+                <ul>
+                    <li> 09:00 - Échauffement collectif </li>
+                    <li> 10:00 - Entrainement adapté à votre programme de match du jour </li>
+                    <li> 14:00 - Matchs  en tournoi </li>
+                    <li> 16:00 - Débriefing constructif après chaque match avec l’un de vos coachs </li>
+                    <li> 19:00 - Animations et soirées avec le reste de l’équipe </li>
+                </ul>
+               </div>
+               <div class="stage-button-container">
+                    <a  class="stage-button" href="#"> M'inscrire au stage</a>
+                    <a  class="stage-button-hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
+                </div> 
+           </div>
+           
+        </div>
+
+        <div class="stage-container">
+           <div class="stage-text-container">
+               <img src="Images/tennis-score.jpg" alt="">
+           </div>
+           <div class="stage-text-container">
+               <div class="stage-text">
+               <h2> STAGE OTT Grand-Chelem </h2>
+               <div class="age-container">
+                   <h3> 10 à 17 ans</h3>
+               </div>
+               <p>La formule OTT 1000 est le stage parfait pour les joueurs souhaitant commencer la compétition et progresser sur leur jeu en tournoi !</p>
+               <h4> Volume d'entraînement </h4>
+               <ul>
+                    <li> Tennis - 5H/Jour </li>
+                    <li> Entraînement physique & sports collectifs - 3H/Jour </li>
+                    <li> Matchs en tournoi officiel </li>
+                    <li> Au moins 1 tournoi durant le stage </li>
+                </ul>
+                <h4> Journée type </h4>
+                <ul>
+                    <li> 09:00 - Échauffement collectif </li>
+                    <li> 10:00 - Entrainement adapté à votre programme de match du jour </li>
+                    <li> 14:00 - Matchs  en tournoi </li>
+                    <li> 16:00 - Débriefing constructif après chaque match avec l’un de vos coachs </li>
+                    <li> 19:00 - Animations et soirées avec le reste de l’équipe </li>
                 </ul>
                </div>
                <div class="stage-button-container">
