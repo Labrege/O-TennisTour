@@ -15,7 +15,7 @@
                 <h1> LES STAGES O'TENNIS TOUR </h1>
                 <div class="intro-text-container">
                     <div class="intro-text">
-                        <img class='intro-text-image' src="Images/tennis-kid.jpg" alt="">
+                        <img class='intro-text-image' src="Images/joueur-ado.jpg" alt="">
                     </div>
                     <div class="intro-text">
                         <h2> UN ÉTÉ HORS DU COMMUN : OFFREZ-LUI UN STAGE DE TENNIS EN 2021 ! </h2>
@@ -183,9 +183,9 @@
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
-               <h2> STAGE OTT Grand-Chelem </h2>
+               <h2> Leçon individuelles </h2>
                <div class="age-container">
-                   <h3> 10 à 17 ans</h3>
+                   <h3> Tous les âges</h3>
                </div>
                <p>La formule OTT 1000 est le stage parfait pour les joueurs souhaitant commencer la compétition et progresser sur leur jeu en tournoi !</p>
                <h4> Volume d'entraînement </h4>
