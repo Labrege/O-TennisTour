@@ -50,7 +50,7 @@
         <!-- OTT MULTISPORT -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/coach.jpg" alt="">
+               <img src="Images/ado-fille.jpg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
