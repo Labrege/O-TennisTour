@@ -183,26 +183,19 @@
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
-               <h2> Leçon individuelles </h2>
-               <div class="age-container">
-                   <h3> Tous les âges</h3>
-               </div>
-               <p>La formule OTT 1000 est le stage parfait pour les joueurs souhaitant commencer la compétition et progresser sur leur jeu en tournoi !</p>
-               <h4> Volume d'entraînement </h4>
-               <ul>
-                    <li> Tennis - 5H/Jour </li>
-                    <li> Entraînement physique & sports collectifs - 3H/Jour </li>
-                    <li> Matchs en tournoi officiel </li>
-                    <li> Au moins 1 tournoi durant le stage </li>
-                </ul>
-                <h4> Journée type </h4>
-                <ul>
-                    <li> 09:00 - Échauffement collectif </li>
-                    <li> 10:00 - Entrainement adapté à votre programme de match du jour </li>
-                    <li> 14:00 - Matchs  en tournoi </li>
-                    <li> 16:00 - Débriefing constructif après chaque match avec l’un de vos coachs </li>
-                    <li> 19:00 - Animations et soirées avec le reste de l’équipe </li>
-                </ul>
+                   <h2> Leçon individuelles </h2>
+                   <div class="age-container">
+                       <h3> Tous les âges</h3>
+                    </div>
+                    <h4> A PARIS </h4>
+                    <p> Ne laissez rien au hasard. Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec le coaching individuel tout au long de l’année à Paris.
+                        Planifié selon vos disponibilités.
+                        <br>
+                        L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
+                    </p>
+
+                    <h4> PENDANT LES STAGES </h4>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor ducimus soluta deleniti laborum, labore, maxime quisquam unde iure earum necessitatibus delectus magnam aspernatur at recusandae. Laboriosam alias dolorem dolores.</P>
                </div>
                <div class="stage-button-container">
                     <a  class="stage-button" href="#"> M'inscrire au stage</a>
