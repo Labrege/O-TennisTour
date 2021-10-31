@@ -91,12 +91,10 @@ function uidExists($conn, $username, $email){
 
 function createUser($conn, $name, $surname, $email, $username, $pwd){
     $sql = "INSERT INTO users (userName, userSurname, userEmail, userUid, userPwd, codeVerif, regDate) VALUES (?,?,?,?,?,?, NOW());";
-    header('Location: login.php?error=signupcomplete');
-    $stmt = mysqli_stmt_init($conn);
-    if (!mysqli_stmt_prepare($stmt, $sql)){
-        echo "<span id='message' class='error_message'> Une erreur est survenue ! Veuillez réessayer. </span>";
-        //header("location: ../signup.php?error=stmtfailed");
-        exit();
+    $sqlinput = $conn->query($sql);
+
+    if($sqlinput){
+        header('Location: login.php');
     }
 
     $codeverif = "azertyuiopqsdfghjklmwxcvbn";
