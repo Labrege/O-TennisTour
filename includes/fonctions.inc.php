@@ -212,7 +212,7 @@ function loginUser($conn, $username, $pwd){
         $_SESSION["regdate"] = $uidExists["regDate"];
         $_SESSION["compteverif"] = $uidExists["compteVerif"];
 
-        if($_SESSION["compteverif"] == 1){
+        if($_SESSION["compteverif"] == "1"){
             header("location: ../espace-membre/espace_membre.php");
             exit();
         }
