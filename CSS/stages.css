@@ -90,6 +90,14 @@
     text-align: left;
     margin-bottom: 10px;
     color: #F46E54;
+    text-transform: uppercase;
+}
+
+.intro-text h4{
+    font-weight: bolder;
+    color: #F46E54;
+    margin-bottom: 7px;
+    margin-top: 7px;
 }
 
 /* Stages */

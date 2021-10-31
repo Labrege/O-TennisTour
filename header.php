@@ -68,6 +68,15 @@
           }
         ?>">Contact</a>
                 </li>
+                <li class="nav-item">
+                  <a href="covid.php" class="nav-link btn <?php 
+          if(strpos($_SERVER['REQUEST_URI'], 'covid.php') !== false){
+              echo 'jaune';
+          }else{
+              echo "";
+          }
+        ?>">COVID-19</a>
+                </li>
             </ul>
       </nav>
     <script src="JS/script.js?v=<?php echo time(); ?>"></script>
