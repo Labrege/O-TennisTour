@@ -94,19 +94,9 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
     $sqlinput = $conn->query($sql);
 
     if($sqlinput){
+        echo 'bite';
         header('Location: login.php');
     }
-
-    $codeverif = "azertyuiopqsdfghjklmwxcvbn";
-    $codeverif = str_shuffle($codeverif);
-    $codeverif = strtoupper(substr($codeverif, 0, 8));
-    $ecodeverif = password_hash($codeverif, PASSWORD_BCRYPT);
-
-    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
-
-    mysqli_stmt_bind_param($stmt, "ssssss", $name, $surname, $email, $username, $hashedPwd, $codeverif);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
     exit();
 }
     //  // Load Composer's autoloader
