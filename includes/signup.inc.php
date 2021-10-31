@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST["submit"])){
     $name = $_POST["name"];
     $surname = $_POST["surname"];
@@ -52,3 +53,5 @@ if (isset($_POST["submit"])){
     else{
         exit();
     }
+
+

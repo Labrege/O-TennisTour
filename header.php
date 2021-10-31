@@ -17,7 +17,7 @@
                 <a href="index.php" class="nav-link btn <?php 
           if(strpos($_SERVER['REQUEST_URI'], 'index.php') !== false){
               echo 'jaune';
-          }else{
+            }else{
               echo "";
           }
         ?>">Accueil </a>
