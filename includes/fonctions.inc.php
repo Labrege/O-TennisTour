@@ -90,13 +90,14 @@ function uidExists($conn, $username, $email){
 
 
 function createUser($conn, $name, $surname, $email, $username, $pwd){
-    $sql = "INSERT INTO users (userName, userSurname, userEmail, userUid, userPwd, codeVerif, regDate) VALUES (?,?,?,?,?,?, NOW());";
-    $sqlinput = $conn->query($sql);
+    echo 'hello';
+    // $sql = "INSERT INTO users (userName, userSurname, userEmail, userUid, userPwd, codeVerif, regDate) VALUES (?,?,?,?,?,?, NOW());";
+    // $sqlinput = $conn->query($sql);
 
-    if($sqlinput){
-        echo 'bite';
-        header('Location: login.php');
-    }
+    // if($sqlinput){
+    //     echo 'bite';
+    //     header('Location: login.php');
+    // }
     exit();
 }
     //  // Load Composer's autoloader
