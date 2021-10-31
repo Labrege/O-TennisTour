@@ -126,7 +126,7 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     
             //Recipients
-            $mail->setFrom('contact@ovalxv.com', "O'Tennis Tour");
+            $mail->setFrom('contact@ovalxv.com', 'OvalXV');
             $mail->addAddress($email);     // Add a recipient
     
             $body = "Bonjour! <br> Veuillez cliquer sur le lien ci-dessous pour valider votre compte :
