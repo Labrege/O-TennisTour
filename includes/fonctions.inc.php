@@ -113,34 +113,33 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
     ?>
     <?php
      // Load Composer's autoloader
-     $mail = new PHPMailer(true);
-     try {
-         //Server settings
-         $mail->SMTPDebug = false;//SMTP::DEBUG_SERVER;                   // Enable verbose debug output
-         $mail->isSMTP();                                            // Send using SMTP
-         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-         $mail->Username   = 'contact.otennistour@gmail.com';                     // SMTP username
-         $mail->Password   = 'Ott75016';                               // SMTP password
-         $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-         $mail->Port       = 587;           // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-    
+        $mail = new PHPMailer(true);
+        try {
+            //Server settings
+            $mail->SMTPDebug = false;//SMTP::DEBUG_SERVER;                   // Enable verbose debug output
+            $mail->isSMTP();                                            // Send using SMTP
+            $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+            $mail->Username   = 'contact@ovalxv.com';                     // SMTP username
+            $mail->Password   = 'OvalXV75016';                               // SMTP password
+            $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     
             //Recipients
-            $mail->setFrom('contact@otennistour.com', "O'Tennis Tour");
+            $mail->setFrom('contact@ovalxv.com', 'OvalXV');
             $mail->addAddress($email);     // Add a recipient
     
             $body = "Bonjour! <br> Veuillez cliquer sur le lien ci-dessous pour valider votre compte :
             <br><br>
             
-            <a href='https://www.otennistour.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
+            <a href='http://www.ovalxv.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
     
-            A bientôt sur la plateforme O'Tennis Tour!
+            A bientôt sur la plateforme OvalXV!
             ";
     
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = "O'Tennis Tour | Vérification de votre compte";
+            $mail->Subject = 'OvalXV | Vérification de votre compte';
             $mail->Body    = $body;
             $mail->AltBody = strip_tags($body);
     
