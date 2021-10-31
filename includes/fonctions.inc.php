@@ -94,10 +94,10 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
     $sql = "INSERT INTO users (userName, userSurname, userEmail, userUid, userPwd, regDate) VALUES ('$name','$surname','$email','$username','$pwd', NOW());";
     $sqlinput = $conn->query($sql);
 
-    if($sqlinput){
-        echo 'bite';
-        header('Location: login.php');
-    }
+    echo"<script language='javascript'>
+    window.location = 'login.php?error=signupcomplete';
+    window.location = newLocation;
+    </script>";
     exit();
 }
     //  // Load Composer's autoloader
