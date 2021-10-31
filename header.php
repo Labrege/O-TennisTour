@@ -79,7 +79,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="covid.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'covid.php') !== false){
+          if(strpos($_SERVER['REQUEST_URI'], 'login.php') !== false){
               echo 'jaune';
           }else{
               echo "";
