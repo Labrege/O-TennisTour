@@ -26,7 +26,7 @@ img.background {
     -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
     filter: blur(5px);
     opacity: 0.5;
-    }
+}
 
 .titre-offres {
     padding: 3em;
@@ -348,6 +348,15 @@ header{
         border: 1px solid white;
         background-color:white;
         color: #111A2F;
+    }
+
+    .nav-item{
+        list-style: none;
+        margin: 10px;
+    }
+
+    .nav-link{
+        font-size: 1.1rem;
     }
 }
 
