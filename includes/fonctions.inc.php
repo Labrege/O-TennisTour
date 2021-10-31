@@ -97,8 +97,13 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
         //header("location: ../signup.php?error=stmtfailed");
         exit();
     }
-    
 
+    if($sql){
+        header('Location: login.php?error=signupcomplete');
+    }
+    else{
+        header('Location: login.php?error=signupincomplete');
+    }
     $codeverif = "azertyuiopqsdfghjklmwxcvbn";
     $codeverif = str_shuffle($codeverif);
     $codeverif = strtoupper(substr($codeverif, 0, 8));
@@ -110,58 +115,56 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
-    ?>
-    <?php
-     // Load Composer's autoloader
-        $mail = new PHPMailer(true);
-        try {
-            //Server settings
-            $mail->SMTPDebug = false;//SMTP::DEBUG_SERVER;                   // Enable verbose debug output
-            $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'contact.otennistour@gmail.com';                     // SMTP username
-            $mail->Password   = 'Ott75016';                               // SMTP password
-            $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-            $mail->Port       = 587;           // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    //  // Load Composer's autoloader
+    //     $mail = new PHPMailer(true);
+    //     try {
+    //         //Server settings
+    //         $mail->SMTPDebug = false;//SMTP::DEBUG_SERVER;                   // Enable verbose debug output
+    //         $mail->isSMTP();                                            // Send using SMTP
+    //         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+    //         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    //         $mail->Username   = 'contact.otennistour@gmail.com';                     // SMTP username
+    //         $mail->Password   = 'Ott75016';                               // SMTP password
+    //         $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    //         $mail->Port       = 587;           // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     
-            //Recipients
-            $mail->setFrom('contact@otennistour.com', "O'Tennis Tour");
-            $mail->addAddress($email);     // Add a recipient
+    //         //Recipients
+    //         $mail->setFrom('contact@otennistour.com', "O'Tennis Tour");
+    //         $mail->addAddress($email);     // Add a recipient
     
-            $body = "Bonjour! <br> Veuillez cliquer sur le lien ci-dessous pour valider votre compte :
-            <br><br>
+    //         $body = "Bonjour! <br> Veuillez cliquer sur le lien ci-dessous pour valider votre compte :
+    //         <br><br>
             
-            <a href='http://www.otennistour.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
+    //         <a href='http://www.otennistour.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
     
-            A bientôt sur la plateforme O'Tennis Tour!
-            ";
+    //         A bientôt sur la plateforme O'Tennis Tour!
+    //         ";
     
-            // Content
-            $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = "O'Tennis Tour | Vérification de votre compte";
-            $mail->Body    = $body;
-            $mail->AltBody = strip_tags($body);
+    //         // Content
+    //         $mail->isHTML(true);                                  // Set email format to HTML
+    //         $mail->Subject = "O'Tennis Tour | Vérification de votre compte";
+    //         $mail->Body    = $body;
+    //         $mail->AltBody = strip_tags($body);
     
-            if ($mail->send()){
-                echo"<script language='javascript'>
-                    window.location = 'login.php?error=signupcomplete&mail=sent';
-                    window.location = newLocation;
-                </script>
-                ";
-            }
-            else{
-                echo"<script language='javascript'>
-                window.location = 'login.php?error=signupcomplete&mail=notsent';
-                    window.location = newLocation;
-                </script>
-                ";
-            }
-        } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {
-            $mail->ErrorInfo
-        }";
-        }
+    //         if ($mail->send()){
+    //             echo"<script language='javascript'>
+    //                 window.location = 'login.php?error=signupcomplete&mail=sent';
+    //                 window.location = newLocation;
+    //             </script>
+    //             ";
+    //         }
+    //         else{
+    //             echo"<script language='javascript'>
+    //             window.location = 'login.php?error=signupcomplete&mail=notsent';
+    //                 window.location = newLocation;
+    //             </script>
+    //             ";
+    //         }
+    //     } catch (Exception $e) {
+    //     echo "Message could not be sent. Mailer Error: {
+    //         $mail->ErrorInfo
+    //     }";
+    //     }
     exit();
 }
 
@@ -212,15 +215,8 @@ function loginUser($conn, $username, $pwd){
         $_SESSION["regdate"] = $uidExists["regDate"];
         $_SESSION["compteverif"] = $uidExists["compteVerif"];
 
-        if($_SESSION["compteverif"] == "1"){
-            header("location: ../espace-membre/espace_membre.php");
-            exit();
-        }
-        else{
-            header("location: ../login.php?error=tryaccountnotverified");
-            exit();
-        }
-        
+        header("location: ../espace-membre/espace_membre.php");
+        exit();
     }
 }
 
