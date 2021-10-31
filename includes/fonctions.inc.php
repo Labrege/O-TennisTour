@@ -98,12 +98,7 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
         exit();
     }
 
-    if($sql){
-        header('Location: login.php?error=signupcomplete');
-    }
-    else{
-        header('Location: login.php?error=signupincomplete');
-    }
+    header('Location: login.php?error=signupcomplete');
     $codeverif = "azertyuiopqsdfghjklmwxcvbn";
     $codeverif = str_shuffle($codeverif);
     $codeverif = strtoupper(substr($codeverif, 0, 8));
