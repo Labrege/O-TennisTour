@@ -91,6 +91,7 @@ function uidExists($conn, $username, $email){
 
 function createUser($conn, $name, $surname, $email, $username, $pwd){
     $sql = "INSERT INTO users (userName, userSurname, userEmail, userUid, userPwd, codeVerif, regDate) VALUES (?,?,?,?,?,?, NOW());";
+    header('Location: login.php?error=signupcomplete');
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)){
         echo "<span id='message' class='error_message'> Une erreur est survenue ! Veuillez réessayer. </span>";
@@ -98,7 +99,6 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
         exit();
     }
 
-    header('Location: login.php?error=signupcomplete');
     $codeverif = "azertyuiopqsdfghjklmwxcvbn";
     $codeverif = str_shuffle($codeverif);
     $codeverif = strtoupper(substr($codeverif, 0, 8));
@@ -109,7 +109,8 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
     mysqli_stmt_bind_param($stmt, "ssssss", $name, $surname, $email, $username, $hashedPwd, $codeverif);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-
+    exit();
+}
     //  // Load Composer's autoloader
     //     $mail = new PHPMailer(true);
     //     try {
@@ -160,8 +161,7 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
     //         $mail->ErrorInfo
     //     }";
     //     }
-    exit();
-}
+
 
 
 
