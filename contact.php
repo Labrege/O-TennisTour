@@ -40,9 +40,9 @@
                     </div>
                 </a>
 
-                <a href='tel:+33615620383' class="contact-info-container">
+                <a href='tel:+33698993320' class="contact-info-container">
                     <div class="contact-info-text"> 
-                        <h2> 06.15.62.03.83 </h2> 
+                        <h2> 06.98.99.33.20 </h2> 
                     </div>
                     <div class="contact-info-icon">
                         <i class="fa fa-phone" aria-hidden="true"></i>

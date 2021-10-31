@@ -93,6 +93,11 @@
     text-transform: uppercase;
 }
 
+.intro-text a{
+    color: #F46E54;
+}
+
+
 .intro-text h4{
     font-weight: bolder;
     color: #F46E54;
