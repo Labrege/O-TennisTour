@@ -120,26 +120,26 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
             $mail->isSMTP();                                            // Send using SMTP
             $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'contact@ovalxv.com';                     // SMTP username
-            $mail->Password   = 'OvalXV75016';                               // SMTP password
+            $mail->Username   = 'contact@otennistour.com';                     // SMTP username
+            $mail->Password   = 'Ott75016';                               // SMTP password
             $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     
             //Recipients
-            $mail->setFrom('contact@ovalxv.com', 'OvalXV');
+            $mail->setFrom('contact@otennistour.com', "O'Tennis Tour");
             $mail->addAddress($email);     // Add a recipient
     
             $body = "Bonjour! <br> Veuillez cliquer sur le lien ci-dessous pour valider votre compte :
             <br><br>
             
-            <a href='http://www.ovalxv.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
+            <a href='http://www.otennistour.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
     
-            A bientôt sur la plateforme OvalXV!
+            A bientôt sur la plateforme O'Tennis Tour!
             ";
     
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'OvalXV | Vérification de votre compte';
+            $mail->Subject = "O'Tennis Tour | Vérification de votre compte";
             $mail->Body    = $body;
             $mail->AltBody = strip_tags($body);
     
