@@ -132,14 +132,14 @@ function createUser($conn, $name, $surname, $email, $username, $pwd){
             $body = "Bonjour! <br> Veuillez cliquer sur le lien ci-dessous pour valider votre compte :
             <br><br>
             
-            <a href='http://www.otennistour.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
+            <a href='http://www.ovalxv.com/verification.php?code=$ecodeverif&username=$username'> Cliquer ici pour vérifier votre compte ! </a><br><br>
     
-            A bientôt sur la plateforme O'Tennis Tour!
+            A bientôt sur la plateforme OvalXV!
             ";
     
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = "O'Tennis Tour | Vérification de votre compte";
+            $mail->Subject = 'OvalXV | Vérification de votre compte';
             $mail->Body    = $body;
             $mail->AltBody = strip_tags($body);
     
