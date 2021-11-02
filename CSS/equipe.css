@@ -112,6 +112,10 @@ img.background-equipe {
 
 .card-liste-container{
     width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-liste{

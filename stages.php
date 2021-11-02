@@ -18,22 +18,21 @@
                         <img class='intro-text-image' src="Images/ado-soleil.jpg" alt="">
                     </div>
                     <div class="intro-text">
-                        <h2> UN ÉTÉ HORS DU COMMUN : OFFREZ-LUI UN STAGE DE TENNIS EN 2021 ! </h2>
-                        <p> Nous proposons différents programmes d’entraînement adaptés pour améliorer le niveau physique & tennistique des joueurs, des tournois officiels ainsi que des cours de langues intensifs (selon options). Les stages peuvent être pratiqués par tous, pour les débutants comme pour les compétiteurs à partir de 6 ans.
+                        <h2 >Un été exceptionnel, venez profiter et vous perfectionner au tennis avec O’TENNIS TOUR ! </h2>
+                        <p>
+                        Nos stages de tennis s’adressent aussi bien aux compétiteurs qu’aux débutants, et sont encadrés par des entraîneurs diplômés titulaires du DEJEPS ou du DESJEPS.
+                        <br><br>
+                        Nous proposons différentes formules d’entraînement avec un programme complet adaptés afin d’améliorer le niveau physique & tennistique des joueurs, des tournois officiels.
                         <br>
-                        Les stages sont proposés :
                         <br>
-                        <br>
+                        Chaque semaine de stage comprend au minimum :
                         
-                        <li> sur une durée d’une semaine </li>
-                        <li>à partir de 1h30 de tennis par jour</li>
-                        <li>à partir de 1h30 de fitness par jour</li>
-                        <li>par groupes de niveau de 4 joueurs par terrain</li>
-                        <li>avec ou sans hébergement (sur place dans des chambres triples ou quadruples)</li>
-                        <li>avec repas inclus (petit-déjeuner, déjeuner et dîner)</li>
+                        <li> 2 sessions d’1h30 de tennis par jour</li>  
+                        <li> 1h 30 de physique (sport collectif, fitness, running) par jour</li> 
                         <br>
-                        
-                        Cette année, les stages de tennis d’été commencent à partir du 14 juin 2021 jusqu’au 30 aout 2021. Venez découvrir ou redécouvrir la Mouratoglou Academy et choisissez le stage qui correspond le mieux à vos attentes.
+                        Avec hébergement en pension complète , transport au départ de Paris, vous vivrez du lundi (possible arrivée le dimanche) au samedi un séjour inoubliable , et partagerez une expérience humaine unique avec les autres joueurs ! 
+                        <br><br>
+                        <h4>Les stages peuvent être pratiqués par tous, pour les débutants comme pour les compétiteurs à partir de 10 ans.</h4>
                         </p>
                     </div>
                 </div>
@@ -195,7 +194,7 @@
                     </p>
 
                     <h4> PENDANT LES STAGES </h4>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor ducimus soluta deleniti laborum, labore, maxime quisquam unde iure earum necessitatibus delectus magnam aspernatur at recusandae. Laboriosam alias dolorem dolores.</P>
+                    <p>Ne laissez rien au hasard, boostez votre stage et optimisez votre progression en vous octroyant 1h de Coaching individuel en plus de vos entraînements en groupes !</p>
                </div>
                <div class="stage-button-container">
                     <a  class="stage-button" href="#"> M'inscrire au stage</a>
