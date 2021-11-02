@@ -87,6 +87,7 @@ img.background-equipe {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: center;
     width: 75%;
     min-height: 300px;
     z-index: 1;
