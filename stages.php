@@ -22,7 +22,7 @@
                         <p>
                         Nos stages de tennis s’adressent aussi bien aux compétiteurs qu’aux débutants, et sont encadrés par des entraîneurs diplômés titulaires du DEJEPS ou du DESJEPS.
                         <br><br>
-                        Nous proposons différentes formules d’entraînement avec un programme complet adaptés afin d’améliorer le niveau physique & tennistique des joueurs, des tournois officiels.
+                        Nous proposons différentes formules d’entraînement avec un programme complet adapté afin d’améliorer le niveau physique & tennistique des joueurs, des tournois officiels.
                         <br>
                         <br>
                         Chaque semaine de stage comprend au minimum :
@@ -187,7 +187,7 @@
                        <h3> Tous les âges</h3>
                     </div>
                     <h4> A PARIS </h4>
-                    <p> Ne laissez rien au hasard. Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec le coaching individuel tout au long de l’année à Paris.
+                    <p> Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec le coaching individuel tout au long de l’année à Paris.
                         Planifié selon vos disponibilités.
                         <br>
                         L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
