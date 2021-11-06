@@ -6,31 +6,113 @@
 	font-size: 14px;
 
 }
-body{
-	background-color: #FFFAE5;
-	overflow-x: hidden;	
+
+.espace-membre-page{
+    position: relative;
+    min-height: 90vh;
+    background-color: white;
 }
 
+.side-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #111A2F;
+    width: 25vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+
+.side-bar.closed{
+    position: absolute;
+    top: 0;
+    left: -20vw;
+    height: 100%;
+    background-color: #111A2F;
+    width: 25vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.side-bar-text{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar-text a{
+    margin: 10px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.side-bar-btn-container{
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar-btn-container button{
+    background: none;
+    border: none;
+    background: #111A2F;
+    color: white;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+/*header*/
 header{
-    background-color: #10222e;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-video::-webkit-media-controls {
-    visibility: hidden;
-}
-
-video::-webkit-media-controls-enclosure {
-    visibility: visible;
-}
-
 .header-container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    min-height: 55vh;
+}
+
+.header-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.header-container .screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.5;
 }
 
 .pages-container{
@@ -43,213 +125,114 @@ video::-webkit-media-controls-enclosure {
     width: 90vw;
 }
 
-
-/*rubrique sections*/
-.page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.h2{
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #FFFAE5;
-    text-transform: lowercase;
-}
-
-.unclickable{
-    color: darkgray;
-    text-decoration: none;
-}
-
-.unclickable:hover{
-    color: darkgray;
-    text-decoration: none;
-}
-
-.page a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #FFFAE5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 70px;
-}
-
-.page .active{
-    color: #FFFAE5;
-    text-shadow: 0px 0px 10px salmon;
-}
-
-.page .active h2{
-    font-size: 16px;
-}
-
-.logo-container{
-    flex: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.logo-container img{
-    width: auto;
-    max-height: 10vh;
-}
-
-/*User detail*/
-
-.user-container{
-    position: absolute;
-    left: 70px;
-    top: 20px;
+.profile-pic-container{
+    width: 50%;
+    height: 90%;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
-.user-container ul li{
-    list-style: none;
-}
-
-.user-container ul li a{
-    text-decoration: none;
-    color: #FFFAE5;
-}
-
-.user-container h1{
-    color: #FFFAE5;
-}
-
-.user-container img{
-    width: auto;
-    max-height: 60px;
-}
-
-.nom-membre{
-    color: #FFFAE5;
-    text-transform: uppercase;
-    padding: 2px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.statut-membre{
-    color: red;
-    text-transform: lowercase;
-    margin-bottom: 2px;
-    padding: 2px;
-    text-align: center;
-    font-size: 12px;
-}
-
-/*dropdown button*/
-.dropbtn {
-    color: #10222e;
-    padding: 4px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 50px;
-    border: none;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+.profile-pic{
     position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fafafa;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 14px;
+    width: 125px;
+    height: 125px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-  }
+    background-color: white;
+    border-radius: 50%;
+}
 
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: white;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn {
-        background-color: #FFFAE5;
-        color: #10222e;
+.profile-pic img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-text{
+    text-align: center;
+}
+
+.profile-text h1, .uppercase{
+    margin-top: 40px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 2rem;
+}
+
+h1 .uppercase{
+    text-transform: uppercase;
+}
+
+.right-arrow, .left-arrow{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.left-arrow.closed{
+    display: none;
+}
+
+.right-arrow.closed{
+    display: none;
+}
+
+/*espace-membre-index*/
+.espace-membre-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+@media screen and (max-width: 768px){
+    .profile-pic{
+        width: 105px;
+        height: 105px;
+    }
+    
+    .profile-pic img{
+        width: 100px;
+        height: 100px;
     }
 
-    .dropdown .dropbtn {
-        background-color: #10222e;
-        color: #FFFAE5;
-        }
-
-    .dropdown .dropbtn:focus {
-        outline: none;
+    .side-bar{
+        width: 45vw;
     }
-    /*footer*/
-    .footer{
+    
+    .side-bar.closed{
+        left: -40vw;
+        width: 45vw;
+    }
+
+    .side-bar-text{
+        width: 40vw;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-top: 40px;
+        align-items: center;
     }
 
-    .footer h2{
-        font-weight: bold;
+    .right-arrow, .left-arrow{
         font-size: 1rem;
+        cursor: pointer;
     }
 
-@media screen and (max-width: 768px)
-{
-    .logo-container img{
-        width: auto;
-        max-height: 6vh;
-    }
-
-    .page a{
-        font-size: 30px;
-    }
-
-    .dropdown-content {
-        min-width: 90px;
-      }
-
-    .user-container{
-        position: absolute;
-        left: 20px;
-        top: 5px;
-    }
-
-    .dropdown-content a {
-        padding: 5px 5px;
-        font-size: 10px;
-    }
-
-    .dropbtn{
-        font-size: 30px;
+    .side-bar-text a{
+        margin: 7px;
+        text-transform: capitalize;
+        color: white;
+        font-size: 1rem;
     }
 }
 

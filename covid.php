@@ -19,7 +19,7 @@
                     </div>
                     <div class="intro-text">
                         <h2> Les mesures sanitaires prises par O'Tennis Tour ! </h2>
-                        <p> Chez O'Tennis Tour, votre santé et celle de nos joueurs est notre priorité. Nous faisons tout pour garantir cela sur le terrain comme en dehors.
+                        <p> Chez O'Tennis Tour, votre santé et celle de nos entraîneurs sont notre priorité. Nous faisons tout pour garantir les gestes barrières sur le terrain et en dehors.
                         
                         <h4>Votre responsabilité de joueur !</h4>
                         
@@ -28,11 +28,11 @@
                         <h4> Pour les leçons individuelles :</h4>
                         <li> Utilisation de gel hydroalccolique régulièrement pendant la séance </li>
                         <li> En cas de symptômes de la Covid-19, effectuer un test PCR ou antigénique avant de reprendre une réservation</li>
-                        <li> En cas de test positif à la COVID-19 avant la leçon, ne pas vous déplacer pour votre cours et <a href="contact.php">contactez-nous</a> </li>
-                        <li> En cas de test positif à la COVID-19 après la leçon, <a href="contact.php">contactez-nous</a> afin de nous permettre de pouvoir prendre les mesures nécessaires</li>
+                        <li> En cas de test positif à la COVID-19 avant la leçon, merci de nous contacter (<a href="contact.php">contactez-nous</a>) et d'annuler votre cours </li>
+                        <li> En cas de test positif à la COVID-19 après la leçon, merci de nous avertir (<a href="contact.php">contactez-nous</a>) afin de nous permettre de pouvoir prendre les mesures nécessaires</li>
 
                         <h4> Pour les stages :</h4>
-                        <li> Pour les enfants de 12 ans et plus, fournir un passe sanitaire valide par email avant le début du stage (<a href="contact.php">contactez-nous</a>) </li>
+                        <li> Pour les enfants de 12 ans et plus, un passe sanitaire valide sera demandé avant le début du stage (<a href="contact.php">contactez-nous</a>) </li>
                         </p>
                     </div>
                 </div>

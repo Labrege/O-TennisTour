@@ -25,7 +25,7 @@
           <h2> Stage de tennis </h2>
           <p> Vivez l’expérience O’TENNIS  TOUR cet été !
           Reservez votre stage en 2021 et rejoignez l’aventure.
-          De 10 à 18 ans, quelque soit votre niveau, profitez durant les semaines de vacances d’un entraînement personnalisé et adapté afin de  maximiser votre potentiel et atteindre vos objectifs .
+          De 10 à 18 ans, quelque soit votre niveau, profitez durant les semaines de vacances d’un entraînement personnalisé et adapté afin de maximiser votre potentiel et d'atteindre vos objectifs .
           </p>
         </div>
         <a href="inscriptions.php" class="btn-link">
@@ -38,7 +38,7 @@
         <div class="valeurs-texte">
           <h2> Infrastructures </h2>
           <p> 
-            O’TENNIS TOUR vous accueille sur les CREPS (Centres de ressources, d'expertise et de performance sportive) de Toulouse, Boulouris Saint Raphaël , Poitiers ainsi que sur la base de loisirs d’Hostens(Landes Girondines) pour votre séjour tennis. 
+            Pour votre séjour de tennis, O’TENNIS TOUR vous accueille dans les CREPS (Centres de ressources, d'expertise et de performance sportive) de Toulouse, Boulouris Saint Raphaël , Poitiers ainsi que sur la base de loisirs d’Hostens (Landes Girondines). 
           </p>
         </div>
         <a href="inscriptions.php" class="btn-link">
@@ -50,8 +50,7 @@
       <div class="valeurs-container valeurs-container-3 no-display">
         <div class="valeurs-texte">
           <h2> Coaching Individuel</h2>
-          <p> Ne laissez rien au hasard. Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec le coaching individuel tout au long de l’année à Paris.
-            Planifié selon vos disponibilités.L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
+          <p> Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec un coaching individuel. A Paris, tout au long de l’année, un entraînement individuel vous est proposé en fonction de vos disponibilités. L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
           </p>
         </div>
           <a href="cours-individuels.php" class="btn-link">

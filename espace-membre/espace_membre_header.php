@@ -16,60 +16,18 @@ if($_SESSION["endsub"]!== "0000-00-00"){
 ?>
     <header>
         <div class="header-container">
-            <div class="logo-container">
-                <a href="../espace-membre/espace_membre.php"><img src="../Images/logoheader.png" alt=""></a>
-            </div>
-            <div class="pages-container">
-                          
-            </div>
-
-        </div>        
-        <div class="user-container">
-            <!-- <img src="../Images/user.png" alt="">
-            <span class="statut-membre"> </span>
-            -->
-            <div class="dropdown">
-                <button class="dropbtn"> <i class="fa fa-user" aria-hidden="true"></i></button>
-                <div class="dropdown-content">
-                    <a href="#"> <i class="fa fa-file" aria-hidden="true"></i>Documents </a>
-                    <a href="espace_membre_informations.php"><i class="fa fa-cog" aria-hidden="true"></i> Mon compte </a>
-                    <?php
-                    if ($_SESSION["plan"] == 4) {
-                        ?>
-                        <a href="../Admin/admin-post.php" target="_blank"> <i class="fa fa-user" aria-hidden="true"></i> Page Admin </a>
-                    <?php
-                    }
-                    ?>
-                    <a href="espace_membre_paiements.php"> <i class="fa fa-eur" aria-hidden="true"></i> Paiements </a>
-                    <a href="../includes/logout.inc.php"> <i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion </a>
-
+            <img src="../Images/filet.jpg" alt="">
+            <div class="screen"></div>
+            <div class="profile-pic-container">
+                <div class="profile-pic">
+                    <img src="../Images/coachs/solal.jpg" alt="">
+                </div>
+                <div class="profile-text">
+                    <h1><?php echo $_SESSION['username'];?> <span class="uppercase"><?php echo $_SESSION['usersurname'];?></span></h1>
                 </div>
             </div>
-            <h2 class="h2"> 
-            <?php 
-            if ($_SESSION["plan"]==0) {
-                echo "Gratuit";
-            }
-            elseif ($_SESSION["plan"]==1){
-                echo "Stagiaire";
-            }
-
-            elseif ($_SESSION["plan"]==2){
-                echo "Titulaire";
-            }
-
-            elseif ($_SESSION["plan"]== 3){
-                echo "Club";
-            }
-
-            elseif ($_SESSION["plan"]== 4){
-                echo "Admin";
-            }
-            ?> 
-            </h2>
-        </div>
+        </div>        
     </header>
-
 <?php 
 //Si mauvaise connexion - Retour à la page login
 }else{
