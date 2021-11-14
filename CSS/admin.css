@@ -1,217 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,600;1,900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Muli', sans-serif;
-    font-size: 14px;
-    list-style: none;
-    text-decoration: none;
-}
-
-body{
-    display: flex;
-    flex-direction: row;
-}
-
 /* Section vidéos*/
 
-#section-videos{
-    background-color: #10222e;
+#section-dispos{
+    width: 100%;
+    height: 100%;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 75vw;
-    object-fit: cover;
-    width: 100%;
 }
 
-#section-videos h1{
+#section-dispos h1{
     font-size: 2rem;
-    color: #FFFAE5;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 20px;
+    text-align: center;
 }
-
 
 .heures-dispo{
     width: 90%;
-    min-height: 40vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .heures-dispo form{
+    width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .heures-dispo .form-container{
     width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-}
-
-.heures-dispo .dispo-container{
-    height: 40px;
-    width: 120px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid aliceblue;
-    cursor: pointer;
-}
-
-.heures-dispo label{
-    color: aliceblue;
-    cursor: pointer;
-}
-
-.heures-dispo .booked{
-    height: 40px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid lightgreen;
-    background: lightgreen;
-    cursor:not-allowed;
-}
-
-.heures-dispo .booked label{
-    color: black;
-    cursor:not-allowed;
-}
-
-.heures-dispo .unavailable{
-    height: 40px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid lightcoral;
-    background: lightcoral;
-    cursor:not-allowed;
-}
-
-.heures-dispo .unavailable label{
-    color: black;
-    cursor:not-allowed;
-}
-
-.heures-dispo .unavailable .time-select{
-    display: none;
-}
-
-.heures-dispo .booked .time-select{
-    display: none;
-}
-
-.heures-dispo .dispo-container label{
-    margin-right: 5px;
-}
-
-.hourSubmit{
-    width: 200px;
-    height: 30px;
-    outline: none;
-    border: 1px solid #F46E54;
-    background: #F46E54;
-    margin: 10px;
-}
-/*tableau-video*/
-#tableau-video{
-    background-color: #10222e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 75vw;
-}
-
-#tableau-video h1{
-    font-size: 3rem;
-    color: #FFFAE5;
-    margin-top: 30px;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
-.tableau{
-    width: 80%;
-    height: 450px;
-    border: 2px solid white;
-    overflow-y: scroll;
-    color: #10222e;
-}
-
-.tableau table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.tableau table th{
-    background: #FFFAE5;
-    padding: 10px;
-    color: #10222e;
-    border: 2px solid #10222e;
-}
-
-.tableau table td{
-    text-align: center;
-    padding: 10px;
-    color: #10222e;
-}
-
-.tableau tr{
-    border: 2px solid #10222e;
-}
-
-.tableau tr:nth-child(2n+1){background-color: #f2f2f2;}
-.tableau tr:nth-child(2n){background-color: #ddd;}
-
-/*side-bar*/
-.side-bar{
-    width: 25vw;
-    min-height: 100vh;
-    background-color: #FFFAE5;
-    color: #10222e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.side-bar ul li{
+.dispo-container{
+    width: 120px;
+    height: 40px;
     margin: 10px;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #dee3ed;
+    border-radius: 5px;
 }
 
-.side-bar ul li a{
-    color: #10222e;
-    font-size: 1rem;
+.heures-dispo button{
+    height: 40px;
+    width: 250px;
+    background: white;
+    border: 1px solid #F46E54;
+    border-radius: 5px;
 }
 
-.side-bar ul li a:hover{
-    text-decoration: underline;
+.heures-dispo button:hover{
+    cursor: pointer;
+    background: #F46E54;
 }
+
+.dispo-container.booked{
+    background: lightgreen;
+    cursor: not-allowed;
+}
+
+.dispo-container.booked{
+    background: lightgreen;
+}
+
+.dispo-container.booked input{
+    display: none;
+}
+
+.dispo-container.unavailable input{
+    display: none;
+}
+
+.dispo-container.unavailable{
+    background: lightsalmon;
+    cursor: not-allowed;
+}
+
+
 
 

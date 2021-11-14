@@ -199,7 +199,7 @@ function loginUser($conn, $username, $pwd){
         $_SESSION["regdate"] = $uidExists["regDate"];
         $_SESSION["compteverif"] = $uidExists["compteVerif"];
 
-        header("location: ../espace-membre/espace_membre.php");
+        header("location: ../espace-membre/espace_membre_index.php");
         exit();
     }
 }

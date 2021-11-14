@@ -6,5 +6,9 @@ include '../espace-membre/espace_membre_header.php';
     <?php
     include '../espace-membre/espace_membre_sidebar.php';
     ?>
-    <div class="espace-membre-container"></div>
+    <div class="espace-membre-container">
+        <?php
+        include '../espace-membre/admin-post.php';
+        ?>
+    </div>
 </div>

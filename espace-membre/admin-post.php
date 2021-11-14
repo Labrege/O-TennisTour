@@ -45,10 +45,9 @@
     });
 </script>
 <?php
-require('admin-header.php');
 $dateval = date(0);
 ?>
-<div id="section-videos">
+<div id="section-dispos">
     <h1> Postez vos disponibilités sur le site ! </h1>
     <div class="form">
         <form action="#" method="POST" enctype="multipart/form-data" class='form-dispos'>

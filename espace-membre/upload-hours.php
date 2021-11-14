@@ -17,8 +17,8 @@ if(isset($_POST['hourSubmit'])){
         }
     }
     else{
-        header('Location: admin-post.php');
+        header('Location: espace_membre_index.php');
     }
-    header("Location: admin-post.php?lastDate=$dayAfter");
+    header("Location: espace_membre_index.php?lastDate=$dayAfter");
 
 }
