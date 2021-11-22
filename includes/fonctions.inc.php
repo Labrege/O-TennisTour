@@ -198,9 +198,15 @@ function loginUser($conn, $username, $pwd){
         $_SESSION["stripeid"] = $uidExists["stripeId"];
         $_SESSION["regdate"] = $uidExists["regDate"];
         $_SESSION["compteverif"] = $uidExists["compteVerif"];
-
-        header("location: ../espace-membre/espace_membre_index.php");
-        exit();
+        
+        if($_SESSION["plan"] == 4){
+            header("location: ../espace-membre/espace_membre_index.php");
+            exit();
+        }
+        else{
+            header("location: ../login.php?error=notallowed");
+            exit(); 
+        }
     }
 }
 

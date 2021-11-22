@@ -20,13 +20,15 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
     $date = date("Y/m/d", strtotime($dateGet));
     $amount = $_GET['amount'];
     $profEmail = $_GET['profEmail'];
+    $unix_time = time();
+    $idReservation = $nom.$unix_time;
 
     // Time //
     $oneHourLess = date('H:i', strtotime($heure.'-1 hour'));
     $oneHourMore = date('H:i', strtotime($heure.'+1 hour'));
 
     // SQL //
-    $sql = "INSERT INTO réservations (nom, prénom, mail, téléphone, CourtCondition, surface, age, localisation1, localisation2, prof, heure, dateRésa, amount) VALUES ('$nom', '$prénom','$mail', '$téléphone', '$condition', '$surface','$age', '$localisation1', '$localisation2','$prof','$heure','$date', '$amount')";
+    $sql = "INSERT INTO réservations (nom, prénom, mail, téléphone, CourtCondition, surface, age, localisation1, localisation2, prof, heure, dateRésa, amount, idReservation) VALUES ('$nom', '$prénom','$mail', '$téléphone', '$condition', '$surface','$age', '$localisation1', '$localisation2','$prof','$heure','$date', '$amount','$idReservation')";
     $conn->query($sql);
 
     $sqlChange = "UPDATE disposindivs SET coursReserve = '1' WHERE profDispo='$prof' AND heureDispo='$heure' AND dateDispo='$date'";
@@ -42,7 +44,10 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $fromName = "O'TENNIS TOUR";
 
         //Mail Responsable
-        $mailText = "Bonjour ! <br><br> Nouvelle réservation OTT: <ul><li> Pour $prénom $nom</li> <li> Le $date à $heure</li> <li> Avec $prof </li> <li> Localisation 1: $localisation1 </li> <li> Localisation 2: $localisation2 </li> <li> Total: $amount </li></ul> ";
+        $mailText = "Bonjour ! <br><br> Votre nouvelle réservation OTT à bien été enregistrée ! <br><br> Voici ci-dessous le détail de votre commande :  <ul><li> Pour $prénom $nom</li> <li> Le $date à $heure</li> <li> Avec $prof </li> <li> Localisation 1: $localisation1 </li> <li> Localisation 2: $localisation2 </li> <li> Votre numéro de commande : $idReservation </li></ul> <br><br> Lorsque votre commande sera validée par notre équipe, vous recevrez un nouveau mail ou SMS avec toutes les informations relatives à votre réservation. <br><br>
+        Sportivement ! 
+        <br><br>
+        L’équipe O'Tennis Tour ";
         $mailSubjectProf = "Nouvelle réservation OTT pour $prof";
         $successUrl = 'index.php';
         $failUrl = 'index.php?error=failedemail';

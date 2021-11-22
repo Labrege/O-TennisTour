@@ -14,6 +14,7 @@ $(document).ready(function(){
         <a href="espace_membre_index.php"> Profil </a>
         <a href="espace_membre_informations.php"> Informations </a>
         <a href="../Admin/admin-post.php" target='_blank'> Mes dispos </a>
+        <a href="../includes/logout.inc.php"> <i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion </a>
     </div>
     <div class="side-bar-btn-container">
         <button class="side-bar-btn">

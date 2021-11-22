@@ -7,7 +7,7 @@
     <div id='espace_membre_inscription_1'>
         <div class="recherche-container">
             <div class="screen-inscription"></div>
-            <img class="background-inscription" src="Images/court.jpg" alt="">
+            <img class="background-inscription" src="Images/tennis-court.jpg" alt="">
             <div class="rechercher-container">
                 <h2> Réserver un stage </h2>
                 <div class="input-container">
@@ -46,7 +46,9 @@
     </div>
     <div id='espace_membre_inscription_2'>
         <div class="container-formules">
-            <div class="card-formule">
+            <br><br><br><br><br>
+            Aucun stage disponible pour le moment... Revenez bientôt pour réserver votre stage OTT !
+            <!-- <div class="card-formule">
                 <div class="image-card">
                     <img src="Images/image-tennis.png" alt="">
                 </div>
@@ -101,7 +103,7 @@
                 <div class="boite-bouton-valider">
                     <button type="button_gratuit" class="bouton_valider" name="button_gratuit">Choisir ce plan</a>
                 </div>  
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
