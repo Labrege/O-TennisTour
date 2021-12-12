@@ -121,7 +121,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['userbirthdate'] = $birthdate;
         }
         else {
-            $message = "Un problème est survenu... Veuillez réessayer ulterieurement! <span class='exit-message'>&times;</span>";
+            $message = "2) Un problème est survenu... Veuillez réessayer ulterieurement! <span class='exit-message'>&times;</span>";
             echo "<p class='error_message'> $message </p>";
             
         }
