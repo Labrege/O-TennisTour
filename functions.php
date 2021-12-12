@@ -6,11 +6,11 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
-function SendEmail($mailFrom, $fromName, array $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
+function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        $mail->SMTPDebug = 1; //SMTP::DEBUG_SERVER;     //false              // Enable verbose debug output
+        $mail->SMTPDebug = false; //SMTP::DEBUG_SERVER;               // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
