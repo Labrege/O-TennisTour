@@ -23,7 +23,7 @@ function SendEmail($mailFrom, $fromName, array $recipients, $mailText, $mailSubj
         $mail->setFrom($mailFrom, $fromName);
         $mail->addAddress('contact@otennistour.com');
         foreach($recipients as $email){
-            echo $email;
+            print_r($email);
             $mail->addBCC($email);
         }
             // Add a recipient
