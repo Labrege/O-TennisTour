@@ -52,7 +52,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $mailSubjectProf = "Nouvelle réservation OTT pour $prof";
         $successUrl = 'index.php';
         $failUrl = 'index.php?error=failedemail';
-        $mail2 = SendEmail($mailFrom, $fromName, array('contact@otennistour.com','solalettepont@gmail.com',$profEmail), $mailText, $mailSubjectProf, $successUrl, $failUrl);
+        echo $mail2 = SendEmail($mailFrom, $fromName, array('contact@otennistour.com','solalettepont@gmail.com',$profEmail), $mailText, $mailSubjectProf, $successUrl, $failUrl);
 
         header("Location: success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date");
     }
