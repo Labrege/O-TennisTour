@@ -7,7 +7,6 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 function SendEmail($mailFrom, $fromName, array $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
-    echo 'sendemail';
     $mail = new PHPMailer(true);
     try {
         //Server settings
@@ -25,6 +24,7 @@ function SendEmail($mailFrom, $fromName, array $recipients, $mailText, $mailSubj
         $mail->addAddress('contact@otennistour.com');
         foreach($recipients as $email){
             $mail->addBCC($email); 
+            echo $email;
         }
             // Add a recipient
 
