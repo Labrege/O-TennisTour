@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
-function SendEmail($mailFrom, $fromName, array $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
+function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
     $mail = new PHPMailer(true);
     try {
         //Server settings
@@ -22,10 +22,7 @@ function SendEmail($mailFrom, $fromName, array $recipients, $mailText, $mailSubj
         //Recipients
         $mail->setFrom($mailFrom, $fromName);
         $mail->addAddress('contact@otennistour.com');
-        foreach($recipients as $email){
-            print_r($email);
-            $mail->addBCC($email);
-        }
+        $mail->addBCC($recipients);
             // Add a recipient
 
         // Content
