@@ -39,6 +39,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
 
     // Mail //
     if($sql && $sqlChange && $sqlModifyHours){
+        echo $email;
         //Expéditeur
         $mailFrom = 'contact@otennistour.com';
         $fromName = "O'TENNIS TOUR";
@@ -77,6 +78,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
             $mail->AltBody = strip_tags($mailText);
 
             if ($mail->send()){
+
                 echo"<script language='javascript'>
                     window.location = 'success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date';
                     window.location = newLocation;
