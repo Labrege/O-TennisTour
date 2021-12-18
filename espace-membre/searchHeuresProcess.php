@@ -9,7 +9,7 @@ $date = $_POST['date'];
     <div class="form-container">
     <?php
     $sqlHour = "SELECT * FROM horaires";
-    $searchHours = $conn->query($sqlHour );
+    $searchHours = $conn->query($sqlHour);
 
     //Si la recherche donne un résultat
     if($searchHours->num_rows > 0){
@@ -24,7 +24,7 @@ $date = $_POST['date'];
             <div class="dispo-container 
             <?php 
                 $sqlResaCheck = "SELECT * FROM disposindivs WHERE profDispo='$name' AND dateDispo='$date' AND heureDispo='$hourStart' AND coursReserve != '0'";
-                $searchResa = $conn->query($sqlResaCheck );
+                $searchResa = $conn->query($sqlResaCheck);
                 //Si la recherche donne un résultat
                 if($searchResa->num_rows > 0){
                     //Tant qu'il y a des résultat dans la table, afficher...

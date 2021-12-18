@@ -33,7 +33,7 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
 
         if ($mail->send()){
             echo"<script language='javascript'>
-                window.location = '$sucessUrl';
+                window.location = '$successUrl';
                 window.location = newLocation;
             </script>
             ";

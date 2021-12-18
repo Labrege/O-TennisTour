@@ -73,7 +73,8 @@ if(isset($_POST['submit'])){
                         <?php
                             $profDispo = $donnees['profDispo'];
                             $profEmail = $donnees['mailProf'];
-                            $sqlHeure = "SELECT DISTINCT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo' AND heureDispo>='$time' AND coursReserve='0' ORDER BY heureDispo ASC";
+                            $nullValue = 0;
+                            $sqlHeure = "SELECT DISTINCT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo' AND heureDispo>='$time' AND coursReserve = '$nullValue' ORDER BY heureDispo ASC";
                             $searchHeure = $conn->query($sqlHeure);
 
                             while ($donneesheures = $searchHeure->fetch_assoc()){

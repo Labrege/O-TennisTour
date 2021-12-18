@@ -28,7 +28,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
     $oneHourMore = date('H:i', strtotime($heure.'+1 hour'));
 
     // SQL //
-    $sql = "INSERT INTO réservations (nom, prénom, mail, téléphone, CourtCondition, surface, age, localisation1, localisation2, prof, heure, dateRésa, amount, idReservation) VALUES ('$nom', '$prénom','$mail', '$téléphone', '$condition', '$surface','$age', '$localisation1', '$localisation2','$prof','$heure','$date', '$amount','$idReservation')";
+    $sql = "INSERT INTO réservations (nom, prénom, mail, téléphone, CourtCondition, surface, age, localisation1, localisation2, prof, heure, dateRésa, amount, idReservation) VALUES ('$nom', '$prénom','$email', '$téléphone', '$condition', '$surface','$age', '$localisation1', '$localisation2','$prof','$heure','$date', '$amount','$idReservation')";
     $conn->query($sql);
 
     $sqlChange = "UPDATE disposindivs SET coursReserve = '1' WHERE profDispo='$prof' AND heureDispo='$heure' AND dateDispo='$date'";
@@ -39,7 +39,6 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
 
     // Mail //
     if($sql && $sqlChange && $sqlModifyHours){
-        echo $email;
         //Expéditeur
         $mailFrom = 'contact@otennistour.com';
         $fromName = "O'TENNIS TOUR";
@@ -50,53 +49,11 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         <br><br>
         L’équipe O'Tennis Tour ";
         $mailSubjectProf = "Nouvelle réservation OTT pour $prof";
-        $successUrl = 'index.php';
+        $successUrl = "success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date";
         $failUrl = 'index.php?error=failedemail';
+        
+        SendEmail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
 
-        $mail = new PHPMailer(true);
-        try {
-            //Server settings
-            $mail->SMTPDebug = 2; //SMTP::DEBUG_SERVER;               // Enable verbose debug output
-            $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'contact.otennistour@gmail.com';                     // SMTP username
-            $mail->Password   = 'Ott75016';                               // SMTP password
-            $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-            $mail->Port       = 587;           // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-
-            //Recipients
-            $mail->setFrom($mailFrom, $fromName);
-            $mail->addAddress('contact@otennistour.com');
-            $mail->addBCC($email);
-            // Add a recipient
-
-            // Content
-            $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = $mailSubject;
-            $mail->Body    = $mailText;
-            $mail->AltBody = strip_tags($mailText);
-
-            if ($mail->send()){
-
-                echo"<script language='javascript'>
-                    window.location = 'success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date';
-                    window.location = newLocation;
-                </script>
-                ";
-            }
-            else{
-                echo"<script language='javascript'>
-                window.location = 'success-payement-page.php?error=aproblemhasoccured';
-                    window.location = newLocation;
-                </script>
-                ";
-            }
-        } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {
-            $mail->ErrorInfo
-        }";
-        }
     }
 
 }else{
