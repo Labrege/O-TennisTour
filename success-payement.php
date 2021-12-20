@@ -1,5 +1,4 @@
 <?php
-echo 'hello';
 require 'links.php';
 require 'includes/dbh.inc.php';
 require 'functions.php';
@@ -37,7 +36,6 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
 
     $sqlModifyHours = "UPDATE disposindivs SET coursReserve = '2' WHERE profDispo='$prof' AND (heureDispo='$oneHourLess' OR heureDispo='$oneHourMore') AND dateDispo='$date'";
     $conn->query($sqlModifyHours);
-    echo 'hello';
 
     // Mail //
     if($sql && $sqlChange && $sqlModifyHours){
