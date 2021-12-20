@@ -30,7 +30,7 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         $mail->Username   = 'contact@otennistour.com';                     // SMTP username
         $mail->Password   = 'Ott75016';                               // SMTP password
-        $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+        $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
         //Recipients
