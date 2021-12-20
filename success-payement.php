@@ -57,6 +57,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         // $failUrl = 'index.php?error=failedemail';
         // SendEmail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
         // Load Composer's autoloader
+        echo 'bite';
         $mail = new PHPMailer(true);
         try {
             //Server settings
