@@ -7,6 +7,14 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
+    echo $mailFrom;
+    echo $fromName;
+    echo $recipients;
+    echo $mailText;
+    echo $mailSubject;
+    echo $successUrl;
+    echo $failUrl;
+    
     $mail = new PHPMailer(true);
     try {
         //Server settings
