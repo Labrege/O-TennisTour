@@ -53,4 +53,8 @@ function SendMail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $s
     }
 }
 
+function Test(){
+    echo 'test';
+}
+
 ?>
