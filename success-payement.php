@@ -4,7 +4,7 @@ require 'includes/dbh.inc.php';
 require 'functions.php';
 
 if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && isset($_GET['tel']) && isset($_GET['condition']) && isset($_GET['surface']) && isset($_GET['age'])){
-    echo $nom = $_GET['surname'];
+    $nom = $_GET['surname'];
     $prénom = $_GET['name'];
     $email = $_GET['mail'];
     $téléphone = $_GET['tel'];
@@ -39,7 +39,6 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
 
     // Mail //
     if($sql && $sqlChange && $sqlModifyHours){
-        echo 'yay';
         //Expéditeur
         $mailFrom = 'contact@otennistour.com';
         $fromName = "O'TENNIS TOUR";
@@ -50,9 +49,9 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         <br><br>
         L’équipe O'Tennis Tour ";
         $mailSubjectProf = "Nouvelle réservation OTT pour $prof";
-        $successUrl = "success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date&idCommande=$idReservation";
+        $successUrl = "success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$email&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date&idCommande=$idReservation";
         $failUrl = 'index.php?error=failedemail';
-        SendMail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
+        SendEmail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
 
     }
 
