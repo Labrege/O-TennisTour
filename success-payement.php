@@ -4,7 +4,7 @@ require 'includes/dbh.inc.php';
 require 'functions.php';
 
 if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && isset($_GET['tel']) && isset($_GET['condition']) && isset($_GET['surface']) && isset($_GET['age'])){
-    $nom = $_GET['surname'];
+    echo $nom = $_GET['surname'];
     $prénom = $_GET['name'];
     $email = $_GET['mail'];
     $téléphone = $_GET['tel'];
