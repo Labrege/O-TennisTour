@@ -60,7 +60,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $mail = new PHPMailer(true);
         try {
             //Server settings
-            $mail->SMTPDebug = false;//SMTP::DEBUG_SERVER;                   // Enable verbose debug output
+            $mail->SMTPDebug = 1;//SMTP::DEBUG_SERVER;                   // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
             $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
