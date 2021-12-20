@@ -6,14 +6,12 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
-echo 'hors function';
 function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
-    echo 'hors function 1';
     $mail = new PHPMailer(true);
     try {
         //Server settings
         echo 'dans function';
-        echo $mail->SMTPDebug = 2;                   // Enable verbose debug output
+        echo $mail->SMTPDebug = false;                   // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
@@ -34,7 +32,6 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
         $mail->Body    = $mailText;
         $mail->AltBody = strip_tags($mailText);
 
-        echo 'hello';
         if ($mail->send()){
             echo"<script language='javascript'>
                 window.location = '$successUrl';
