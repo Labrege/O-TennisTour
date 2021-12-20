@@ -5,6 +5,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
+$mail = new PHPMailer(true);
+
 
 function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
     echo $mailFrom;
@@ -21,7 +23,6 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
     echo '<br>';
     echo $failUrl;
     
-    $mail = new PHPMailer(true);
     try {
         echo 'in';
         //Server settings
