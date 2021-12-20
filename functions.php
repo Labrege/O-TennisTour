@@ -8,6 +8,7 @@ require 'vendor/autoload.php';
 
 function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
     $mail = new PHPMailer(true);
+    echo 'bite';
     try {
         //Server settings
         echo $mail->SMTPDebug = SMTP::DEBUG_SERVER;                   // Enable verbose debug output
