@@ -5,8 +5,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
-$mail = new PHPMailer(true);
-
 
 function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
     echo $mailFrom;
@@ -23,8 +21,8 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
     echo '<br>';
     echo $failUrl;
     
-    try {
-        echo 'in';
+    $mail = new PHPMailer(true);
+    
         //Server settings
         $mail->SMTPDebug = 1;                   // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
@@ -61,11 +59,6 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
             </script>
             ";
         }
-    } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {
-        $mail->ErrorInfo
-    }";
-    }
     exit();
 }
 ?>
