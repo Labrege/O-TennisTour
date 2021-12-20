@@ -1,7 +1,7 @@
 <?php
 require 'links.php';
 require 'includes/dbh.inc.php';
-require 'functions.php';
+// require 'functions.php';
 
 if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && isset($_GET['tel']) && isset($_GET['condition']) && isset($_GET['surface']) && isset($_GET['age'])){
     $nom = $_GET['surname'];
@@ -51,7 +51,59 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $mailSubjectProf = "Nouvelle réservation OTT pour $prof";
         $successUrl = "success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$email&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date&idCommande=$idReservation";
         $failUrl = 'index.php?error=failedemail';
-        SendEmail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
+        // SendEmail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
+        // Load Composer's autoloader
+        $mail = new PHPMailer(true);
+        try {
+            //Server settings
+            $mail->SMTPDebug = false;//SMTP::DEBUG_SERVER;                   // Enable verbose debug output
+            $mail->isSMTP();                                            // Send using SMTP
+            $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+            $mail->Username   = 'contact@ovalxv.com';                     // SMTP username
+            $mail->Password   = 'OvalXV75016';                               // SMTP password
+            $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    
+            //Recipients
+            $mail->setFrom('contact@ovalxv.com', 'OvalXV');
+            $mail->addAddress($email);     // Add a recipient
+    
+            $body = "Bonjour! <br> Voici vos informations:
+            <br><br>
+
+            Ce mot de passe peut être cangé dans la rubrique 'Mon compte' de votre espace OvalXV.
+            
+            <a href='www.ovalxv.com/login.php'> Cliquez ici pour vous connecter! </a><br><br>
+    
+            A bientôt sur la plateforme OvalXV!
+            ";
+    
+            // Content
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = 'OvalXV | Nouveau mot de passe!';
+            $mail->Body    = $body;
+            $mail->AltBody = strip_tags($body);
+    
+            if ($mail->send()){
+                echo"<script language='javascript'>
+                    var newLocation = '../mot_de_passe.php?error=none';
+                    window.location = newLocation;
+                </script>
+                ";
+            }
+            else{
+                echo"<script language='javascript'>
+                    var newLocation = '../mot_de_passe.php?error=mailnonenvoyé';
+                    window.location = newLocation;
+                </script>
+                ";
+            }
+        } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {
+            $mail->ErrorInfo
+        }";
+        }
     }
 
 }else{
