@@ -1,7 +1,11 @@
 <?php
 require 'links.php';
 require 'includes/dbh.inc.php';
-require 'functions.php';
+// require 'functions.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/autoload.php';
 
 if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && isset($_GET['tel']) && isset($_GET['condition']) && isset($_GET['surface']) && isset($_GET['age'])){
     $nom = $_GET['surname'];
@@ -52,10 +56,52 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $mailSubjectProf = "Nouvelle réservation OTT pour $prof";
         $successUrl = "success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date&idCommande=$idReservation";
         $failUrl = 'index.php?error=failedemail'; 
-        SendMail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
+        
+        $mail = new PHPMailer(true);
+        try {
+            //Server settings
+            $mail->SMTPDebug = false;                   // Enable verbose debug output
+            $mail->isSMTP();                                            // Send using SMTP
+            $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+            $mail->Username   = 'contact@otennistour.com';                     // SMTP username
+            $mail->Password   = 'Ott75016';                               // SMTP password
+            $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
+            //Recipients
+            $mail->setFrom($mailFrom, $fromName);
+            $mail->addAddress('contact@otennistour.com');
+            $mail->addBCC($recipients);
+                // Add a recipient
+
+            // Content
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = $mailSubject;
+            $mail->Body    = $mailText;
+            $mail->AltBody = strip_tags($mailText);
+
+            if ($mail->send()){
+                echo"<script language='javascript'>
+                    window.location = '$successUrl';
+                    window.location = newLocation;
+                </script>
+                ";
+            }
+            else{
+                echo"<script language='javascript'>
+                window.location = '$failUrl';
+                    window.location = newLocation;
+                </script>
+                ";
+            }
+        } 
+        catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {
+            $mail->ErrorInfo
+        }";
+        }
     }
-
 }else{
     header('Location: cours-individuels.php');
 }
