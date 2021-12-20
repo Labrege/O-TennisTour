@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
-function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
+function SendMail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
     $mail = new PHPMailer(true);
     try {
         //Server settings

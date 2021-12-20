@@ -52,8 +52,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $mailSubjectProf = "Nouvelle réservation OTT pour $prof";
         $successUrl = "success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date&idCommande=$idReservation";
         $failUrl = 'index.php?error=failedemail'; 
-        echo 'jpp'; 
-        SendEmail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
+        SendMail($mailFrom, $fromName, $email, $mailText, $mailSubjectProf, $successUrl, $failUrl);
 
     }
 
