@@ -64,5 +64,6 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
         $mail->ErrorInfo
     }";
     }
+    exit();
 }
 ?>

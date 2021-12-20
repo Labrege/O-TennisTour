@@ -1,7 +1,7 @@
 <?php
 require 'links.php';
 require 'includes/dbh.inc.php';
-require 'functions.php';
+// require 'functions.php';
 
 if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && isset($_GET['tel']) && isset($_GET['condition']) && isset($_GET['surface']) && isset($_GET['age'])){
     $nom = $_GET['surname'];
