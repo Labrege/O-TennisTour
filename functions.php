@@ -10,7 +10,7 @@ function SendEmail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        $mail->SMTPDebug = 2;                   // Enable verbose debug output
+        echo $mail->SMTPDebug = 2;                   // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
