@@ -6,13 +6,11 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
-echo 'bite';
 function SendMail($mailFrom, $fromName, $recipients, $mailText, $mailSubject, $successUrl, $failUrl){
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        echo 'dans function';
-        echo $mail->SMTPDebug = false;                   // Enable verbose debug output
+        $mail->SMTPDebug = false;                   // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.hostinger.fr';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication

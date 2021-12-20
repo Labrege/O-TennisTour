@@ -39,7 +39,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
 
     // Mail //
     if($sql && $sqlChange && $sqlModifyHours){
-        
+        echo 'yay';
         //Expéditeur
         $mailFrom = 'contact@otennistour.com';
         $fromName = "O'TENNIS TOUR";
