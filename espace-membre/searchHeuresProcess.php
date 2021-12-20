@@ -43,7 +43,7 @@ $date = $_POST['date'];
                 <input type="text" name='name' value='<?php echo $name;?>' style='display: none;'>
                 <input type="checkbox" class='time-select' id='<?php echo $donnees['id'];?>' name='checked_time[]' value='<?php echo $donnees['hourStart'];?>'
                 <?php
-                $sqlHourCheck = "SELECT * FROM disposindivs WHERE profDispo='$name' AND dateDispo='$date' AND heureDispo='$hourStart'";
+                $sqlHourCheck = "SELECT * FROM disposindivs WHERE profDispo='$name' AND coursReserve = '0' AND dateDispo='$date' AND heureDispo='$hourStart'";
                 if ($result=mysqli_query($conn,$sqlHourCheck)) {
                     $rowcount=mysqli_num_rows($result);
                     if($rowcount>0){

@@ -84,7 +84,7 @@ if(isset($_POST['time-select']) && isset($_POST['date'])){
           <div class="titre-info-container">
             <h2> Mes informations </h2>
             <div class="ligne-rouge-indiv"></div>
-            <h3> Réservation pour le <?php echo $date;?> à <?php echo $timepicked;?> avec <?php echo $profpicked?></h3>
+            <h3> Réservation pour le <?php echo $date;?> à <?php echo $timepicked;?> avec <span class="capitalize"><?php echo $profpicked?></span></h3>
           </div>
         </div>
         <div class="form-indiv-container">

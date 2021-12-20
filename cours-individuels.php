@@ -82,12 +82,12 @@ $dateval = date(1);
                 <select name="" class='prof-indiv' id='form-info'>
                     <option value="all" selected> Tous les profs </option>
                 <?php
-                $sqlProf = 'SELECT * FROM profs';
+                $sqlProf = "SELECT * FROM users WHERE plan = '4'";
                 $searchprofs = $conn->query($sqlProf);
 
                 while($donnesprofs = $searchprofs->fetch_assoc()){
                 ?>
-                    <option value="<?php echo $donnesprofs['prenomProf'];?>"> <?php echo $donnesprofs['prenomProf'];?> </option>
+                    <option value="<?php echo $donnesprofs['userName'];?>"> <span style='text-transform: capitalize;'><?php echo $donnesprofs['userName'];?></span> </option>
                 <?php
                 }
                 ?>                   

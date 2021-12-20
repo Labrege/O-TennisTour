@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
         $searchTime = "AND heureDispo >= '$time'";
     }
 
-    $sqlDate = "SELECT DISTINCT profDispo, statutProf, mailProf FROM disposindivs, profs WHERE disposindivs.profDispo = profs.prenomProf AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo ='$date' ORDER BY statutProf,  profs.prenomProf ASC";
+    $sqlDate = "SELECT DISTINCT profDispo, userName, coursReserve, userStatut, userName, userEmail, dateDispo FROM disposindivs, users WHERE disposindivs.profDispo = users.userName AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo ='$date' ORDER BY userStatut,  userName ASC";
     $searchDate = $conn->query($sqlDate);
 
     //Si la recherche donne un résultat
@@ -62,7 +62,7 @@ if(isset($_POST['submit'])){
                     <h1> <?php echo $donnees['profDispo'];?> </h1>
                     <div class="ligne-noire"></div>
                     <div class="statut-coach">
-                        <h3> <span class="capitalize"><?php echo $donnees['statutProf'];?></span> </h3>
+                        <h3> <span class="capitalize"><?php echo $donnees['userStatut'];?></span> </h3>
                     </div>
 
                     <!-- dispo du prof -->
@@ -72,7 +72,7 @@ if(isset($_POST['submit'])){
                         <input type="text" name='date' value='<?php echo $date;?>' style='display: none;'>
                         <?php
                             $profDispo = $donnees['profDispo'];
-                            $profEmail = $donnees['mailProf'];
+                            $profEmail = $donnees['userEmail'];
                             $nullValue = 0;
                             $sqlHeure = "SELECT DISTINCT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo' AND heureDispo>='$time' AND coursReserve = '$nullValue' ORDER BY heureDispo ASC";
                             $searchHeure = $conn->query($sqlHeure);
@@ -81,7 +81,7 @@ if(isset($_POST['submit'])){
                         ?>
                             <div class="card-indiv-dispo">
                             <label class='card-indiv-dispo-label'>
-                                <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo.' '.$donnees['statutProf'].' '.$profEmail;?>'> 
+                                <input style='display: none;' class='time-select' type="checkbox" name='time-select' value='<?php echo $donneesheures['heureDispo'].' '.$profDispo.' '.$donnees['userStatut'].' '.$profEmail;?>'> 
                                 <?php 
                                 $heureSelect = new DateTime($donneesheures['heureDispo']);
                                 echo $heureSelect->format('H:i'); 

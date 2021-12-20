@@ -28,7 +28,7 @@ $sql = $conn->query("SELECT * FROM users WHERE userUid = '$user");
             });
             
         });
-        });
+    });
 </script>
 
 <div id="espace-membre-page"  class='espace-membre-page'>
