@@ -3,6 +3,7 @@
 include '../espace-membre/espace_membre_liens.php';
 if (isset($_SESSION['useruid'])){
 $email = $_SESSION["useremail"];
+echo $photo = $_SESSION["userphoto"];
 
 // Verification de la fin de l'abonnement
 $date = date("Y-m-d");
@@ -20,7 +21,11 @@ if($_SESSION["endsub"]!== "0000-00-00"){
             <div class="screen"></div>
             <div class="profile-pic-container">
                 <div class="profile-pic">
-                    <img src="../Images/coachs/solal.jpg" alt="">
+                    <img src="../Images/coachs/<?php echo $photo;?>" alt="">
+                </div>
+                <br>
+                <div>
+                    <a href="#" style='color: white;'> <i class="fa fa-picture-o" aria-hidden="true"></i> Changer ma photo de profil</a>
                 </div>
                 <div class="profile-text">
                     <h1><?php echo $_SESSION['username'];?> <span class="uppercase"><?php echo $_SESSION['usersurname'];?></span></h1>

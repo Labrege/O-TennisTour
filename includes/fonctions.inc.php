@@ -198,6 +198,7 @@ function loginUser($conn, $username, $pwd){
         $_SESSION["stripeid"] = $uidExists["stripeId"];
         $_SESSION["regdate"] = $uidExists["regDate"];
         $_SESSION["compteverif"] = $uidExists["compteVerif"];
+        $_SESSION["userphoto"] = $uidExists["userPhoto"];
         
         if($_SESSION["plan"] == 4){
             header("location: ../espace-membre/espace_membre_index.php");
