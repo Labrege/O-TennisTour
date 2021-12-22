@@ -43,7 +43,21 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         error_reporting( E_ALL );
         
         //Mail Responsable
-        $mailText = "Bonjour ! <br><br> Votre nouvelle réservation OTT à bien été enregistrée ! <br><br> Voici ci-dessous le détail de votre commande :  <ul><li> Pour $prénom $nom</li> <li> Le $date à $heure</li> <li> Avec $prof </li> <li> Localisation 1: $localisation1 </li> <li> Localisation 2: $localisation2 </li> <li> Votre numéro de commande : $idReservation </li></ul> <br><br> Lorsque votre commande sera validée par notre équipe, vous recevrez un nouveau mail ou SMS avec toutes les informations relatives à votre réservation. <br><br>
+        $mailText = "
+        Bonjour ! <br><br> 
+        Votre nouvelle réservation OTT à bien été enregistrée ! 
+        <br><br> 
+        Voici ci-dessous le détail de votre commande :  
+        <ul>
+            <li> Pour $prénom $nom</li> 
+            <li> Le $date à $heure</li> 
+            <li> Avec $prof </li> 
+            <li> Localisation 1: $localisation1 </li> 
+            <li> Localisation 2: $localisation2 </li> 
+            <li> Votre numéro de commande : $idReservation </li>
+        </ul> 
+        <br><br> 
+        Lorsque votre commande sera validée par notre équipe, vous recevrez un nouveau mail ou SMS avec toutes les informations relatives à votre réservation. <br><br>
         Sportivement ! 
         <br><br>
         L’équipe O'Tennis Tour ";
