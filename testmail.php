@@ -1,8 +1,8 @@
 <?php
 ini_set( 'display_errors', 1);
 error_reporting( E_ALL );
-$from = "test@votredomaine.com";
-$to ="adressedestinataire";
+$from = "contact@otennistour.com";
+$to ="solalpont@gmail.com";
 $subject = "Vérification PHP Mail";
 $message = "PHP mail marche";
 $headers = "From:" . $from;
