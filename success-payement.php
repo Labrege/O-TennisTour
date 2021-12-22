@@ -51,8 +51,16 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $from = "contact@otennistour.com";
         $to ="contact@otennistour.com, $email, $profEmail";
         $subject = "Nouvelle réservation OTT pour $prénom";
-        $headers = "From:" . $from;
-        $result = mail($to,$subject,$mailText, $headers);
+        
+        //To send mail with HTML
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+        //Other headers
+        $headers[] = "From:" . $from;
+
+
+        $result = mail($to,$subject,$mailText, implode("\r\n", $headers));
         if($result){
             echo "L'email a été envoyé.";
         }
