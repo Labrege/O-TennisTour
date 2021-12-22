@@ -40,7 +40,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
     // Mail //
     if($sql && $sqlChange && $sqlModifyHours){
         //Expéditeur
-        $mailFrom = 'contact@otennistour.com';
+        $mailFrom = 'contact.otennistour@gmail.com';
         $fromName = "O'TENNIS TOUR";
 
         //Mail Responsable
