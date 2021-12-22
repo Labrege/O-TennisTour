@@ -13,7 +13,6 @@ $mail->setFrom('contact@otennistour.com', 'Votre nom');
 $mail->addReplyTo('contact@otennistour.fr', 'Votre nom');
 $mail->addAddress('solalpont@gmail.com', 'Nom du destinataire');
 $mail->Subject = 'Essai de PHPMailer';
-$mail->msgHTML(file_get_contents('message.html'), __DIR__);
 $mail->Body = 'Ceci est le contenu du message en texte clair';
 //$mail->addAttachment('test.txt');
 if (!$mail->send()) {
