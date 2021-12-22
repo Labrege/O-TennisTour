@@ -22,7 +22,7 @@
                         <p>
                         Nos stages de tennis s’adressent aussi bien aux compétiteurs qu’aux débutants. Ils sont encadrés par des entraîneurs diplômés titulaires du DEJEPS (Diplôme d'Etat Jeunesse, Education Populaire et Sport) ou du diplôme supérieur (DESJEPS).
                         <br><br>
-                        Nous proposons différentes formules d’entraînement avec un programme complet et adapté. Notre objectif est d’améliorer vos compétences physiques & tennistiques des joueurs quelque soit votre projet.
+                        Nous proposons différentes formules d’entraînement avec un programme complet et adapté. Notre objectif est d’améliorer vos compétences physiques & tennistiques quelque soit votre projet.
                         <br>
                         <br>
                         Pendant votre semaine de stage, nous vous garantissons au minimum :
@@ -75,7 +75,7 @@
                </div>
                <div class="stage-button-container">
                     <a  class="stage-button" href="#"> M'inscrire au stage</a>
-                    <a  class="stage-button-hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
+                    <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
            
@@ -103,7 +103,7 @@
                </div>
                <div class="stage-button-container">
                     <a  class="stage-button" href="#"> M'inscrire au stage</a>
-                    <a  class="stage-button-hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
+                    <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
            
@@ -138,7 +138,7 @@
                </div>
                <div class="stage-button-container">
                     <a  class="stage-button" href="#"> M'inscrire au stage</a>
-                    <a  class="stage-button-hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
+                    <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
            
@@ -173,7 +173,7 @@
                </div>
                <div class="stage-button-container">
                     <a  class="stage-button" href="#"> M'inscrire au stage</a>
-                    <a  class="stage-button-hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
+                    <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
            
@@ -200,7 +200,7 @@
                </div>
                <div class="stage-button-container">
                     <a  class="stage-button" href="#"> M'inscrire au stage</a>
-                    <a  class="stage-button-hollow" target='_blank' href="PDF/brochure.pdf"> Télécharger la brochure </a>
+                    <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
            
