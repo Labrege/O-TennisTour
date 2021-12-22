@@ -51,26 +51,22 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         $from = "contact@otennistour.com";
         $to ="contact@otennistour.com, $email, $profEmail";
         $subject = "Nouvelle réservation OTT pour $prénom";
-        
+
         //To send mail with HTML
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
         //Other headers
-        $headers[] = "From:" . $from;
+        $headers[] = "From: O'Tennis Tour " . $from;
 
 
         $result = mail($to,$subject,$mailText, implode("\r\n", $headers));
         if($result){
-            echo "L'email a été envoyé.";
+            header("Location: success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$email&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date&idCommande=$idReservation");
         }
         else{
-            echo "L'email n'a pas été envoyé.";
+            header("Location: index.php?error=failedemail");
         }
-        
-
-        // $successUrl = "success-payement-page.php?amount=$amount&name=$prénom&surname=$nom&tel=$téléphone&mail=$email&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$heure&date=$date&idCommande=$idReservation";
-        // $failUrl = 'index.php?error=failedemail';
     }
 
 }else{
