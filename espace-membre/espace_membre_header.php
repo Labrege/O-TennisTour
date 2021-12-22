@@ -3,7 +3,7 @@
 include '../espace-membre/espace_membre_liens.php';
 if (isset($_SESSION['useruid'])){
 $email = $_SESSION["useremail"];
-echo $photo = $_SESSION["userphoto"];
+$photo = $_SESSION["userphoto"];
 
 // Verification de la fin de l'abonnement
 $date = date("Y-m-d");
