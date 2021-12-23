@@ -26,13 +26,14 @@
   $statutprof = $_GET['statut'];
   $date = $_GET['date'];
   require 'vendor/autoload.php';
-  \Stripe\Stripe::setApiKey('sk_test_51JeKanC0wJvQStrM1E5hZf736sLysewAGej9P0zGH79tPdMgSbywBVHjONEPu8g55G3H7kQXNTAkt87pyiNNDhj800LvYoxlNu');
+  \Stripe\Stripe::setApiKey('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');
+  //clé test - sk_test_51JeKanC0wJvQStrM1E5hZf736sLysewAGej9P0zGH79tPdMgSbywBVHjONEPu8g55G3H7kQXNTAkt87pyiNNDhj800LvYoxlNu
 
   header('Content-Type: application/json');
   $amount = $_POST['amount'];
   $price = "'$amount'";
-  // $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
-  $YOUR_DOMAIN = 'https://www.otennistour.com';
+  $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
+  // $YOUR_DOMAIN = 'https://www.otennistour.com';
   $checkout_session = \Stripe\Checkout\Session::create([
     'line_items' => [[
       # TODO: replace this with the `price` of the product you want to sell
