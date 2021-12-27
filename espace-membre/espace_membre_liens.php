@@ -3,17 +3,17 @@ if(!isset($_SESSION)){
     session_start();
 }
 /* For website*/
-$_SESSION['includes'] = "/includes/dbh.inc.php";
-$_SESSION['vendor'] = "/vendor/autoload.php";
-$_SESSION['abonnementPrefix'] ="";
-$_SESSION['ovalXV'] ="";
+// $_SESSION['includes'] = "/includes/dbh.inc.php";
+// $_SESSION['vendor'] = "/vendor/autoload.php";
+// $_SESSION['abonnementPrefix'] ="";
+// $_SESSION['ovalXV'] ="";
 
 
 /* For localhost*/
-// $_SESSION['includes'] = "/O-TennisTour/includes/dbh.inc.php";
-// $_SESSION['vendor'] = "/O-TennisTour/vendor/autoload.php";
-// $_SESSION['abonnementPrefix'] ="..";
-// $_SESSION['ovalXV'] ="/O-TennisTour";
+$_SESSION['includes'] = "/O-TennisTour/includes/dbh.inc.php";
+$_SESSION['vendor'] = "/O-TennisTour/vendor/autoload.php";
+$_SESSION['abonnementPrefix'] ="..";
+$_SESSION['ovalXV'] ="/O-TennisTour";
 
 require_once($_SERVER['DOCUMENT_ROOT'] . $_SESSION['includes']);
 
@@ -35,6 +35,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . $_SESSION['includes']);
     <link rel="stylesheet" type="Text/css" href="../CSS/membre/espacemembre-paiements.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" type="Text/css" href="../CSS/membre/espacemembre-annulerabonnement.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" type="Text/css" href="../CSS/membre/espacemembre-profs.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="Text/css" href="../CSS/membre/modal.css?v=<?php echo time(); ?>">
+
 
     <!-- JavaScript file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

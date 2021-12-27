@@ -82,7 +82,7 @@ $dateval = date(1);
                 <select name="" class='prof-indiv' id='form-info'>
                     <option value="all" selected> Tous les profs </option>
                 <?php
-                $sqlProf = "SELECT * FROM users WHERE plan = '4'";
+                $sqlProf = "SELECT * FROM users WHERE plan = '4' AND (userStatut = 'coach' OR userStatut = 'sparring')";
                 $searchprofs = $conn->query($sqlProf);
 
                 while($donnesprofs = $searchprofs->fetch_assoc()){

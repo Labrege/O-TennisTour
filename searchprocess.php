@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
         $searchTime = "AND heureDispo >= '$time'";
     }
 
-    $sqlDate = "SELECT DISTINCT profDispo, userName, coursReserve, userStatut, userName, userEmail, dateDispo FROM disposindivs, users WHERE disposindivs.profDispo = users.userName AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo ='$date' ORDER BY userStatut,  userName ASC";
+    $sqlDate = "SELECT DISTINCT profDispo, userName, coursReserve, userStatut, userName, userEmail, dateDispo, userPhoto FROM disposindivs, users WHERE disposindivs.profDispo = users.userName AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo ='$date' ORDER BY userStatut,  userName ASC";
     $searchDate = $conn->query($sqlDate);
 
     //Si la recherche donne un résultat
@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
             ?>
             <div class="card-indiv">
                 <div class="card-indiv-photo">
-                    <img src="Images/coachs/<?php echo $donnees['profDispo'];?>.jpg" alt="">
+                    <img src="Images/coachs/<?php echo $donnees['userPhoto'];?>" alt="">
                 </div>
                 <div class="card-indiv-text">
                     <!-- Nom du prof -->
@@ -101,6 +101,11 @@ if(isset($_POST['submit'])){
         ?>
         <div class="no-results">
             <h2> Oops... Aucun résultat ne correspond à votre recherche. Veuillez saisir une nouvelle recherche.</h2>
+
+            <?php
+            // $nextDate = "SELECT *  FROM  disposindivs WHERE date(dateDispo) >= '$date' ORDER BY dateDispo ASC
+            // LIMIT 1"
+            ?>
         </div>
         <?php
     }
