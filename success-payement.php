@@ -63,7 +63,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
         L’équipe O'Tennis Tour ";
 
         $from = "contact@otennistour.com";
-        $to ="contact@otennistour.com, $email, $profEmail";
+        $to ="contact@otennistour.com, solalpont@gmail.com, $email, $profEmail";
         $subject = "Nouvelle réservation OTT pour $prénom";
 
         //To send mail with HTML
