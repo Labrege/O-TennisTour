@@ -1,4 +1,12 @@
-<?php  
+<?php
+  require('includes/dbh.inc.php');
+  $searchKey = $conn->query("SELECT * FROM valeurs WHERE id='1'");
+  if($searchKey->num_rows > 0){
+    //Tant qu'il y a des résultat dans la table, afficher...
+    while ($donnees = $searchKey->fetch_assoc()){
+      $APIKEY = $donnees['value'];
+    }
+  }
   //Variables
   $name = $_POST['clientname'];
   $surname = $_POST['clientsurname'];
@@ -26,8 +34,7 @@
   $statutprof = $_GET['statut'];
   $date = $_GET['date'];
   require 'vendor/autoload.php';
-  \Stripe\Stripe::setApiKey('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');
-  //clé test - sk_test_51JeKanC0wJvQStrM1E5hZf736sLysewAGej9P0zGH79tPdMgSbywBVHjONEPu8g55G3H7kQXNTAkt87pyiNNDhj800LvYoxlNu
+  \Stripe\Stripe::setApiKey("$APIKEY"); 
 
   header('Content-Type: application/json');
   $amount = $_POST['amount'];
