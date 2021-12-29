@@ -85,7 +85,6 @@ img.background-equipe {
 
 .container-liste{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -116,7 +115,7 @@ img.background-equipe {
 .card-liste-container{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 }
@@ -177,7 +176,7 @@ img.background-equipe {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1060px){
+/* @media screen and (max-width: 1060px){
     .card-liste-container{
         width: 100%;
         display: flex;
@@ -185,7 +184,7 @@ img.background-equipe {
         justify-content: center;
         align-items: flex-start;
     }
-}
+} */
 
 @media screen and (max-width: 768px){
     .container-equipe{
