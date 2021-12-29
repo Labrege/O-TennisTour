@@ -110,7 +110,7 @@
                             <div class="ligne"></div>
                             <ul>
                                 <li> <i class="fa fa-medal" aria-hidden="true"></i>Classement - <?php echo $donnees['userClassement'];?></li>
-                                <li> <?php echo $donnees['userMain'];?> // <?php echo $donnees['userRevers'];?> </li>
+                                <li> <span class="capitalize"><?php echo $donnees['userMain'];?></span> // Revers à <?php echo $donnees['userRevers'];?> </li>
                                 <br>
                                 <li>  <?php echo $donnees['userDescription'];?> </li>
                             </ul>
@@ -127,6 +127,33 @@
             <h2> Les sparrings O'TENNIS TOUR</h2>
             <p>Chez O’TENNIS TOUR, nous avons souhaité travailler avec des sparrings ayant la même vision du jeu, du tennis. Leurs expériences, leurs qualités de balles seront un allié afin de jouer dans un cadre idéal et favoriser ainsi votre progression !</p>
             <div class="card-liste-container">
+            <?php
+            $sqlCoach = "SELECT * FROM users WHERE userStatut='sparring'";
+            $searchCoach = $conn->query($sqlCoach);
+
+            if($searchCoach->num_rows > 0){
+                //Tant qu'il y a des résultat dans la table, afficher...
+                while ($donnees = $searchCoach->fetch_assoc()){
+                    ?>
+                    <div class="card-liste">
+                        <div class="img-coach">
+                            <img src="Images/coachs/<?php echo $donnees['userPhoto'];?>" alt="">
+                        </div>
+                        <div class="card-liste-contenu">
+                            <h3><?php echo $donnees['userSurname'];?> <?php echo $donnees['userName'];?></h3>
+                            <div class="ligne"></div>
+                            <ul>
+                                <li> <i class="fa fa-medal" aria-hidden="true"></i>Classement - <?php echo $donnees['userClassement'];?></li>
+                                <li> <span class="capitalize"><?php echo $donnees['userMain'];?></span> // Revers à <?php echo $donnees['userRevers'];?> </li>
+                                <br>
+                                <li>  <?php echo $donnees['userDescription'];?> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
             </div>
         </div>
     </div>
