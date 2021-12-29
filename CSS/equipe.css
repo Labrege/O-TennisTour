@@ -85,6 +85,7 @@ img.background-equipe {
 
 .container-liste{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: start;
     align-items: center;
