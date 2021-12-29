@@ -60,7 +60,7 @@
                             <li> Droitier // Revers à deux mains </li>
                             <br>
                             <li>
-                            Kyrian est un des espoirs du tennis français. Toujours en activité sur le circuit, il ne cesse de progresser d'année en année ! 
+                            Kyrian est un des espoirs du tennis français. 
                             Il compte déjà dans son palmarès plusieurs <span class="red" style='color: #F46E54;'> tournois Futurs </span> (simple et double) et deux quart de finales en <span class="red" style='color: #F46E54;'> Challenger</span>! 
                             Il a également participé aux éditions 2019 et 2020 de <span class="red" style='color: #F46E54;'> Roland-Garros.</span>
                             </li>
