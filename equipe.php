@@ -40,7 +40,7 @@
                             <li> Droitier // Revers à deux mains </li>
                             <br>
                             <li>
-                            En 2006, il remporte <span class="red" style='color: #F46E54;'>l'Open d'Australie junior</span> en simple.
+                            En 2006, il remporte <span class="red" style='color: #F46E54;'>l'Open d'Australie Junior</span> en simple.
                             Durant sa carrière, Alexandre a gagné quatre tournois Future en simple et huit en doubles ainsi que trois sur le circuit Challenger.
                             Il a été huitième de finaliste en double à deux reprises  <span class="red" style='color: #F46E54;'>à Roland-Garros.</span>
                             </li>
