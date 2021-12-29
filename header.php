@@ -39,7 +39,7 @@
           }else{
               echo "";
           }
-        ?>">Equipe</a>
+        ?>">Notre Equipe</a>
               </li>
               <li class="nav-item">
                   <a href="inscriptions.php" class="nav-link btn <?php 
@@ -48,7 +48,7 @@
           }else{
               echo "";
           }
-        ?>">Reservation stages</a>
+        ?>">Réservation stages</a>
                 </li>
                 <li class="nav-item">
                   <a href="cours-individuels.php" class="nav-link btn <?php 
@@ -57,7 +57,7 @@
           }else{
               echo "";
           }
-        ?>">Cours individuels</a>
+        ?>">Coaching Individuel</a>
                 </li>
                 <li class="nav-item">
                   <a href="contact.php" class="nav-link btn <?php 

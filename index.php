@@ -43,7 +43,7 @@
             </div>
           </a>
 
-          <a href="equipe.php" class="btn-link">
+          <a href="equipe.php#pro-liste" class="btn-link">
             <div class="button-container-hollow">
               <h2> Voir les pros </h2>
             </div>
