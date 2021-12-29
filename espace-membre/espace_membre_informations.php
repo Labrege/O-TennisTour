@@ -13,7 +13,10 @@ $sql = $conn->query("SELECT * FROM users WHERE userUid = '$user");
             var lastname = $("#lastname").val();
             var email = $("#email").val();
             var birthdate = $("#birthdate").val();
-            var club = $("#club").val();
+            var classement = $("#classement").val();
+            var revers = $("#revers").val();
+            var main = $("#main").val();
+            var description = $("#description").val();
             var motdepasse = $("#motdepasse").val();
             var submit = $("#button-information").val();
             
@@ -22,7 +25,10 @@ $sql = $conn->query("SELECT * FROM users WHERE userUid = '$user");
                     lastname: lastname,
                     email: email,
                     birthdate: birthdate,
-                    club: club,
+                    classement: classement,
+                    revers: revers,
+                    main: main,
+                    description: description,
                     motdepasse: motdepasse,
                     submit: submit
             });
@@ -69,8 +75,56 @@ $sql = $conn->query("SELECT * FROM users WHERE userUid = '$user");
                         </div>
 
                         <div class="ligne ">
-                            <label class="material-input__label" for="Club">Club </label>
-                            <input name="club" class="material-input__input" type="text" id="club" placeholder="OvalXV" value="<?php echo $_SESSION["userclub"]; ?>">
+                            <label class="material-input__label" for="classement"> Classement </label>
+                            <input name="classement" class="material-input__input" type="text" id="classement" placeholder="15/1" value="<?php echo $_SESSION["userclassement"]; ?>">
+                        </div>
+
+                        <div class="ligne ">
+                            <label class="material-input__label" for="revers"> Revers </label>
+                            <select name="revers" id="revers">
+                                <option value="deux mains"
+                                <?php 
+                                if($_SESSION['userrevers'] == 'deux mains'){ 
+                                    echo 'selected';
+                                }
+                                ?> 
+                                > Deux Mains</option>
+                                <option value="une main"
+                                <?php 
+                                if($_SESSION['userrevers'] == 'une main'){ 
+                                    echo 'selected';
+                                }
+                                ?> 
+                                > Une Main</option>
+                            </select>
+                        </div>
+
+                        <div class="ligne ">
+                            <label class="material-input__label" for="main"> Main dominante </label>
+                            <select name="main" id="main">
+                                <option value="droitier" 
+                                <?php 
+                                if($_SESSION['usermain'] == 'droitier'){ 
+                                    echo 'selected';
+                                }
+                                ?> 
+                                > Droitier </option>
+                                <option value="gaucher" 
+                                <?php 
+                                if($_SESSION['usermain'] == 'gaucher'){ 
+                                    echo 'selected';
+                                }
+                                ?> 
+                                > Gaucher </option>
+                            </select>
+                        </div>
+
+                        <div class="ligne ">
+                            <label class="material-input__label" for="description"> Description </label>
+                            <textarea id="description" name="description"
+                                    rows="5" cols="33" maxlength="350">
+                                    <?php echo $_SESSION['userdescription'];?>
+                            </textarea>
                         </div>
 
                         <div class="ligne ">

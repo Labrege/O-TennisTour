@@ -11,7 +11,10 @@ if (isset($_POST['submit'])) {
     $motdepasse= $_POST['motdepasse'];
     $hashedPwd = password_hash($motdepasse, PASSWORD_DEFAULT);
     $birthdate = $_POST['birthdate'];
-    $club = $_POST['club'];
+    $classement = $_POST['classement'];
+    $revers = $_POST['revers'];
+    $main = $_POST['main'];
+    $description = addslashes($_POST['description']);
     $useruid = $_SESSION['useruid'];
 
     //Prénom
@@ -108,15 +111,19 @@ if (isset($_POST['submit'])) {
     
     if (!empty($firstname) && !empty($lastname) && !empty($email) && $updateOther == true ) {
         $birthdate = date('Y-m-d', strtotime($birthdate));
-        $sqlInformation = $conn->query("UPDATE users SET userName = '$firstname' , userSurname = '$lastname', userEmail = '$email',  userBirthDate = '$birthdate'  WHERE userUid = '$useruid'");
+        $sqlInformation = $conn->query("UPDATE users SET userName = '$firstname' , userSurname = '$lastname', userEmail = '$email',  userBirthDate = '$birthdate', userClassement = '$classement' , userRevers = '$revers', userMain = '$main', userDescription = '$description' WHERE userUid = '$useruid'");
         if ($sqlInformation) {
             $message = "Modifications enregistrées <span class='exit-message'>&times;</span>"; 
             echo "<p class='success_message'> $message </p>";
             $_SESSION["username"] = $firstname;
             $_SESSION["usersurname"] = $lastname;
             $_SESSION["useremail"] = $email;
-            $_SESSION["userclub"] = $club;
+            $_SESSION["userclassement"] = $classement;
             $_SESSION['userbirthdate'] = $birthdate;
+            $_SESSION['usermain'] = $main;
+            $_SESSION['userrevers'] = $revers;
+            $_SESSION['userdescription'] = $description;
+
         }
         else {
             $message = "2) Un problème est survenu... Veuillez réessayer ulterieurement! <span class='exit-message'>&times;</span>";

@@ -199,7 +199,11 @@ function loginUser($conn, $username, $pwd){
         $_SESSION["regdate"] = $uidExists["regDate"];
         $_SESSION["compteverif"] = $uidExists["compteVerif"];
         $_SESSION["userphoto"] = $uidExists["userPhoto"];
-        
+        $_SESSION["userclassement"] = $uidExists["userClassement"];
+        $_SESSION["usermain"] = $uidExists["userMain"];
+        $_SESSION["userdescription"] = $uidExists["userDescription"];
+        $_SESSION["userrevers"] = $uidExists["userRevers"];
+
         if($_SESSION["plan"] == 4){
             header("location: ../espace-membre/espace_membre_index.php");
             exit();
