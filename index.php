@@ -65,7 +65,7 @@
             </div>
           </a>
 
-          <a href="equipe.php" class="btn-link">
+          <a href="equipe.php#coach-liste" class="btn-link">
             <div class="button-container-hollow">
               <h2> Voir les coachs </h2>
             </div>
@@ -89,7 +89,7 @@
             </div>
           </a>
 
-          <a href="equipe.php" class="btn-link">
+          <a href="equipe.php#sparring-liste" class="btn-link">
             <div class="button-container-hollow">
               <h2> Voir les sparrings </h2>
             </div>

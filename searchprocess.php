@@ -54,6 +54,11 @@ if(isset($_POST['submit'])){
         while ($donnees = $searchDate->fetch_assoc()){
             ?>
             <div class="card-indiv">
+                <div class="profile-indiv">
+                <a href="equipe.php#<?php echo $donnees['profDispo'];?>" target='_blank'> 
+                    <i class="fa fa-external-link" aria-hidden="true"> voir profil </i>
+                </a>
+                </div>
                 <div class="card-indiv-photo">
                     <img src="Images/coachs/<?php echo $donnees['userPhoto'];?>" alt="">
                 </div>

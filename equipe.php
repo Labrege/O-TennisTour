@@ -101,7 +101,7 @@
                 //Tant qu'il y a des résultat dans la table, afficher...
                 while ($donnees = $searchCoach->fetch_assoc()){
                     ?>
-                    <div class="card-liste">
+                    <div class="card-liste" id="<?php echo $donnees['userName'];?>">
                         <div class="img-coach">
                             <img src="Images/coachs/<?php echo $donnees['userPhoto'];?>" alt="">
                         </div>
@@ -135,7 +135,7 @@
                 //Tant qu'il y a des résultat dans la table, afficher...
                 while ($donnees = $searchCoach->fetch_assoc()){
                     ?>
-                    <div class="card-liste">
+                    <div class="card-liste" id="<?php echo $donnees['userName'];?>">
                         <div class="img-coach">
                             <img src="Images/coachs/<?php echo $donnees['userPhoto'];?>" alt="">
                         </div>
