@@ -80,14 +80,14 @@ $dateval = date(1);
 
                 <!-- Load tous les profs -->
                 <select name="" class='prof-indiv' id='form-info'>
-                    <option value="all" selected> Tous les profs </option>
+                    <option value="all" selected> Tous les joueurs </option>
                 <?php
-                $sqlProf = "SELECT * FROM users WHERE plan = '4' AND (userStatut = 'coach' OR userStatut = 'sparring')";
+                $sqlProf = "SELECT * FROM users WHERE plan = '4' AND (userStatut = 'coach' OR userStatut = 'sparring') ORDER BY userStatut ASC";
                 $searchprofs = $conn->query($sqlProf);
 
                 while($donnesprofs = $searchprofs->fetch_assoc()){
                 ?>
-                    <option value="<?php echo $donnesprofs['userName'];?>"> <span style='text-transform: capitalize;'><?php echo $donnesprofs['userName'];?></span> </option>
+                    <option value="<?php echo $donnesprofs['userName'];?>"> <span style='text-transform: capitalize;'><?php echo $donnesprofs['userName'];?></span> (<span style='text-transform: capitalize;'><?php echo $donnesprofs['userStatut'];?></span>)</option>
                 <?php
                 }
                 ?>                   

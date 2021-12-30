@@ -25,8 +25,8 @@
         </div>
     </div>
     <div id='espace_membre_equipe_2' class="espace_membre_equipe">
-        <div id='pro-liste' class="container-liste">
-            <h2> L'Equipe des pros</h2>
+        <div class="container-liste">
+            <h2 id='pro-liste'> L'Equipe des pros</h2>
             <div class="card-liste-container">
                 <div class="card-liste">
                     <div class="img-coach">
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <br>
-            <h2> Les coachs O'TENNIS TOUR</h2>
+            <h2 id='coach-liste'> Les coachs O'TENNIS TOUR</h2>
             <p>Chez O’TENNIS TOUR, nous avons souhaité travailler uniquement avec des coachs partageant la même philosophie que nous. Nos expériences tennistiques et personnelles différentes nous amènent à nous compléter pour la réalisation de vos projets.
             <br><br>
             Tous nos coachs OTT sont titulaires du DEJEPS ou DESJEPS et prêts à vous aider à remplir vos objectifs !</p>
@@ -124,7 +124,7 @@
             </div>
             <br>
             <br>
-            <h2> Les sparrings O'TENNIS TOUR</h2>
+            <h2 id='sparring-liste'> Les sparrings O'TENNIS TOUR</h2>
             <p>Chez O’TENNIS TOUR, nous avons souhaité travailler avec des sparrings ayant la même vision du jeu, du tennis. Leurs expériences, leurs qualités de balles seront un allié afin de jouer dans un cadre idéal et favoriser ainsi votre progression !</p>
             <div class="card-liste-container">
             <?php
