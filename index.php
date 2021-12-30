@@ -33,7 +33,7 @@
       <div class="valeurs-container valeurs-container-1 display">
         <div class="valeurs-texte">
           <h2> Jouer avec un PRO </h2>
-          <p> Progressez rapidement en jouant avec un de nos joueurs  pros OTT ! Avec la formule O'TT 1000 TRAINING PRO , vivez le rêve de jouer avec l’un de nos joueurs pros  étant ou ayant été sur le circuit , venez profiter de son expérience du plus haut niveau mondial, des coulisses de l’ATP ou WTA  ! </p>
+          <p> Progressez rapidement en jouant avec un de nos joueurs pros OTT ! Avec la formule OTT 1000 TRAINING PRO , vivez le rêve de jouer avec l’un de nos joueurs pros étant ou ayant été sur le circuit, profitez de leur expérience du plus haut niveau mondial. Alors, prêt à rentrer dans les coulisses de l’ATP et de la WTA  ?! </p>
         </div>
 
         <div class="flex-btn-accueil">
