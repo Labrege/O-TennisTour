@@ -41,4 +41,14 @@
     <title> Academie de tennis à Paris | O'Tennis Tour </title>
     <meta name="description" content="Envie de jouer au tennis sur Paris ? Découvrez et progressez rapidement au tennis avec l'académie O'Tennis Tour. Choississez parmis nos différentes options et commencez dès maintenant !">
     <meta name="keywords" content="Tennis, Tennis Paris, Coaching, TENNIS, TENNIS PARIS, O Tennis Tour, OTT, otennistour, o-tennis tour, O'Tennis Tour, Leçon individuelle, Roland Garros, Club Paris, Académie, Tennis Academy, Académie de tennis, Academy">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
 </head>
