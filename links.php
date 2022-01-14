@@ -39,7 +39,7 @@
 
     <!-- SEO -->
     <title> Academie de tennis à Paris | O'Tennis Tour </title>
-    <meta name="description" content="Envie de jouer au tennis sur Paris ? Découvrez et progressez rapidement au tennis avec l'académie O'Tennis Tour. Choississez parmis nos différentes options et commencez dès maintenant !">
+    <meta name="description" content="Envie de jouer au tennis sur Paris ? Découvrez et progressez rapidement au tennis avec l'académie O'Tennis Tour. Choisissez parmis nos différentes options et commencez dès maintenant !">
     <meta name="keywords" content="Tennis, Tennis Paris, Coaching, TENNIS, TENNIS PARIS, O Tennis Tour, OTT, otennistour, o-tennis tour, O'Tennis Tour, Leçon individuelle, Roland Garros, Club Paris, Académie, Tennis Academy, Académie de tennis, Academy">
 
     <!-- Favicon -->
