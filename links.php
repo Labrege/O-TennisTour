@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 
     <!-- SEO -->
-    <title> Academie de tennis à Paris | O'Tennis Tour </title>
+    <title> O'TENNIS TOUR | Academie de tennis à Paris </title>
     <meta name="description" content="Envie de jouer au tennis sur Paris ? Découvrez et progressez rapidement au tennis avec l'académie O'Tennis Tour. Choisissez parmis nos différentes options et commencez dès maintenant !">
     <meta name="keywords" content="Tennis, Tennis Paris, Coaching, TENNIS, TENNIS PARIS, O Tennis Tour, OTT, otennistour, o-tennis tour, O'Tennis Tour, Leçon individuelle, Roland Garros, Club Paris, Académie, Tennis Academy, Académie de tennis, Academy">
 
@@ -50,4 +50,14 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PV4Y7820KL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PV4Y7820KL');
+    </script>
 </head>
