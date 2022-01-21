@@ -114,7 +114,7 @@ $dateval = date(1);
                 </div>
             </form>
             <div class="download-container">
-                <a href="PDF/OTT - Nos joueurs.pdf" target='_blank' class="button_hollow"> Voir les joueurs OTT </a>
+                <a href="equipe.php" target='_blank' class="button_hollow"> Voir les joueurs OTT </a>
                 <a href="PDF/OTT - brochure prix.pdf" target='_blank' class="button"> Voir les tarifs </a>
             </div>
         </div>

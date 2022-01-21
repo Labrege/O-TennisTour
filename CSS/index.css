@@ -98,7 +98,7 @@
 }
 
 .texte h2 , .valeurs-texte h2{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px;
@@ -167,7 +167,7 @@
     }
 
     .valeurs-texte h2{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .valeurs-texte p{

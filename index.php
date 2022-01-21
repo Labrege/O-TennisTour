@@ -3,6 +3,11 @@
       require 'header.php'
   ?>
 </header>
+<script>
+  setInterval(function(){
+   $('.btn--next').trigger("click");
+  },6000);
+</script>
 
 <div class="rest">
     <div class="photo-container">
@@ -33,7 +38,8 @@
       <div class="valeurs-container valeurs-container-1 display">
         <div class="valeurs-texte">
           <h2> Jouer avec un PRO </h2>
-          <p> Progressez rapidement en jouant avec un de nos joueurs pros OTT ! Avec la formule OTT 1000 TRAINING PRO , vivez le rêve de jouer avec l’un de nos joueurs pros étant ou ayant été sur le circuit, profitez de leur expérience du plus haut niveau mondial. Alors, prêt à rentrer dans les coulisses de l’ATP et de la WTA  ?! </p>
+          <p> Progressez rapidement en jouant avec un de nos joueurs pros OTT ! Avec la formule OTT 1000 - TRAINING PRO, vivez le rêve de jouer avec l’un de nos joueurs pros étant ou ayant été sur le circuit ATP et WTA ! </p>
+          <!-- <p> Progressez rapidement en jouant avec un de nos joueurs pros OTT ! Avec la formule OTT 1000 TRAINING PRO , vivez le rêve de jouer avec l’un de nos joueurs pros étant ou ayant été sur le circuit, profitez de leur expérience du plus haut niveau mondial. Alors, prêt à rentrer dans les coulisses de l’ATP et de la WTA  ?! </p> -->
         </div>
 
         <div class="flex-btn-accueil">
@@ -55,8 +61,13 @@
       <div class="valeurs-container valeurs-container-2 no-display">
         <div class="valeurs-texte">
           <h2> Coaching individuel </h2>
-          <p> Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec un coaching individuel. A Paris, tout au long de l’année, un entraînement individuel vous est proposé en fonction de vos disponibilités. L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
-          </p>
+          <!-- <p> Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec un coaching individuel. 
+            A Paris, tout au long de l’année, un entraînement individuel vous est proposé en fonction de vos disponibilités. 
+            L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
+          </p> -->
+          <p>Mettez toutes les chances de votre côté et optez pour des cours avec entraînement avec un coach de tennis professionnel.
+            La formule OTT 500 - LEÇON COACH est disponnible à Paris tout au long de l’année et programmé en fonction de vos disponibilités.</p>
+
         </div>
         <div class="flex-btn-accueil">
           <a href="cours-individuels.php" class="btn-link">
