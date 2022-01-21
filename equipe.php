@@ -1,7 +1,7 @@
 <head>
     <!-- SEO -->
     <title> O'TENNIS TOUR | Notre Equipe </title>
-    <meta name="description" content="Découvrez notre équipe de Pros, sparrings et coachs et choisissez la formule OTT qui VOUS convient !">
+    <meta name="description" content="Découvrez notre équipe de Pros, Sparrings et Coachs et choisissez la formule OTT qui VOUS convient !">
     <meta name="keywords" content="Tennis, Tennis Paris, Coaching, TENNIS, TENNIS PARIS, O Tennis Tour, OTT, otennistour, o-tennis tour, O'Tennis Tour, Leçon individuelle, Roland Garros, Club Paris, Académie, Tennis Academy, Académie de tennis, Academy">
 </head>
 
