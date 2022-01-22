@@ -1,21 +1,23 @@
 <?php
-if(isset($_POST['time-select']) && isset($_POST['date'])){
-    $date1 = $_POST['date'];
-    $date = date('d M Y', strtotime($date1));
-    $info = $_POST['time-select'];
-    $divide = explode(' ', $info);
-    $timepicked = date("H:i", strtotime($divide[0]));
-    $profpicked = $divide[1];
-    $statutProf = $divide[2];
-    $profEmail = $divide[3];
-    ?>
-    <header>
-    <?php
-      require 'header.php'
-    ?>
-    </header>
-    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+if(isset($_POST['time-select'])){
+  $info = $_POST['time-select'];  
+  $divide = explode(' ', $info);
+  $timepicked = date("H:i", strtotime($divide[0]));
+  $profpicked = $divide[1];
+  $statutProf = $divide[2];
+  $profEmail = $divide[3];  
+  $date1 = $divide[4];
+  $date = date('d M Y', strtotime($date1));
+  
+  
+  ?>
+  <header>
+  <?php
+    require 'header.php'
+  ?>
+  </header>
+  <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+  <script src="https://js.stripe.com/v3/"></script>
 
 <script>
   $(document).ready(function(){

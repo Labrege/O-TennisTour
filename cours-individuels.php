@@ -1,6 +1,6 @@
 <header>
   <?php
-      require 'header.php'
+      require 'header.php';
   ?>
 </header>
 <!-- Date -->
