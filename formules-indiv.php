@@ -49,20 +49,20 @@
         </div>
 
         <!-- Début section stages -->
-        <!-- OTT MULTISPORT -->
+        <!-- OTT 250 -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/joueur-ado.jpg" alt="">
+               <img src="Images/coachs/arthur.jpg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
-               <h2> OTT 250 - SPARRING </h2>
+               <h2> OTT 250 - Leçon SPARRING </h2>
                <div class="info-age-localisation">
                 <div class="age-container">
                     <h3> A Paris</h3>
                 </div>
                 <div class="age-container-hollow">
-                    <h3> Prêt de matériel possible</h3>
+                    <h3> Prêt de matériel</h3>
                 </div>
                </div>
                
@@ -78,8 +78,7 @@
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos sparrings</li>
                    <li> Lieu - A la localisation la plus proche de chez vous!</li>
-                   <li> Matériel - Balles fournies // Prêt de matériel possible </li>
-                   <li> Annulation - Remboursement complet si annulation  </li>
+                   <li> Matériel - Balles fournies // Prêt de matériel </li>
                 </ul>
 
                 <h4> Tarifs : </h4>
@@ -89,7 +88,7 @@
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> M'inscrire au stage</a>
+                    <a  class="stage-button" href="#"> Réserver ma leçon sparring</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
@@ -98,127 +97,139 @@
         <!-- OTT 500 -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/ado-service.jpg" alt="">
+               <img src="Images/coachs/arnaud.jpeg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
-               <h2> STAGE OTT 500 </h2>
-               <div class="age-container">
-                   <h3> 10 à 18 ans</h3>
+               <h2> OTT 500 - Leçon COACH </h2>
+               <div class="info-age-localisation">
+                <div class="age-container">
+                    <h3> A Paris</h3>
+                </div>
+                <div class="age-container-hollow">
+                    <h3> Prêt de matériel</h3>
+                </div>
                </div>
-               <p>Améliorez votre tennis et votre condition physique tout en participant à des activités ludiques et culturelles avec la formule OTT 500. Tout au long de la semaine, travail complet sur les fondamentaux du jeu.</p>
-               <h4> Au programme </h4>
-               <p> En plus des entraînements sportifs, une journée sera consacrée à une sortie éducative ou culturelle (ex: Cité de l’espace, Futuroscope, Ecomusée de Marquèze, Parc de loisirs, Musée archéologique...) </p>
                
-               <h4> Volume d'entraînement </h4>
+                
+               <p> Avec la formule OTT 500 COACH, progressez et travaillez
+                techniquement avec un professionnel ! Tous titulaires du
+                DEJEPS ou du DESJEPS, nos coachs vous aiderons sur tous les
+                aspects de votre jeu. Ce format est idéal pour progresser
+                rapidement sur des points précis et enfin vous imposer sur le
+                terrain ! </p>
+               
+               <h4> Au programme : </h4>
                <ul>
-                   <li> Tennis : 15h/semaine </li>
-                   <li> Entraînement physique et sports collectifs : 10H/semaine </li>
+                   <li> Durée - Session de 60 minutes avec l'un de nos coachs</li>
+                   <li> Lieu - A la localisation la plus proche de chez vous!</li>
+                   <li> Matériel - Balles fournies // Prêt de matériel </li>
+                </ul>
+
+                <h4> Tarifs : </h4>
+               <ul>
+                   <li> En extérieur - 100€ par séance</li>
+                   <li> En intérieur - 120€ par séance </li>
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> M'inscrire au stage</a>
+                    <a  class="stage-button" href="#"> Réserver ma leçon coach</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
-           
         </div>
+
         <!-- OTT 1000 -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/competition.jpg" alt="">
+               <img src="Images/coachs/alexandre.jpg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
-               <h2> STAGE OTT 1000 </h2>
-               <div class="age-container">
-                   <h3> 10 à 18 ans</h3>
+               <h2> OTT 1000 - Leçon PRO </h2>
+               <div class="info-age-localisation">
+                <div class="age-container">
+                    <h3> A Paris</h3>
+                </div>
+                <div class="age-container-hollow">
+                    <h3> Prêt de matériel</h3>
+                </div>
                </div>
-               <p>C'est le stage parfait pour des joueurs qui souhaitent commencer la compétition et progresser sur leur jeu en tournoi !</p>
-               <h4> Volume d'entraînement </h4>
+               
+                
+               <p>Progressez rapidement en jouant avec un de nos joueurs pros
+                OTT ! Avec la formule O'TT 1000 TRAINING PRO , vivez le rêve
+                de jouer avec l’un de nos joueurs pros étant ou ayant été sur
+                le circuit , venez profiter de son expérience du plus haut niveau
+                mondial, des coulisses de l’ATP ou WTA !  </p>
+               
+               <h4> Au programme : </h4>
                <ul>
-                    <li> Tennis - 5H/Jour </li>
-                    <li> Entraînement physique & sports collectifs - 3H/Jour </li>
-                    <li> Matchs en tournoi officiel </li>
-                    <li> Au moins 1 tournoi durant le stage </li>
+                   <li> Durée - Session de 60 minutes avec l'un de nos PRO</li>
+                   <li> Lieu - A la localisation la plus proche de chez vous!</li>
+                   <li> Matériel - Balles fournies // Prêt de matériel </li>
                 </ul>
-                <h4> Journée type </h4>
-                <ul>
-                    <li> 09:00 - Échauffement collectif </li>
-                    <li> 10:00 - Entrainement adapté à votre programme de match du jour </li>
-                    <li> 14:00 - Matchs  en tournoi </li>
-                    <li> 16:00 - Débriefing constructif après chaque match avec l’un de vos coachs </li>
-                    <li> 19:00 - Animations et soirées avec le reste de l’équipe </li>
+
+                <h4> Tarifs : </h4>
+               <ul>
+                   <li> En extérieur - 200€ par séance</li>
+                   <li> En intérieur - 220€ par séance </li>
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> M'inscrire au stage</a>
+                    <a  class="stage-button" href="#"> Réserver ma leçon PRO</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
-           
         </div>
 
+        <!-- OTT leçon hybrida -->
         <div class="stage-container">
            <div class="stage-text-container">
-               <img src="Images/tennis-score.jpg" alt="">
+               <img src="Images/coachs/kyrian.jpg" alt="">
            </div>
            <div class="stage-text-container">
                <div class="stage-text">
-               <h2> STAGE OTT Grand-Chelem </h2>
-               <div class="age-container">
-                   <h3> 10 à 18 ans</h3>
+               <h2> OTT Grand-Chelem </h2>
+               <div class="info-age-localisation">
+                <div class="age-container">
+                    <h3> A Paris</h3>
+                </div>
+                <div class="age-container-hollow">
+                    <h3> Prêt de matériel</h3>
+                </div>
                </div>
-               <p>C'est la formule adaptée aux joueurs confirmés qui souhaient avancer dans leur classement !</p>
-               <h4> Volume d'entraînement </h4>
+               
+                
+               <p>Avec la formule OTT Grand-Chelem, allié les avantages de la
+                qualité de balles de notre sparring et des conseils avisés de notre
+                coach. Le sparring vous garantira un confort de jeu sans égal
+                tandis que notre coach restera derrière vous et vous poussera à
+                atteindre tous vos objectifs tout au long de la séance. Le but de
+                cette formule est de vous entraîner comme un pro en étant le plus
+                proche de vous !
+                </p>
+               
+               <h4> Au programme : </h4>
                <ul>
-                    <li> Tennis - 5H/Jour </li>
-                    <li> Entraînement physique & sports collectifs - 3H/Jour </li>
-                    <li> Matchs en tournoi officiel </li>
-                    <li> Au moins 1 tournoi durant le stage </li>
+                   <li> Durée - Session de 60 minutes avec l'un de nos PRO</li>
+                   <li> Lieu - A la localisation la plus proche de chez vous!</li>
+                   <li> Matériel - Balles fournies // Prêt de matériel </li>
                 </ul>
-                <h4> Journée type </h4>
-                <ul>
-                    <li> 09:00 - Échauffement collectif </li>
-                    <li> 10:00 - Entrainement adapté à votre programme de match du jour </li>
-                    <li> 14:00 - Matchs en tournoi </li>
-                    <li> 16:00 - Débriefing constructif après chaque match avec l’un de vos coachs </li>
-                    <li> 19:00 - Animations et soirées avec le reste de l’équipe </li>
+
+                <h4> Tarifs : </h4>
+               <ul>
+                   <li> En extérieur - 250€ par séance</li>
+                   <li> En intérieur - 270€ par séance </li>
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> M'inscrire au stage</a>
+                    <a  class="stage-button" href="#"> Réserver ma leçon HYBRIDE</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
-           
         </div>
 
-        <div class="stage-container">
-           <div class="stage-text-container">
-               <img src="Images/indiv.jpg" alt="">
-           </div>
-           <div class="stage-text-container">
-               <div class="stage-text">
-                   <h2> Leçon individuelles </h2>
-                   <div class="age-container">
-                       <h3> Tous les âges</h3>
-                    </div>
-                    <h4> A PARIS </h4>
-                    <p> Mettez toutes les chances de votre côté et optez pour des cours sur mesure avec un coaching individuel. A Paris, tout au long de l’année, un entraînement individuel vous est proposé en fonction de vos disponibilités.
-                        <br>
-                        L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
-                    </p>
-
-                    <h4> AVANT LES STAGES </h4>
-                    <p>Ne laissez rien au hasard, boostez votre stage et optimisez votre progression en vous octroyant 1h de Coaching individuel avant le début de votre stage !</p>
-               </div>
-               <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> M'inscrire au stage</a>
-                    <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
-                </div> 
-           </div>
-           
-        </div>
+        
     </div>
 </div>
