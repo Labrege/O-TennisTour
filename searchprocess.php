@@ -127,6 +127,22 @@ if(isset($_POST['submit'])){
         }
     // Si aucune donnée !
     else{
+        ?>
+        <h2> Oops... Nous n'avons trouvé aucun résultat pour le 
+            <?php 
+            echo $dateLargeFormat;
+            if($prof != 'all'){ 
+                echo " avec $prof";
+            }
+            if($time != 'all'){ 
+                echo " à partir de $time";
+            }
+            ?>
+            <br>
+            <br>
+            Pas de panique ! Voici quelques créneaux similaires. 
+        </h2>
+        <?php
         //Choix du prof
         if($prof == 'all'){
             $searchProf = '';
@@ -143,29 +159,12 @@ if(isset($_POST['submit'])){
             $searchTime = "AND heureDispo >= '$time'";
         }
 
-        $sqlDate = "SELECT DISTINCT profDispo, userName, coursReserve, userStatut, userName, userEmail, dateDispo, userPhoto FROM disposindivs, users WHERE disposindivs.profDispo = users.userName AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo >='$date' ORDER BY userStatut,  userName ASC";
+        echo $sqlDate = "SELECT DISTINCT profDispo, userName, coursReserve, userStatut, userName, userEmail, dateDispo, userPhoto FROM disposindivs, users WHERE disposindivs.profDispo = users.userName AND coursReserve = '0'".$searchProf." ".$searchTime." AND dateDispo >='$date' ORDER BY userStatut,  userName ASC";
         $searchDate = $conn->query($sqlDate);
 
         //Si la recherche donne un résultat
         if($searchDate->num_rows > 0){
             ?>
-            <div class="result-title">
-                <h2> Oops... Nous n'avons trouvé aucun résultat pour le 
-                    <?php 
-                    echo $dateLargeFormat;
-                    if($prof != 'all'){ 
-                        echo " avec $prof";
-                    }
-                    if($time != 'all'){ 
-                        echo " à partir de $time";
-                    }
-                    ?>
-                    <br>
-                    <br>
-                    Pas de panique ! Voici quelques créneaux similaires. 
-                </h2>
-            </div>
-
             <div class="card-indiv-container">
             <?php
             //Tant qu'il y a des résultat dans la table, afficher...
@@ -191,15 +190,16 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="card-indiv-text">
                         <!-- dispo du prof -->
-                        <h2> Disponibilité(s) pour le <?php echo $dateSmallFormat;?></h2>
+                        <h2> Disponibilité(s) pour le <?php echo date("d M", strtotime($donnees['dateDispo']))?></h2>
                         <div class="card-indiv-dispo-container">
                             <!-- Création d'info pour l'étape 2-->
-                            <input type="text" name='date' value='<?php echo $date;?>' style='display: none;'>
+                            <input type="text" name='date' value='<?php echo $donnees['dateDispo'];?>' style='display: none;'>
                             <?php
                                 $profDispo = $donnees['profDispo'];
                                 $profEmail = $donnees['userEmail'];
                                 $nullValue = 0;
-                                $sqlHeure = "SELECT DISTINCT heureDispo FROM disposindivs WHERE dateDispo ='$date' AND profDispo='$profDispo' AND heureDispo>='$time' AND coursReserve = '$nullValue' ORDER BY heureDispo ASC";
+                                $newDate = $donnees['dateDispo'];
+                                $sqlHeure = "SELECT DISTINCT heureDispo FROM disposindivs WHERE dateDispo ='$newDate' AND profDispo='$profDispo' AND heureDispo>='$time' AND coursReserve = '$nullValue' ORDER BY heureDispo ASC";
                                 $searchHeure = $conn->query($sqlHeure);
 
                                 while ($donneesheures = $searchHeure->fetch_assoc()){
