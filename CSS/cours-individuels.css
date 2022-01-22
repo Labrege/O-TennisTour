@@ -287,7 +287,7 @@
     }
 
     .form-indiv input, .form-indiv select, .download-container .button, .download-container .button_hollow{
-        max-height: 40px;
+        max-height: 30px;
         margin: 15px;
         padding: 5px;
         max-width: 70%;
@@ -302,5 +302,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .title-resa h1{
+        font-size: 1.4rem;
+    }
+
+    .resa-info-container{
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resa-info-div{
+        margin: 10px;
     }
 }
