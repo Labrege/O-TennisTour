@@ -177,6 +177,10 @@ if(isset($_POST['time-select'])){
                 <option value="BB"> Boulogne-Billancourt </option>
               </select>
             </div>
+
+            <div class="CGU-container">
+                <p for="CGU"> J'ai lu et j'accepte les <a href="PDF/CONDITIONS GÉNÉRALES DE VENTE.pdf" target='_blank' style='text-decoration: underline;'>Conditions Générales de Vente</a> <input type="checkbox" name='CGU' required></p>
+            </div>
             <button class='button blue button-pay' name='submit-pay'>  Passer au paiement </button>
           </form>
 

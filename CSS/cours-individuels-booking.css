@@ -168,6 +168,11 @@
     font-weight: bold;
 }
 
+.CGU-container{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .ligne-rouge-indiv-text{
     width: 75px;

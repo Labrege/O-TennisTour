@@ -14,14 +14,16 @@ $(document).ready(function(){
             clienttel: "required",
             // Specify that email should be validated
             // by the built-in "email" rule
-            clientmail: "required"
+            clientmail: "required",
+            CGU: "required"
         },
         // Specify validation error messages
         messages: {
             clientname: "Veuillez entrer votre prénom",
             clientsurname: "Veuillez entrer votre nom",
             clienttel: "Veuillez remplir votre numéro",
-            clientmail: "Veuillez entrer votre adresse mail"
+            clientmail: "Veuillez entrer votre adresse mail",
+            CGU: "Veuillez lire et cocher cette case"
         },
         // Make sure the form is submitted to the destination defined
         // in the "action" attribute of the form when valid
