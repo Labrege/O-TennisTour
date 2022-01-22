@@ -34,7 +34,7 @@
             var prof = $('.prof-indiv').val();
             var time = $('.time-indiv').val();
             var submit = $('#btnRechercher').val();
-            $(".card-indiv-container").load("searchprocess.php", {
+            $(".resultats").load("searchprocess.php", {
                 date: date,
                 dateToEcho: dateToEcho,
                 prof:prof,
@@ -54,7 +54,7 @@
             var prof = $('.prof-indiv').val();
             var time = $('.time-indiv').val();
             var submit = $('#btnRechercher').val();
-            $(".card-indiv-container").load("searchprocess.php", {
+            $(".resultats").load("searchprocess.php", {
                 date: date,
                 dateToEcho: dateToEcho,
                 prof:prof,
@@ -136,7 +136,7 @@ $dateval = date(1);
         </div>
         
         <form class="results" method='POST' action='cours-individuels-booking.php'>
-            <div class="card-indiv-container">
+            <div class="resultats">
                 
             </div>
             <button disabled class='valider-heure'> continuer </button>
