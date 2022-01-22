@@ -370,10 +370,12 @@ header{
     .nav-item{
         list-style: none;
         margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .nav-link{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 }
 
