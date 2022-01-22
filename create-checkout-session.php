@@ -1,6 +1,6 @@
 <?php
   require('includes/dbh.inc.php');
-  $searchKey = $conn->query("SELECT * FROM valeurs WHERE id='1'");
+  $searchKey = $conn->query("SELECT * FROM valeurs WHERE id='2'");
   if($searchKey->num_rows > 0){
     //Tant qu'il y a des résultat dans la table, afficher...
     while ($donnees = $searchKey->fetch_assoc()){
