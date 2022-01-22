@@ -18,7 +18,7 @@
         <img class="background-equipe" src="Images/coach.jpg" alt="">
         <div class="container-equipe">
             <div class="card-equipe">
-                <h2> Notre philosophie </h2>
+                <h2> Notre test </h2>
                 <p> Ayant travaillé dans des clubs de Paris, nous partageons la même vision du tennis. L’Académie comprend que le tennis d’aujourd’hui et du futur se joue d’abord avec les « yeux », puis avec « le mental », ensuite avec les « jambes » et finalement avec les « mains ».
                 
                 <br><br>
