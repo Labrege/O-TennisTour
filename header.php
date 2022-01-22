@@ -42,7 +42,7 @@
                   <span class="nav-link"> Cours individuels </span>
                 </div>
                 <div class="hidden-link" style='display: none'>
-                  <a href="#"> Nos formules </a>
+                  <a href="formules-indiv.php"> Nos formules </a>
                   <a href="#"> Réserver avec un Pro </a>
                   <a href="cours-individuels.php"> Réserver une leçon </a>
                 </div>
