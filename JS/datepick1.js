@@ -12,7 +12,7 @@ var frDate = {
   weekdaysShort : ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim']
 };
 
-var monthNames = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
+var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 var picker = new Pikaday({
   field: document.getElementById('datepicker'),
