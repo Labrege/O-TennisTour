@@ -2,6 +2,15 @@
   require 'links.php';
   require 'includes/dbh.inc.php';
 ?>
+
+<script>
+  $(document).ready(function(){
+    $('.clickable-link').click(function(){
+      $(this).next().toggle(300, 'swing');
+      $(this).children().toggleClass('selected');
+    });
+  });
+</script>
 <div class="header-logo">
           <a href="index.php"><img class= "logo_club" src="Images/logoheader-3.png" alt="logo-test"></a>
           <a href="index.php"><img class= "logo_nom" src="Images/titre-header.png" alt="logo-test"></a>
@@ -13,79 +22,43 @@
       </div> 
       <nav class="navbar">
           <ul id="myDIV" class="nav-list">
+
               <li class="nav-item">
-                <a href="index.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'index.php') !== false){
-              echo 'jaune';
-            }else{
-              echo "";
-          }
-        ?>">Accueil </a>
-              </li>
-              <li class="nav-item">
-                <a href="stages.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'stages.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">Nos Stages </a>
+                <a href="index.php" class="nav-link btn"> Accueil </a>
               </li>
 
               <li class="nav-item">
-                <a href="equipe.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'equipe.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">Notre Equipe</a>
+                <div class="clickable-link">
+                  <span class="nav-link"> Stages </span>
+                </div>
+                <div class="hidden-link" style='display: none'>
+                  <a href="stages.php"> Nos formules </a>
+                  <a href="inscriptions.php"> Réserver un stage </a>
+                </div>
               </li>
+
               <li class="nav-item">
-                  <a href="inscriptions.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'inscriptions.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">Réservation stages</a>
-                </li>
-                <li class="nav-item">
-                  <a href="cours-individuels.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'cours-individuels.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">Coaching Individuel</a>
-                </li>
-                <li class="nav-item">
-                  <a href="contact.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'contact.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a href="covid.php" class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'covid.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">COVID-19</a>
-                </li>
-                <li class="nav-item">
-                  <a href="login.php" target='_blank' class="nav-link btn <?php 
-          if(strpos($_SERVER['REQUEST_URI'], 'login.php') !== false){
-              echo 'jaune';
-          }else{
-              echo "";
-          }
-        ?>">Connexion</a>
-                </li>
+                <div class="clickable-link">
+                  <span class="nav-link"> Cours individuels </span>
+                </div>
+                <div class="hidden-link" style='display: none'>
+                  <a href="#"> Nos formules </a>
+                  <a href="#"> Réserver avec un Pro </a>
+                  <a href="cours-individuels.php"> Réserver une leçon </a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <a href="equipe.php" class="nav-link btn"> Notre Equipe </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="contact.php" class="nav-link btn"> Contact </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="covid.php" class="nav-link btn"> Covid-19 </a>
+              </li>
             </ul>
       </nav>
     <script src="JS/script.js?v=<?php echo time(); ?>"></script>

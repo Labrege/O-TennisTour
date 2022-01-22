@@ -34,6 +34,24 @@ img.background {
     align-items: center;
     justify-content: center;
 }
+
+.nav-link.selected{
+    color: #F46E54;
+}
+
+.hidden-link{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.hidden-link a{
+    color: white;
+    margin: 7px;
+    margin-left: 4px;
+}
 /* Buttons*/
 .button{
     min-width: 175px;
@@ -218,22 +236,21 @@ header{
     justify-content: center;
     align-items: center;
     overflow: visible;
+    
 }
 
 .nav-item{
     list-style: none;
     margin: 15px;
+    width: 70%;
+    padding-left: 30px;
 }
 
 .nav-link{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: 1.5em;
-}
-
-.jaune{
-    color: salmon;
+    font-size: 1.4rem;
 }
 
 .nav-link:hover{

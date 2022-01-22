@@ -35,9 +35,50 @@
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-indiv h1{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.title-resa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-resa .red-line{
+    width: 80%;
+    height: 2px;
+    margin-top: 5px;
+}
+
+.resa-info-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.resa-info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.resa-info-div h2{
+    color: white;
+    font-weight: lighter;
+    font-size: 1.1rem;
 }
 
 .download-container{
@@ -61,7 +102,31 @@
     padding: 5px;
     min-width: 175px;
     max-width: 60%;
+    border: none;
+    border-bottom: 1px solid white;
     outline: none;
+    background: black;
+    opacity: 0.6;
+    color: white;
+}
+
+.btnContainer{
+    margin-bottom: 15px;
+}
+
+.btnContainer button{
+    width: 225px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: 1.5px solid #F46E54;
+    background: none;
+    color: white;
+}
+
+.btnContainer button:hover{
+    cursor: pointer;
+    background: #F46E54;
 }
 
 .card-indiv-container{
@@ -95,8 +160,6 @@
     align-items: center;
     font-size: 0.8rem;
     font: inherit;
-
-    
 }
 
 .profile-indiv a{

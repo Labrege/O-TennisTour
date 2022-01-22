@@ -13,7 +13,7 @@
             <div class="contact-text-container">
                 <h1> Contactez-nous </h1>
                 <div class="red-ligne"></div>
-                <a href='#' class="contact-info-container">
+                <a href='https://www.facebook.com/otennistour' target='_blank' class="contact-info-container">
                     <div class="contact-info-text"> 
                         <h2> O'Tennis Tour </h2> 
                     </div>
