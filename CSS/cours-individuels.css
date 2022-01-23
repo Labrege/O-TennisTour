@@ -381,4 +381,25 @@
     .resa-info-div{
         margin: 10px;
     }
+
+    .valider-heure{
+        width: 70px;
+        height: 30px;
+        background-color: none;
+        background-color: #F46E54;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        bottom:10px;
+        right: 10px;
+    }
+    
+    .valider-heure:disabled{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      cursor: not-allowed;
+    }
 }
