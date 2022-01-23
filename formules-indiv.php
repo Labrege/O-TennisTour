@@ -77,7 +77,7 @@
                <h4> Au programme : </h4>
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos sparrings</li>
-                   <li> Lieu - A la localisation la plus proche de chez vous!</li>
+                   <li> Lieu - A la localisation la plus proche de votre choix !</li>
                    <li> Matériel - Balles fournies // Prêt de matériel </li>
                 </ul>
 
@@ -122,7 +122,7 @@
                <h4> Au programme : </h4>
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos coachs</li>
-                   <li> Lieu - A la localisation la plus proche de chez vous!</li>
+                   <li> Lieu - A la localisation la plus proche de votre choix !</li>
                    <li> Matériel - Balles fournies // Prêt de matériel </li>
                 </ul>
 
@@ -166,7 +166,7 @@
                <h4> Au programme : </h4>
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos PRO</li>
-                   <li> Lieu - A la localisation la plus proche de chez vous!</li>
+                   <li> Lieu - A la localisation la plus proche de votre choix !</li>
                    <li> Matériel - Balles fournies // Prêt de matériel </li>
                 </ul>
 
@@ -213,7 +213,7 @@
                <h4> Au programme : </h4>
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos PRO</li>
-                   <li> Lieu - A la localisation la plus proche de chez vous!</li>
+                   <li> Lieu - A la localisation la plus proche de votre choix !</li>
                    <li> Matériel - Balles fournies // Prêt de matériel </li>
                 </ul>
 
