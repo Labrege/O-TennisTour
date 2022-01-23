@@ -165,6 +165,7 @@
 .age-container{
     height: 25px;
     width: 110px;
+    font-size: 0.95rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +178,8 @@
 
 .age-container-hollow{
     height: 25px;
-    width: 110px;
+    width: 150px;
+    font-size: 0.95rem;
     display: flex;
     justify-content: center;
     align-items: center;

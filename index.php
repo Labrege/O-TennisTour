@@ -6,7 +6,7 @@
 <script>
   setInterval(function(){
    $('.btn--next').trigger("click");
-  },6000);
+  },8500);
 </script>
 
 <div class="rest">
