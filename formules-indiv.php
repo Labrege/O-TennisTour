@@ -78,17 +78,17 @@
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos sparrings</li>
                    <li> Lieu - A la localisation la plus proche de votre choix !</li>
-                   <li> Matériel - Balles fournies // Prêt de matériel </li>
+                   <li> Matériel - Balles fournies // Prêt de matériel possible </li>
                 </ul>
 
                 <h4> Tarifs : </h4>
                <ul>
-                   <li> En extérieur - 80€ par séance</li>
-                   <li> En intérieur - 100€ par séance </li>
+                   <li> En extérieur - 70€ par séance</li>
+                   <li> En intérieur - 80€ par séance </li>
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> Réserver ma leçon sparring</a>
+                    <a  class="stage-button" href="cours-individuels.php"> Réserver ma leçon sparring</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
@@ -123,17 +123,17 @@
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos coachs</li>
                    <li> Lieu - A la localisation la plus proche de votre choix !</li>
-                   <li> Matériel - Balles fournies // Prêt de matériel </li>
+                   <li> Matériel - Balles fournies // Prêt de matériel possible </li>
                 </ul>
 
                 <h4> Tarifs : </h4>
                <ul>
-                   <li> En extérieur - 100€ par séance</li>
-                   <li> En intérieur - 120€ par séance </li>
+                   <li> En extérieur - 80€ par séance</li>
+                   <li> En intérieur - 90€ par séance </li>
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> Réserver ma leçon coach</a>
+                    <a  class="stage-button" href="cours-individuels.php"> Réserver ma leçon coach</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
@@ -167,13 +167,13 @@
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos PRO</li>
                    <li> Lieu - A la localisation la plus proche de votre choix !</li>
-                   <li> Matériel - Balles fournies // Prêt de matériel </li>
+                   <li> Matériel - Balles fournies // Prêt de matériel possible </li>
                 </ul>
 
                 <h4> Tarifs : </h4>
                <ul>
-                   <li> En extérieur - 200€ par séance</li>
-                   <li> En intérieur - 220€ par séance </li>
+                   <li> En extérieur - 170€ par séance</li>
+                   <li> En intérieur - 180€ par séance </li>
                 </ul>
                </div>
                <div class="stage-button-container">
@@ -214,13 +214,13 @@
                <ul>
                    <li> Durée - Session de 60 minutes avec l'un de nos PRO</li>
                    <li> Lieu - A la localisation la plus proche de votre choix !</li>
-                   <li> Matériel - Balles fournies // Prêt de matériel </li>
+                   <li> Matériel - Balles fournies // Prêt de matériel possible </li>
                 </ul>
 
                 <h4> Tarifs : </h4>
                <ul>
-                   <li> En extérieur - 250€ par séance</li>
-                   <li> En intérieur - 270€ par séance </li>
+                   <li> En extérieur - 210€ par séance</li>
+                   <li> En intérieur - 220€ par séance </li>
                 </ul>
                </div>
                <div class="stage-button-container">

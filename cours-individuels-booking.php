@@ -25,25 +25,25 @@ if(isset($_POST['time-select'])){
       var statutprof = <?php echo "'$statutProf'";?>;
       if(statutprof == 'coach'){
         if($('.client-condition').val() == 'ext'){
-          $('.amount').val('10000');
-          $('.price').html(' 100 € ');
-          $('.condition').html(' exterieur');
-        }
-        else if($('.client-condition').val() == 'int') {
-          $('.amount').val('12000');
-          $('.price').html(' 120 € ');
-          $('.condition').html(' interieur');
-        }
-      }
-      else if(statutprof == 'sparring'){
-        if($('.client-condition').val() == 'ext'){
           $('.amount').val('8000');
           $('.price').html(' 80 € ');
           $('.condition').html(' exterieur');
         }
         else if($('.client-condition').val() == 'int') {
-          $('.amount').val('10000');
-          $('.price').html(' 100 € ');
+          $('.amount').val('9000');
+          $('.price').html(' 90 € ');
+          $('.condition').html(' interieur');
+        }
+      }
+      else if(statutprof == 'sparring'){
+        if($('.client-condition').val() == 'ext'){
+          $('.amount').val('7000');
+          $('.price').html(' 70 € ');
+          $('.condition').html(' exterieur');
+        }
+        else if($('.client-condition').val() == 'int') {
+          $('.amount').val('8000');
+          $('.price').html(' 80 € ');
           $('.condition').html(' interieur');
         }
       }
@@ -53,25 +53,25 @@ if(isset($_POST['time-select'])){
       var statutprof = <?php echo "'$statutProf'";?>;
       if(statutprof == 'coach'){
         if($('.client-condition').val() == 'ext'){
-          $('.amount').val('10000');
-          $('.price').html(' 100 € ');
-          $('.condition').html(' exterieur');
-        }
-        else if($('.client-condition').val() == 'int') {
-          $('.amount').val('12000');
-          $('.price').html(' 120 € ');
-          $('.condition').html(' interieur');
-        }
-      }
-      else if(statutprof == 'sparring'){
-        if($('.client-condition').val() == 'ext'){
           $('.amount').val('8000');
           $('.price').html(' 80 € ');
           $('.condition').html(' exterieur');
         }
         else if($('.client-condition').val() == 'int') {
-          $('.amount').val('10000');
-          $('.price').html(' 100 € ');
+          $('.amount').val('9000');
+          $('.price').html(' 90 € ');
+          $('.condition').html(' interieur');
+        }
+      }
+      else if(statutprof == 'sparring'){
+        if($('.client-condition').val() == 'ext'){
+          $('.amount').val('7000');
+          $('.price').html(' 70 € ');
+          $('.condition').html(' exterieur');
+        }
+        else if($('.client-condition').val() == 'int') {
+          $('.amount').val('8000');
+          $('.price').html(' 80 € ');
           $('.condition').html(' interieur');
         }
       }
