@@ -53,6 +53,7 @@
       'card',
     ],
     'mode' => 'payment',
+    'allow_promotion_codes' => true,
     'success_url' => $YOUR_DOMAIN . "/success-payement.php?amount=$amount&name=$name&surname=$surname&tel=$tel&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&prof=$prof&statutprof=$statutprof&time=$timepicked&date=$date&profEmail=$profEmail",
     'cancel_url' => $YOUR_DOMAIN . '/cours-individuels.php',
   ]);
