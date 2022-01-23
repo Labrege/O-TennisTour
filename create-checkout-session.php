@@ -1,6 +1,6 @@
 <?php
   require('includes/dbh.inc.php');
-  $searchKey = $conn->query("SELECT * FROM valeurs WHERE id='2'");
+  $searchKey = $conn->query("SELECT * FROM valeurs WHERE id='1'");
   if($searchKey->num_rows > 0){
     //Tant qu'il y a des résultat dans la table, afficher...
     while ($donnees = $searchKey->fetch_assoc()){
@@ -39,8 +39,8 @@
   header('Content-Type: application/json');
   $amount = $_POST['amount'];
   $price = "'$amount'";
-  // $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
-  $YOUR_DOMAIN = 'https://www.otennistour.com';
+  $YOUR_DOMAIN = 'http://localhost/O-tennisTour';
+  // $YOUR_DOMAIN = 'https://www.otennistour.com';
   $checkout_session = \Stripe\Checkout\Session::create([
     'line_items' => [[
       # TODO: replace this with the `price` of the product you want to sell
