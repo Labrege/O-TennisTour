@@ -145,6 +145,7 @@
                             <ul>
                                 <li> <i class="fa fa-medal" aria-hidden="true"></i>Classement - <?php echo $donnees['userClassement'];?></li>
                                 <li> <span class="capitalize"><?php echo $donnees['userMain'];?></span> // Revers à <?php echo $donnees['userRevers'];?> </li>
+                                <br>
                                 <li>  <?php echo $donnees['userDescription'];?> </li>
                             </ul>
                         </div>
