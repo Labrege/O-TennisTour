@@ -1,7 +1,7 @@
 <header>
   <?php
       require 'links.php';
-      require 'header.php'
+      require 'header.php';
   ?>
 </header>
 <script>
