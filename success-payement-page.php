@@ -29,7 +29,8 @@ $amount = $_GET['amount'];
         <li>Séance de 60 minutes avec votre <?php echo $_GET['statutprof'];?>, <?php echo $_GET['prof'];?>.</li>
         <li>Réservation d'un court le <?php echo $date;?> à <?php echo $_GET['time'];?>.</li>
         <li>Votre numéro de confirmation : <?php echo $_GET['idCommande'];?></li>
-        <li>Total payé : <?php echo number_format(($_GET['amount'] /100), 2, '.', ' ');?> €</li>
+        <li>Un mail de confirmation vous a été envoyé ! Si vous n'avez rien reçu, regarder vos spams !</li>
+        <li>En cas de problème, <a href="contact.php" targer='blank'>contactez-nous !</a>  </li>
     </div>
     <a href="cours-individuels.php" class='button'> Retour à l'acceuil </a>
 </div>
