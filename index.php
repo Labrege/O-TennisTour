@@ -1,12 +1,12 @@
-<?php
-  require 'links.php';  
-?>
+
 
 <header>
-  <?php
-      require 'header.php';
-  ?>
+<?php
+  require 'header.php';
+?>
+
 </header>
+
 <script>
   setInterval(function(){
    $('.btn--next').trigger("click");
