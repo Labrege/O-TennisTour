@@ -28,7 +28,7 @@ if(isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['mail']) && is
     $oneHourMore = date('H:i', strtotime($heure.'+1 hour'));
 
     // SQL //
-    $sql = "INSERT INTO réservations (nom, prénom, mail, téléphone, CourtCondition, surface, age, localisation1, localisation2, prof, heure, dateRésa, amount, idReservation) VALUES ('$nom', '$prénom','$email', '$téléphone', '$condition', '$surface','$age', '$localisation1', '$localisation2','$prof','$heure','$date', '$amount','$idReservation')";
+    $sql = "INSERT INTO reservations (nom, prénom, mail, téléphone, CourtCondition, surface, age, localisation1, localisation2, prof, heure, dateRésa, amount, idReservation) VALUES ('$nom', '$prénom','$email', '$téléphone', '$condition', '$surface','$age', '$localisation1', '$localisation2','$prof','$heure','$date', '$amount','$idReservation')";
     $conn->query($sql);
 
     $sqlChange = "UPDATE disposindivs SET coursReserve = '1' WHERE profDispo='$prof' AND heureDispo='$heure' AND dateDispo='$date'";
