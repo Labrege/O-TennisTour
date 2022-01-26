@@ -37,13 +37,13 @@ $date = $_POST['date'];
                         }
                     }
                 }
-                ?>">
+            ?>">
                 <label for='<?php echo $donnees['id'];?>'> <?php echo $hourStart; ?> - <?php echo $hourEnd;?></label>
                 <input type="date" name='date' value='<?php echo date('Y-m-d', strtotime($date));?>' style='display: none;'>
                 <input type="text" name='name' value='<?php echo $name;?>' style='display: none;'>
                 <input type="checkbox" class='time-select' id='<?php echo $donnees['id'];?>' name='checked_time[]' value='<?php echo $donnees['hourStart'];?>'
                 <?php
-                $sqlHourCheck = "SELECT * FROM disposindivs WHERE profDispo='$name' AND coursReserve = '0' AND dateDispo='$date' AND heureDispo='$hourStart'";
+                $sqlHourCheck = "SELECT * FROM disposindivs WHERE profDispo='$name' AND coursReserve =   '0' AND dateDispo='$date' AND heureDispo='$hourStart'";
                 if ($result=mysqli_query($conn,$sqlHourCheck)) {
                     $rowcount=mysqli_num_rows($result);
                     if($rowcount>0){
@@ -69,6 +69,15 @@ $date = $_POST['date'];
     }
 
     ?>
+    </div>
+    <div>
+        Les prochains 
+        <?php 
+        $scheduled_day = $date;
+        $days = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+        $day = date('w',strtotime($scheduled_day));
+        echo $scheduled_day = date('d-m-Y', strtotime($scheduled_day))." ($days[$day])";
+        ?>
     </div>
     <button type='submit' class='hourSubmit' name='hourSubmit'> Enregistrer mes choix </button>
 </form>

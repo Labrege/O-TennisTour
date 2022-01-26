@@ -1,7 +1,7 @@
 var today = new Date();
 var tomorrow = new Date();
 
-tomorrow.setDate(today.getDate() + 2);
+tomorrow.setDate(today.getDate() + 3);
 var lastMonth = new Date().getMonth() - 1;
 
 var picker = new Pikaday({

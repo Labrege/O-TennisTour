@@ -19,12 +19,20 @@
         <div class="container-equipe">
             <div class="card-equipe">
                 <h2> Notre philosophie </h2>
-                <p> Ayant travaillé dans des clubs de Paris, nous partageons la même vision du tennis. L’Académie comprend que le tennis d’aujourd’hui et du futur se joue d’abord avec les « yeux », puis avec « le mental », ensuite avec les « jambes » et finalement avec les « mains ».
+                <p> L’équipe O’Tennis Tour est convaincu que l’on
+                peut apprendre le goût de l’effort, le
+                dépassement de soi quelque soit son niveau.
                 
                 <br><br>
-                Nous sommes convaincus que l’on peut apprendre le goût de l’effort, le dépassement de soi quelque soit le niveau du joueur.
-                Parce que chaque joueur est unique, que chaque joueur est un projet en soi, il mérite une méthodologie de coaching individualisée et propre à ses besoins, ses attentes que ce soit aussi bien en cours collectifs qu’en leçon individuelle.
-                Notre objectif commun est de faire évoluer le joueur dans les meilleures conditions possibles grâce à un cadre idéal sur le terrain comme en dehors.
+                Parce que chaque joueur est unique, que
+                chaque joueur est un projet en soi, il mérite une
+                méthodologie de coaching individualisée et
+                propre à ses besoins, ses attentes que ce soit
+                aussi bien en cours collectifs qu’en leçon
+                individuelle. Notre objectif commun est de faire
+                évoluer le joueur dans les meilleures conditions
+                possibles grâce à un cadre idéal sur le terrain
+                comme en dehors.
                 </p>
                 <div class="ligne"></div>
                 <a class='button' href="contact.php" target='_blank'> Nous rejoindre</a>
@@ -68,7 +76,7 @@
                             <br>
                             <li>
                             Kyrian est un des espoirs du tennis français. 
-                            Il compte déjà dans son palmarès plusieurs <span class="red" style='color: #F46E54;'> tournois Futurs </span> (simple et double) et deux quart de finales en <span class="red" style='color: #F46E54;'> Challenger</span>! 
+                            Il compte déjà dans son palmarès plusieurs <span class="red" style='color: #F46E54;'> tournois Futures </span> (simple et double) et deux quart de finales en <span class="red" style='color: #F46E54;'> Challenger</span> ! 
                             Il a également participé aux éditions 2019 et 2020 de <span class="red" style='color: #F46E54;'> Roland-Garros.</span>
                             </li>
                         </ul>
@@ -89,6 +97,25 @@
                             <li>
                             Excellent chez les juniors <span class="red" style='color: #F46E54;'>(19ème mondial en 2020)</span>, Martin commence fort sa transition chez les adultes ! Actuellement à son meilleur classement ATP, 
                             le jeune français s'illustre sur le circuit Futur en remportant déjà <span class="red" style='color: #F46E54;'>deux titres à Monastir </span>(simple et doubles).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-liste">
+                    <div class="img-coach">
+                        <img src="Images/coachs/sean.jpg" alt="">
+                    </div>
+                    <div class="card-liste-contenu">
+                        <h3>Sean CUENIN</h3>
+                        <div class="ligne"></div>
+                        <ul>
+                            <li> <i class="fa fa-medal" aria-hidden="true"></i>Classement - 1028e ATP</li>
+                            <li> Droitier // Revers à deux mains </li>
+                            <br>
+                            <li>
+                            Faisant partie des meilleurs juniors mondiaux <span class="red" style='color: #F46E54;'>(10ème mondial à son meilleur classement)</span>, Sean est un virtuose du tennis ! Il atteint en 2021 les demies-finales
+                            de <span class="red" style='color: #F46E54;'>Roland Garros Junior </span> en simple. Il se focalise depuis sur le circuit ATP et tente de se faire une place parmi les grands de ce sport !
                             </li>
                         </ul>
                     </div>
