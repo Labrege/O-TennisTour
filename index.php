@@ -1,5 +1,6 @@
 <header>
   <?php
+      require 'links.php';
       require 'header.php'
   ?>
 </header>
