@@ -30,7 +30,7 @@ $amount = $_GET['amount'];
         <li>Réservation d'un court le <?php echo $date;?> à <?php echo $_GET['time'];?>.</li>
         <li>Votre numéro de confirmation : <?php echo $_GET['idCommande'];?></li>
         <li>Un mail de confirmation vous a été envoyé ! Si vous n'avez rien reçu, regarder vos spams !</li>
-        <li>En cas de problème, <a href="contact.php" targer='blank'>contactez-nous !</a>  </li>
+        <li>En cas de problème, <a href="contact.php" targer='_blank'>contactez-nous !</a>  </li>
     </div>
     <a href="cours-individuels.php" class='button'> Retour à l'acceuil </a>
 </div>
