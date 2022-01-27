@@ -8,8 +8,8 @@ var frDate = {
   previousMonth : 'Mois précédent',
   nextMonth     : 'Mois suivant',
   months        : ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-  weekdays      : ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
-  weekdaysShort : ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim']
+  weekdays      : ['Dimanche','Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+  weekdaysShort : ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam']
 };
 
 var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
