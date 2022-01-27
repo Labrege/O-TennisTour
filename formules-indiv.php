@@ -20,9 +20,8 @@
                     <div class="intro-text">
                         <h2 >Jouer au tennis à Paris n'a jamais été aussi simple ! </h2>
                         
-                        <h6 style='margin-bottom: 7px;'><li> Ton ou ta collègue ne veut plus jouer avec toi parce que tu ne fais pas le poid ? Tu râles tout le temps quant elle marque un
-                        point ? Te voilà tout seul avec tes chaussures blanches,
-                        orange d’ocre et ton envie de taper la balle et SANS PARTENAIRE ?</li></h6>
+                        <h6 style='margin-bottom: 7px;'><li> Ton ou ta collègue ne veut plus jouer avec toi parce que tu ne fais pas le poid ? Tu râles tout le temps quand tu rates un
+                        point ? Te voilà tout seul avec tes chaussures blanches orange d’ocre et ton envie de taper la balle et SANS PARTENAIRE ?</li></h6>
 
                         <p> Pas de panique ! L’équipe d’O’Tennis Tour est là pour t’accompagner.
                         Que tu sois débutant, joueur confirmé ou compétiteur, trouves
@@ -33,14 +32,14 @@
                         proximité de chez toi ?</li></h6>
 
                         <p> Nous sommes là où tu veux , quand tu veux ! Nos joueurs
-                        Pros ou coachs qualifiés sont disponibles pour t’ accompagner
+                        Pros ou coachs qualifiés sont disponibles pour t’accompagner
                         selon tes disponibilités près de chez toi !
                         </p>
                         <br>
                         <h6 style='margin-bottom: 7px;'><li>Ton partenaire n’arrive plus à suivre la cadence lors de
                         tes entraînements ? </li></h6>
 
-                        <p> Quelques soient tes attentes , tes envies , que tu joues pour le
+                        <p> Quelques soient tes attentes, tes envies, que tu joues pour le
                         fun, ou progresser à fond techniquement et tactiquement, nos
                         Pros s’adapteront à ton niveau afin de te garantir un confort
                         de jeu et une qualité de séance sans égal !</p>
@@ -63,9 +62,9 @@
                     </div>
                 </div>
                 <br>
-                <a href="inscriptions.php" class="btn-link">
+                <a href="cours-individuels.php" class="btn-link">
                 <div class="button-container">
-                    <h2> Réserver un stage </h2>
+                    <h2> Réserver une leçon </h2>
                 </div>
                 </a>
             </div>

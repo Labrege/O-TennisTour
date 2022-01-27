@@ -47,7 +47,7 @@
     <div id='espace_membre_inscription_2'>
         <div class="container-formules">
             <br><br><br><br><br>
-            Aucun stage disponible pour le moment... Revenez bientôt pour réserver votre stage OTT !
+            Les stages ne sont pas encore disponibles... Revenez bientôt pour réserver votre stage OTT !
             <!-- <div class="card-formule">
                 <div class="image-card">
                     <img src="Images/image-tennis.png" alt="">
