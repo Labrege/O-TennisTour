@@ -24,7 +24,7 @@
                         <h6 style='margin-bottom: 7px; text-decoration: underline;'><li>Etape 1 :</li></h6>
 
                         <p> La première étape pour réserver un créneau est de nous contacter sur l'un de nos réseaux en précisant avec qui et quand vous voulez jouer !
-                            Vous trouverez notre equipe de pros en cliquant <a href="equipe.php#pro-liste" target='_blank'> ICI </a>. 
+                            Vous trouverez notre equipe de pros en cliquant <a href="equipe.php#pro-liste" target='_blank'> ICI</a>. 
                         </p>
                         <br>
                         <h6 style='margin-bottom: 7px; text-decoration: underline;'><li> Etape 2 :</li></h6>
