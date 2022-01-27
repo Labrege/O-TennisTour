@@ -8,63 +8,46 @@
     <div id='espace_membre_stages' class="espace_membre_pros">
         <!-- Début intro stages -->
         <div class="intro-stage-container">
-            <img class='intro-background-image' src="Images/tennis-net.jpg" alt="">
-            <div class="intro-coaching-screen"></div>
+            <img class='intro-background-image' src="Images/coachs/RG2.jpg" alt="">
+            <div class="intro-pro-screen"></div>
             <div class="intro-text-background">
-                <h1> Jouer avec un pro  </h1>
+                <h1> Comment jouer avec un pro ?</h1>
                 <div class="intro-text-container">
                     <div class="intro-text">
-                        <img class='intro-text-image' src="Images/coach-hand.jpg" alt="">
+                        <img class='intro-text-image' src="Images/coachs/alexandre-2.jpg" alt="">
                     </div>
                     <div class="intro-text">
-                        <h2 >Jouer au tennis à Paris n'a jamais été aussi simple ! </h2>
-                        
-                        <h6 style='margin-bottom: 7px;'><li> Ton ou ta collègue ne veut plus jouer avec toi parce que tu ne fait pas le poid ? Tu râles tout le temps quant elle marque un
-                        point ? Te voilà tout seul avec tes chaussures blanches,
-                        orange d’ocre et ton envie de taper la balle et SANS PARTENAIRE ?</li></h6>
-
-                        <p> Pas de panique ! L’équipe d’O’Tennis Tour est là pour t’accompagner.
-                        Que tu sois débutant, joueur confirmé ou compétiteur, trouves
-                        la formule qui te conviendras le mieux avec un coaching
-                        individuel personnalisé et commence à progresser MAINTENANT !</p>
+                        <h2 >Venez vivre un rêve en jouant avec un de nos PROS </h2>
+                    
+                        <p> Nos joueurs professionnels  étant toujours sur le circuit et donc souvent en déplacement, ils ne sont pas toujours disponibles pour donner des cours...</p>
                         <br>
-                        <h6 style='margin-bottom: 7px;'><li>Tu ne trouves jamais de bons créneaux sur des terrains à
-                        proximité de chez toi ?</li></h6>
+                        <h6 style='margin-bottom: 7px; text-decoration: underline;'><li>Etape 1 :</li></h6>
 
-                        <p> Nous sommes là où tu veux , quand tu veux ! Nos joueurs
-                        Pros ou coachs qualifiés sont disponibles pour t’ accompagner
-                        selon tes disponibilités près de chez toi !
+                        <p> La première étape pour réserver un créneau est de nous contacter sur l'un de nos réseaux en précisant avec qui et quand vous voulez jouer !
+                            Vous trouverez notre equipe de pros en cliquant <a href="equipe.php#pro-liste" target='_blank'> ICI </a>. 
                         </p>
                         <br>
-                        <h6 style='margin-bottom: 7px;'><li>Ton partenaire n’arrive plus à suivre la cadence lors de
-                        tes entraînements ? </li></h6>
+                        <h6 style='margin-bottom: 7px; text-decoration: underline;'><li> Etape 2 :</li></h6>
 
-                        <p> Quelques soient tes attentes , tes envies , que tu joues pour le
-                        fun, ou progresser à fond techniquement et tactiquement, nos
-                        Pros s’adapteront à ton niveau afin de te garantir un confort
-                        de jeu et une qualité de séance sans égal !</p>
+                        <p> Suite à votre message, nous reviendrons vers vous afin de répondre au mieux à vos attentes et besoins. 
+                        Nous vous communiquerons ensuite le détail de votre réservation avec l'adresse du court ainsi que la date et 
+                        l'heure exacte du rendez-vous. </p>
                         <br>
 
-                        <h6 style='margin-bottom: 7px;'><li>Tu t’es toujours demandé combien de points tu pourrais
-                        marquer contre un joueur Pro ?</li></h6>
+                        <h6 style='margin-bottom: 7px; text-decoration: underline;  '><li> Besoin d'annuler ? Pas de soucis ! </li></h6>
 
-                        <p> Rentres sur le court et viens défier l’un de nos joueurs !
-                        Vis le rêve de jouer avec un joueur pro étant ou ayant été sur le
-                        circuit, et viens profiter de son expérience du plus haut niveau
-                        mondial, des coulisses de l’ATP ou WTA !
+                        <p> Une fois le rendez-vous confirmé, vous pouvez annuler jusqu'à 24h avant le début de la séance en nous contactant directement.
                         </p>
                         <br>
 
-                        <h4>Le coaching tennis individuel est accessible à tous à
-                        partir de 10 ans, que vous soyez joueur débutant ou
-                        compétiteur.</h4>
+                        <h4>Contactez-nous dès maintenant pour réserver votre première leçon avec un de nos PROS ! </h4>
                         
                     </div>
                 </div>
                 <br>
-                <a href="inscriptions.php" class="btn-link">
+                <a href="contact.php" target='_blank' class="btn-link">
                 <div class="button-container">
-                    <h2> Réserver un stage </h2>
+                    <h2> Nous contacter </h2>
                 </div>
                 </a>
             </div>
