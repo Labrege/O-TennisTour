@@ -20,7 +20,7 @@
                     <div class="intro-text">
                         <h2 >Jouer au tennis à Paris n'a jamais été aussi simple ! </h2>
                         
-                        <h6 style='margin-bottom: 7px;'><li> Ton ou ta collègue ne veut plus jouer avec toi parce que tu ne fait pas le poid ? Tu râles tout le temps quant elle marque un
+                        <h6 style='margin-bottom: 7px;'><li> Ton ou ta collègue ne veut plus jouer avec toi parce que tu ne fais pas le poid ? Tu râles tout le temps quant elle marque un
                         point ? Te voilà tout seul avec tes chaussures blanches,
                         orange d’ocre et ton envie de taper la balle et SANS PARTENAIRE ?</li></h6>
 
