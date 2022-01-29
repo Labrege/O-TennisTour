@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 <div class="side-bar closed">
     <div class="side-bar-text">
-        <a href="espace_membre_index.php"> Profil </a>
-        <a href="espace_membre_informations.php"> Informations </a>
+        <a href="espace_membre_index.php"> Vos dispos </a>
+        <a href="espace_membre_informations.php"> Vos informations </a>
         <!-- <a href="../Admin/admin-post.php" target='_blank'> Mes dispos </a> -->
         <a href="../includes/logout.inc.php"> <i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion </a>
     </div>
