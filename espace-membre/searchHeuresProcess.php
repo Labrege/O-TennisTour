@@ -71,12 +71,34 @@ $date = $_POST['date'];
     ?>
     </div>
     <div>
-        Les prochains 
-        <?php 
-        $scheduled_day = $date;
+        Attribuer ces horaires aux prochains
+        <?php
+        
         $days = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
-        $day = date('w',strtotime($scheduled_day));
-        echo $scheduled_day = date('d-m-Y', strtotime($scheduled_day))." ($days[$day])";
+        $day = date('w',strtotime($date));
+        $scheduled_day = date('d-m-Y', strtotime($date))." ($days[$day])";
+        echo  ($days[$day])."s";
+        echo '<br><br>';
+        ?>
+        <div class="next-weeks">
+            <?php
+            for ($i = 1; $i<=5; $i++){
+                $daysToAdd = $i;
+                $date1 = strtotime($date);
+                $date1 = date('d M Y', strtotime("+"."$daysToAdd"." week", $date1));
+                ?>
+                <div class="next-week-checkbox">
+                    <label for="<?php echo $date1?>"> <?php echo $date1?></label>
+                    <input name="next_week[]" value="<?php echo date('Y-m-d', strtotime($date1));?>" type="checkbox">
+                </div>
+                <br>
+                <?php
+            }
+            ?>
+        </div>
+
+        <?php
+        
         ?>
     </div>
     <button type='submit' class='hourSubmit' name='hourSubmit'> Enregistrer mes choix </button>
