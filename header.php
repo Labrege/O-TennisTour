@@ -11,15 +11,6 @@
     });
   });
 </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PV4Y7820KL"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-PV4Y7820KL');
-</script>
 
 <div class="header-logo">
           <a href="index.php"><img class= "logo_club" src="Images/logoheader-3.png" alt="logo-test"></a>

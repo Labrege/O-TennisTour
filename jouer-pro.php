@@ -1,18 +1,16 @@
+<head>
+    <!-- SEO -->
+    <title> O'TENNIS TOUR | Jouer avec un pro </title>
+    <meta name="description" content="Découvrez notre équipe de Pros, Sparrings et Coachs et choisissez la formule OTT qui VOUS convient !">
+    <meta name="keywords" content="Tennis, Tennis Paris, Coaching, TENNIS, TENNIS PARIS, O Tennis Tour, OTT, otennistour, o-tennis tour, O'Tennis Tour, Leçon individuelle, Roland Garros, Club Paris, Académie, Tennis Academy, Académie de tennis, Academy">
+</head>
+
 <header>
     <?php
         require 'header.php'
     ?>
 </header>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PV4Y7820KL"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-PV4Y7820KL');
-</script>
 
 <div class="rest">
     <div id='espace_membre_stages' class="espace_membre_pros">
