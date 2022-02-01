@@ -4,6 +4,16 @@
     ?>
 </header>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PV4Y7820KL"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-PV4Y7820KL');
+</script>
+
 <div class="rest">
     <div id='espace_membre_stages' class="espace_membre_pros">
         <!-- Début intro stages -->
