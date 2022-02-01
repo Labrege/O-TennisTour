@@ -246,7 +246,7 @@
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> Réserver ma leçon HYBRIDE</a>
+                    <a  class="stage-button" href="jouer-pro.php" target='_blank'> Réserver ma leçon HYBRIDE</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
