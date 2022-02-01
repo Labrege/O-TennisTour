@@ -199,7 +199,7 @@
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="#"> Réserver ma leçon PRO</a>
+                    <a  class="stage-button" href="jouer_pro.php" target='_blank'> Réserver ma leçon PRO</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
