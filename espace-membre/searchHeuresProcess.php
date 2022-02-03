@@ -8,7 +8,18 @@ $date = $_POST['date'];
 <form action="upload-hours.php" method='POST'>
     <div class="form-container">
     <?php
-    $sqlHour = "SELECT * FROM horaires";
+    function getWeekday($dateNum) {
+        return date('w', strtotime($dateNum));
+    }
+    $dayNumber = getWeekday($date); // returns 4
+    if($dayNumber == 0){
+        $sqlHour = "SELECT * FROM horaires WHERE hourStart <= '17:00:00.0000'";
+    }
+
+    else{
+        $sqlHour = "SELECT * FROM horaires";
+    }
+
     $searchHours = $conn->query($sqlHour);
 
     //Si la recherche donne un résultat
@@ -43,7 +54,7 @@ $date = $_POST['date'];
                 <input type="text" name='name' value='<?php echo $name;?>' style='display: none;'>
                 <input type="checkbox" class='time-select' id='<?php echo $donnees['id'];?>' name='checked_time[]' value='<?php echo $donnees['hourStart'];?>'
                 <?php
-                $sqlHourCheck = "SELECT * FROM disposindivs WHERE profDispo='$name' AND coursReserve =   '0' AND dateDispo='$date' AND heureDispo='$hourStart'";
+                $sqlHourCheck = "SELECT * FROM disposindivs WHERE profDispo='$name' AND coursReserve = '0' AND dateDispo='$date' AND heureDispo='$hourStart'";
                 if ($result=mysqli_query($conn,$sqlHourCheck)) {
                     $rowcount=mysqli_num_rows($result);
                     if($rowcount>0){
