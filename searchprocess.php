@@ -25,10 +25,19 @@ require('includes/dbh.inc.php');
 
 if(isset($_POST['submit'])){
     $date = $_POST['date'];
+    $today = time();
     $prof = $_POST['prof'];
     $time = $_POST['time'];
     $dateSmallFormat = date("d M", strtotime($date));
     $dateLargeFormat = date("d/m/Y", strtotime($date));
+    $dateDif = strtotime($date) - $today;
+    $numDayDif = round($dateDif / (60 * 60 * 24));
+
+    function getWeekday($dateNum) {
+        return date('w', strtotime($dateNum));
+    }
+    
+    $dayNumber = getWeekday($date); // returns 4
 
     //Choix du prof
     if($prof == 'all'){
