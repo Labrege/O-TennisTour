@@ -145,7 +145,7 @@
                             <img src="Images/coachs/<?php echo $donnees['userPhoto'];?>" alt="">
                         </div>
                         <div class="card-liste-contenu">
-                            <h3><?php echo $donnees['userSurname'];?> <?php echo $donnees['userName'];?></h3>
+                            <h3><?php echo $donnees['userName'];?> <?php echo $donnees['userSurname'];?></h3>
                             <div class="ligne"></div>
                             <ul>
                                 <li> <i class="fa fa-medal" aria-hidden="true"></i>Classement - <?php echo $donnees['userClassement'];?></li>
@@ -179,7 +179,7 @@
                             <img src="Images/coachs/<?php echo $donnees['userPhoto'];?>" alt="">
                         </div>
                         <div class="card-liste-contenu">
-                            <h3><?php echo $donnees['userSurname'];?> <?php echo $donnees['userName'];?></h3>
+                            <h3><?php echo $donnees['userName'];?> <?php echo $donnees['userSurname'];?></h3>
                             <div class="ligne"></div>
                             <ul>
                                 <li> <i class="fa fa-medal" aria-hidden="true"></i>Classement - <?php echo $donnees['userClassement'];?></li>
