@@ -38,7 +38,7 @@
                         <p> Pas de panique ! L’équipe d’O’Tennis Tour est là pour t’accompagner.
                         Que tu sois débutant, joueur confirmé ou compétiteur, trouves
                         la formule qui te conviendras le mieux avec un coaching
-                        individuel personnalisé et commence à progresser MAINTENANT !</p>
+                        individuel personnalisé et commences à progresser MAINTENANT !</p>
                         <br>
                         <h6 style='margin-bottom: 7px;'><li>Tu ne trouves jamais de bons créneaux sur des terrains à
                         proximité de chez toi ?</li></h6>
