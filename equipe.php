@@ -24,7 +24,7 @@
         <div class="container-equipe">
             <div class="card-equipe">
                 <h2> Notre philosophie </h2>
-                <p> L’équipe O’Tennis Tour est convaincu que l’on
+                <p> L’équipe O’Tennis Tour est convaincue que l’on
                 peut apprendre le goût de l’effort, le
                 dépassement de soi quelque soit son niveau.
                 
