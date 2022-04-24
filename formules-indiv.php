@@ -101,12 +101,11 @@
                </div>
                
                 
-               <p> Progressez rapidement en jouant avec un de nos sparrings
-                OTT ! Avec la formule OTT 250 TRAINING SPARRING, nous
-                vous proposons 1H de jeu avec l'un de nos sparrings. Tous
-                classés entre 3/6 et Numéroté français, nos sparrings
-                s'adapterons à votre niveau de jeu afin de vous garantir un
-                confort de jeu et une qualité de séance sans égal ! </p>
+               <p> Progressez rapidement en jouant avec un de nos sparrings OTT ! 
+                   Avec la formule OTT 250, nous vous proposons 1H de jeu avec l'un de nos sparrings. 
+                   Tous vos futurs sparrings sont classés entre 3/6 et TOP 100 français. 
+                   Ils sauront s'adapter à votre niveau de jeu afin de vous accompagner pour une séance inoubliable ! 
+                </p>
                
                <h4> Au programme : </h4>
                <ul>
@@ -146,12 +145,10 @@
                </div>
                
                 
-               <p> Avec la formule OTT 500 COACH, progressez et travaillez
-                techniquement avec un professionnel ! Tous titulaires du
-                DEJEPS ou du DESJEPS, nos coachs vous aiderons sur tous les
-                aspects de votre jeu. Ce format est idéal pour progresser
-                rapidement sur des points précis et enfin vous imposer sur le
-                terrain ! </p>
+               <p> Avec la formule OTT 500 COACH, progressez et travaillez techniquement avec un professionnel ! 
+                   Tous titulaires du DEJEPS ou du DESJEPS, nos coachs vous aideront sur tous les aspects de votre jeu. 
+                   Ce format est idéal pour progresser rapidement sur des points précis et enfin vous imposer sur le terrain !
+                </p>
                
                <h4> Au programme : </h4>
                <ul>
@@ -191,11 +188,11 @@
                </div>
                
                 
-               <p>Progressez rapidement en jouant avec un de nos joueurs pros
-                OTT ! Avec la formule O'TT 1000 TRAINING PRO , vivez le rêve
-                de jouer avec l’un de nos joueurs pros étant ou ayant été sur
-                le circuit , venez profiter de son expérience du plus haut niveau
-                mondial, des coulisses de l’ATP ou WTA !  </p>
+               <p>Progressez rapidement en jouant avec un de nos joueurs  professionnels OTT ! 
+                   Avec la formule OTT 1000 TRAINING PRO, concrétisez votre rêve et jouez avec un professionnel.
+                   Partagez l'expérience de joueurs  étant ou ayant été sur le circuit. 
+                   Venez profiter de l'expérience du plus haut niveau mondial et découvrir les coulisses de l’ATP et de la WTA  !
+                </p>
                
                <h4> Au programme : </h4>
                <ul>
@@ -235,13 +232,9 @@
                </div>
                
                 
-               <p>Avec la formule OTT Grand-Chelem, allié les avantages de la
-                qualité de balles de notre sparring et des conseils avisés de notre
-                coach. Le sparring vous garantira un confort de jeu sans égal
-                tandis que notre coach restera derrière vous et vous poussera à
-                atteindre tous vos objectifs tout au long de la séance. Le but de
-                cette formule est de vous entraîner comme un pro en étant le plus
-                proche de vous !
+               <p>Avec la formule OTT Grand-Chelem,  alliez les avantages de la qualité de balles de notre sparring et les conseils avisés de notre coach. 
+                   Le sparring vous garantira un confort de jeu sans égal tandis que notre coach restera derrière vous et vous motivera pour atteindre vos objectifs tout au long de la séance. 
+                   Le but de cette formule est de vous entraîner comme un véritable professionnel !
                 </p>
                
                <h4> Au programme : </h4>
