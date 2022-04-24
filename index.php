@@ -76,7 +76,7 @@
             L’entraînement avec le coach de tennis professionnel est à la fois méthodique et rigoureux.
           </p> -->
           <p>Mettez toutes les chances de votre côté et optez pour des cours avec un coach de tennis professionnel.
-            La formule OTT 500 - LEÇON COACH est disponnible à Paris tout au long de l’année et programmé en fonction de vos disponibilités.</p>
+            La formule OTT 500 - LEÇON COACH est disponible à Paris tout au long de l’année et programmé en fonction de vos disponibilités.</p>
 
         </div>
         <div class="flex-btn-accueil">
