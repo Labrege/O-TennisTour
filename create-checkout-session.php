@@ -54,7 +54,7 @@
     ],
     'mode' => 'payment',
     'allow_promotion_codes' => true,
-    'success_url' => $YOUR_DOMAIN . "/success-payement.php?prof=$prof&statutprof=$statutprof&time=$timepicked&profEmail=$profEmail",
+    'success_url' => $YOUR_DOMAIN . "/success-payement.php?age=$age&localisation1=$localisation1&localisation2=$localisation2",
     'cancel_url' => $YOUR_DOMAIN . '/cours-individuels.php',
   ]);
 
