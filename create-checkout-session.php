@@ -1,4 +1,5 @@
 <?php
+echo "bite";
   require('includes/dbh.inc.php');
   $searchKey = $conn->query("SELECT * FROM valeurs WHERE id='1'");
   if($searchKey->num_rows > 0){
