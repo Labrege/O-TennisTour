@@ -1,5 +1,4 @@
 <?php
-echo "bite";
   require('includes/dbh.inc.php');
   $searchKey = $conn->query("SELECT * FROM valeurs WHERE id='1'");
   if($searchKey->num_rows > 0){
@@ -9,10 +8,10 @@ echo "bite";
     }
   }
   //Variables
-  $name = $_POST['clientname'];
-  $surname = $_POST['clientsurname'];
-  $tel = $_POST['clienttel'];
-  $mail = $_POST['clientmail'];
+  echo $name = $_POST['clientname'];
+  echo $surname = $_POST['clientsurname'];
+  echo $tel = $_POST['clienttel'];
+  echo $mail = $_POST['clientmail'];
   if(isset($_POST['client-condition'])){
     $condition = $_POST['client-condition'];
   }
@@ -25,15 +24,15 @@ echo "bite";
   else{
     $surface = 'aucun-choix';
   }
-  $age = $_POST['client-age'];
-  $localisation1 = $_POST['client-localisation-1'];
-  $localisation2 = $_POST['client-localisation-2'];
+  echo $age = $_POST['client-age'];
+  echo $localisation1 = $_POST['client-localisation-1'];
+  echo $localisation2 = $_POST['client-localisation-2'];
 
-  $prof = $_GET['prof'];
-  $profEmail = $_GET['profEmail'];
-  $timepicked = $_GET['time'];
-  $statutprof = $_GET['statut'];
-  $date = $_GET['date'];
+  echo $prof = $_GET['prof'];
+  echo $profEmail = $_GET['profEmail'];
+  echo $timepicked = $_GET['time'];
+  echo $statutprof = $_GET['statut'];
+  echo $date = $_GET['date'];
   require 'vendor/autoload.php';
   \Stripe\Stripe::setApiKey("$APIKEY"); 
 
