@@ -28,7 +28,7 @@
   echo $localisation1 = $_POST['client-localisation-1'];
   echo $localisation2 = $_POST['client-localisation-2'];
 
-  echo $prof = $_GET['prof'];
+  echo $prof = strtolower($_GET['prof']);
   echo $profEmail = $_GET['profEmail'];
   echo $timepicked = $_GET['time'];
   echo $statutprof = $_GET['statut'];
