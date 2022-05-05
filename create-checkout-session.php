@@ -57,7 +57,7 @@
     ],
     'mode' => 'payment',
     'allow_promotion_codes' => true,
-    'success_url' => $YOUR_DOMAIN . "/success-payement.php?amount=$amount&name=$name&surname=$surname&tel=$tel&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&time=$timepicked&profEmail=$profEmail&statutprof=$statutprof&date=$date",
+    'success_url' => $YOUR_DOMAIN . "/success-payement.php?prof=$prof&amount=$amount&name=$name&surname=$surname&tel=$tel&mail=$mail&condition=$condition&surface=$surface&age=$age&localisation1=$localisation1&localisation2=$localisation2&time=$timepicked&profEmail=$profEmail&statutprof=$statutprof&date=$date",
     'cancel_url' => $YOUR_DOMAIN . '/cours-individuels.php',
   ]);
 
