@@ -90,25 +90,6 @@
 
                 <div class="card-liste">
                     <div class="img-coach">
-                        <img src="Images/coachs/martin.jpg" alt="">
-                    </div>
-                    <div class="card-liste-contenu">
-                        <h3>Martin BREYSACH</h3>
-                        <div class="ligne"></div>
-                        <ul>
-                            <li> <i class="fa fa-medal" aria-hidden="true"></i>Classement - 821e ATP</li>
-                            <li> Droitier // Revers à deux mains </li>
-                            <br>
-                            <li>
-                            Excellent chez les juniors <span class="red" style='color: #F46E54;'>(19ème mondial en 2020)</span>, Martin commence fort sa transition chez les adultes ! Actuellement à son meilleur classement ATP, 
-                            le jeune français s'illustre sur le circuit Futur en remportant déjà <span class="red" style='color: #F46E54;'>deux titres à Monastir </span>(simple et doubles).
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card-liste">
-                    <div class="img-coach">
                         <img src="Images/coachs/sean.jpg" alt="">
                     </div>
                     <div class="card-liste-contenu">
