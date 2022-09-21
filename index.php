@@ -96,7 +96,7 @@
 
 
       <!-- SLIDE 3 -->
-      <!-- <div class="valeurs-container valeurs-container-3 no-display">
+      <div class="valeurs-container valeurs-container-3 no-display">
         <div class="valeurs-texte">
           <h2> Jouer avec un sparring </h2>
           <p> Progressez rapidement en jouant avec un de nos sparrings OTT tous classés entre 3/6 et Numéroté français ! 
@@ -116,7 +116,7 @@
             </div>
           </a>
         </div>
-      </div> -->
+      </div>
 
       <!-- SLIDE 4 -->
       <div class="valeurs-container valeurs-container-4 no-display">
