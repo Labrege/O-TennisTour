@@ -84,7 +84,7 @@
 
         <!-- Début section stages -->
         <!-- OTT 250 -->
-        <div class="stage-container">
+        <!-- <div class="stage-container">
            <div class="stage-text-container">
                <img src="Images/coachs/arthur.jpg" alt="">
            </div>
@@ -126,7 +126,7 @@
                 </div> 
            </div>
            
-        </div>
+        </div> -->
         <!-- OTT 500 -->
         <div class="stage-container">
            <div class="stage-text-container">
