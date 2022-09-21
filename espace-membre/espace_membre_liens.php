@@ -3,17 +3,17 @@ if(!isset($_SESSION)){
     session_start();
 }
 /* For website*/
-// $_SESSION['includes'] = "/includes/dbh.inc.php";
-// $_SESSION['vendor'] = "/vendor/autoload.php";
-// $_SESSION['abonnementPrefix'] ="";
-// $_SESSION['ovalXV'] ="";
+$_SESSION['includes'] = "/includes/dbh.inc.php";
+$_SESSION['vendor'] = "/vendor/autoload.php";
+$_SESSION['abonnementPrefix'] ="";
+$_SESSION['ovalXV'] ="";
 
 
 /* For localhost*/
-$_SESSION['includes'] = "/O-TennisTour/includes/dbh.inc.php";
-$_SESSION['vendor'] = "/O-TennisTour/vendor/autoload.php";
-$_SESSION['abonnementPrefix'] ="..";
-$_SESSION['ovalXV'] ="/O-TennisTour";
+// $_SESSION['includes'] = "/O-TennisTour/includes/dbh.inc.php";
+// $_SESSION['vendor'] = "/O-TennisTour/vendor/autoload.php";
+// $_SESSION['abonnementPrefix'] ="..";
+// $_SESSION['ovalXV'] ="/O-TennisTour";
 
 require_once($_SERVER['DOCUMENT_ROOT'] . $_SESSION['includes']);
 
