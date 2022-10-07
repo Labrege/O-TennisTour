@@ -31,16 +31,16 @@
     </div>
     <div class="container-image img3 no-display">
       <div class="screen-index"></div>
-      <video playsinline loop muted autoplay src="Videos/sparring.mp4"></video>
+      <video playsinline loop muted autoplay src="Videos/tenniscourtdrone.mp4"></video>
     </div>
-    <div class="container-image img4 no-display">
+    <!-- <div class="container-image img4 no-display">
       <div class="screen-index"></div>
       <video playsinline loop muted autoplay src="Videos/tennis1.mp4"></video>
     </div>
     <div class="container-image img5 no-display">
       <div class="screen-index"></div>
       <video playsinline loop muted autoplay src="Videos/tennis2.mp4"></video>
-    </div>
+    </div> -->
 
     <div class="page-container">
 
@@ -80,7 +80,7 @@
 
         </div>
         <div class="flex-btn-accueil">
-          <a href="cours-individuels.php" class="btn-link">
+          <a href="https://otennistourbooking.simplybook.it" target="_blank" class="btn-link">
             <div class="button-container">
               <h2> Réserver </h2>
             </div>
@@ -98,27 +98,21 @@
       <!-- SLIDE 3 -->
       <div class="valeurs-container valeurs-container-3 no-display">
         <div class="valeurs-texte">
-          <h2> Jouer avec un sparring </h2>
-          <p> Progressez rapidement en jouant avec un de nos sparrings OTT tous classés entre 3/6 et Numéroté français ! 
-            Jouez avec un véritable métronome , idéal pour se régler ou travailler un coup spécifique !
+          <h2> Nos infrastructures </h2>
+          <p> Pour votre leçon, pas de prise de tête. Nous fournissons un service "clé en main" en fournissant le coach, les balles et le terrain. Nous réserverons un terrain au plus proche de chez vous selon les conditions
+            que vous choisirez !
           </p>
         </div>
         <div class="flex-btn-accueil">
-          <a href="cours-individuels.php" class="btn-link">
+          <a href="https://otennistourbooking.simplybook.it" target="_blank" class="btn-link">
             <div class="button-container">
               <h2> Réserver </h2>
-            </div>
-          </a>
-
-          <a href="equipe.php#sparring-liste" class="btn-link">
-            <div class="button-container-hollow">
-              <h2> Voir les sparrings </h2>
             </div>
           </a>
         </div>
       </div>
 
-      <!-- SLIDE 4 -->
+      <!-- SLIDE 4
       <div class="valeurs-container valeurs-container-4 no-display">
         <div class="valeurs-texte">
           <h2> Stage de tennis </h2>
@@ -132,9 +126,9 @@
             <h2> Trouver mon stage </h2>
           </div>
         </a>
-      </div>
+      </div> -->
 
-      <!-- SLIDE 5 -->
+      <!-- SLIDE 5
       <div class="valeurs-container valeurs-container-5 no-display">
         <div class="valeurs-texte">
           <h2> Infrastructures </h2>
@@ -147,7 +141,7 @@
             <h2> Trouver mon stage </h2>
           </div>
         </a>
-      </div>
+      </div> -->
       
     
       <div class="pagination-wrapper">
@@ -157,7 +151,7 @@
         </svg>
         
         <div class="pagination-container">
-          <h2> <span class='carrousel-number'>01 / 05</span> </h2>
+          <h2> <span class='carrousel-number'>01 / 03</span> </h2>
         </div>
         
         <svg class="button_accueil btn--next" height="96" viewBox="0 0 24 24" width="96" xmlns="http://www.w3.org/2000/svg">
