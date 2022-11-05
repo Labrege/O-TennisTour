@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <br>
-                <a href="cours-individuels.php" class="btn-link">
+                <a href="https://otennistourbooking.simplybook.it" target="_blank" class="btn-link">
                 <div class="button-container">
                     <h2> Réserver une leçon </h2>
                 </div>
