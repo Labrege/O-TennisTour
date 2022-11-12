@@ -164,7 +164,7 @@
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="https://otennistourbooking.simplybook.it"> Réserver ma leçon coach</a>
+                    <a  class="stage-button" href="https://otennistourbooking.simplybook.it" target='_blank'> Réserver ma leçon coach</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
