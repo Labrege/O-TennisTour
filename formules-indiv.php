@@ -164,7 +164,7 @@
                 </ul>
                </div>
                <div class="stage-button-container">
-                    <a  class="stage-button" href="cours-individuels.php"> Réserver ma leçon coach</a>
+                    <a  class="stage-button" href="https://otennistourbooking.simplybook.it"> Réserver ma leçon coach</a>
                     <a  class="stage-button-hollow" target='_blank' href="PDF/OTT - Brochure complète.pdf"> Télécharger la brochure </a>
                 </div> 
            </div>
@@ -214,7 +214,7 @@
            </div>
         </div>
 
-        <!-- OTT leçon hybrida -->
+        <!-- OTT leçon hybride -->
         <div class="stage-container">
            <div class="stage-text-container">
                <img src="Images/coachs/kyrian.jpg" alt="">
