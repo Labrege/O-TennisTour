@@ -61,9 +61,9 @@
                 <a href="covid.php" class="nav-link btn"> Covid-19 </a>
               </li>
 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="login.php" target="_blank" class="nav-link btn"> Connexion </a>
-              </li>
+              </li> -->
             </ul>
       </nav>
     <script src="JS/script.js?v=<?php echo time(); ?>"></script>
