@@ -111,7 +111,7 @@
             <h2 id='coach-liste'> Les coachs O'TENNIS TOUR</h2>
             <p>Chez O’TENNIS TOUR, nous avons souhaité travailler uniquement avec des coachs partageant la même philosophie que nous. Nos expériences tennistiques et personnelles différentes nous amènent à nous compléter pour la réalisation de vos projets.
             <br><br>
-            Tous nos coachs OTT sont titulaires du DEJEPS ou DESJEPS et prêts à vous aider à remplir vos objectifs !</p>
+            Tous nos coachs OTT sont prêts à vous aider à remplir vos objectifs techniques et tactiques !</p>
             <div class="card-liste-container">
             <?php
             $sqlCoach = "SELECT * FROM users WHERE userStatut='coach'";
