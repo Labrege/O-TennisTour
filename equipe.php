@@ -142,11 +142,12 @@
             ?>
         
             </div>
+            <!-- 
             <br>
             <br>
             <h2 id='sparring-liste'> Les sparrings O'TENNIS TOUR</h2>
             <p>Chez O’TENNIS TOUR, nous avons souhaité travailler avec des sparrings ayant la même vision du jeu, du tennis. Leurs expériences, leurs qualités de balles seront un allié afin de jouer dans un cadre idéal et favoriser ainsi votre progression !</p>
-            <!-- 
+            
             <div class="card-liste-container">
             <?php
             $sqlCoach = "SELECT * FROM users WHERE userStatut='sparring'";
