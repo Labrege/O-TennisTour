@@ -45,7 +45,7 @@
                 <div class="hidden-link" style='display: none'>
                   <a href="formules-indiv.php"> Nos formules </a>
                   <a href="jouer-pro.php"> Réserver avec un Pro </a>
-                  <a href="https://otennistourbooking.simplybook.it" target="_blank">Réserver une leçon </a>
+                  <a href="https://otennistourbooking.simplybook.it" target="_blank"> Réserver une leçon </a>
                 </div>
               </li>
               
